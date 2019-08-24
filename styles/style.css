@@ -1,4 +1,4 @@
-
+/* GENERAL *************************/
 #content{
   position: absolute;
   overflow: hidden;
@@ -59,11 +59,10 @@ nav ul li{
   margin-left: 1em;
 } */
 
-
+/* HOME *************************/
 #title{
   position: absolute;
-  top: 30%;
-  left: 10%;
+  bottom: 0;
 
 }
 
@@ -71,24 +70,46 @@ nav ul li{
   margin: 0;
 
   text-transform: uppercase;
-  font-size: 4.5em;
+  font-size: 6.5em;
   font-weight: 900;
 }
 
 #title h3{
   margin: 0;
 
-  font-size: 3em;
+  font-size: 5em;
   font-weight: 300;
 }
 
-@media screen and (max-width: 500px) {
+/* MEDIA QUERIES *************************/
+@media screen and (max-width: 1366px) {
   #title h2{
-    font-size: 2.5em;
+    font-size: 5em;
   }
 
   #title h3{
-    font-size: 1.7em;
+    font-size: 3.5em;
   }
 
+}
+
+@media screen and (max-width: 768px) {
+  #title h2{
+    font-size: 3.5em;
+  }
+
+  #title h3{
+    font-size: 2em;
+  }
+
+}
+
+@media screen and (max-width: 420px) {
+  #title h2{
+    font-size: 2em;
+  }
+
+  #title h3{
+    font-size: 1.5em;
+  }
 }
