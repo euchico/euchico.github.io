@@ -1,5 +1,14 @@
 /* GENERAL *************************/
-#content{
+.colorPrimary{
+  color: #F3F3F3 !important;
+}
+
+.colorSecondary{
+  color: #498f73 !important;
+}
+
+/* content ***************/
+#contentHome{
   position: absolute;
   overflow: hidden;
 
@@ -11,7 +20,7 @@
 
   padding: 1em;
 
-  border: 1em solid #ECE1E6;
+  border: 1em solid #F3F3F3;
 
   font-family: 'Roboto', sans-serif;
   color: #ECE1E6;
@@ -19,13 +28,32 @@
   background-color: #498f73;
 }
 
-#navagation .navbar-toggler{
-  border: none !important;
-  color: #ECE1E6;
+#contentCurriculum{
+  padding: 1em;
+
+  border: 1em solid #498F73;
+
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #F3F3F3;
+}
+
+/* navegation ***************/
+#contentHome #navagation .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 225, 230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#contentCurriculum #navagation .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(73, 143, 115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 #navagation{
+  margin-bottom: 2em;
   padding: 0;
+}
+
+#navagation .navbar-toggler{
+  border: none !important;
 }
 
 nav{
@@ -39,7 +67,6 @@ nav h1{
 
   font-size: 1.3em;
   font-weight: 900;
-  color: #ECE1E6;
 }
 
 nav a,
@@ -61,7 +88,6 @@ nav ul li a{
   text-align: right;
   font-size: 1.3em;
   font-weight: 100;
-  color: #ECE1E6 !important;
 }
 
 /* HOME *************************/
@@ -85,6 +111,71 @@ nav ul li a{
   font-weight: 300;
 }
 
+/* CURRICULUM *************************/
+#card{
+  text-align: center;
+
+  padding: 2em 1em;
+
+  background-color: #E6E6E6;
+}
+
+#card .avatar{
+  display: block;
+
+  margin-bottom: 2em;
+
+  text-align: center;
+}
+
+#card .avatar img{
+    width: 12em;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+#card h2{
+  font-size: 2.2em;
+  font-weight: 900;
+}
+
+#card h3{
+  padding-bottom: 0.7em;
+
+  font-size: 1.5em;
+  font-weight: 100;
+  color:;
+}
+
+#card ul li{
+  padding: 0 0.3em;
+  font-size: 2em;
+}
+
+#card a,
+#card a:hover,
+#card a:visited,
+#card a:link,
+#card a:active{
+  color: #212529;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#download{
+  text-align: center;
+
+  padding: 2em;
+
+  background-color: #FDFDFD;
+}
+
+#download button{
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 /* MEDIA QUERIES *************************/
 @media screen and (max-width: 1366px) {
   #title h2{
@@ -94,7 +185,6 @@ nav ul li a{
   #title h3{
     font-size: 3.5em;
   }
-
 }
 
 @media screen and (max-width: 768px) {
@@ -105,7 +195,6 @@ nav ul li a{
   #title h3{
     font-size: 2em;
   }
-
 }
 
 @media screen and (max-width: 420px) {
