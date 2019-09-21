@@ -112,11 +112,18 @@ nav ul li a{
 }
 
 /* CURRICULUM *************************/
+/* card ***************/
+.areaCard{
+  margin-bottom: 2em;
+}
+
 #card{
+  padding: 2em;
+
   text-align: center;
 
-  padding: 2em 1em;
-
+  border: 1px solid #B3B3B3;
+  border-bottom: none;
   background-color: #E6E6E6;
 }
 
@@ -164,17 +171,77 @@ nav ul li a{
 }
 
 #download{
-  text-align: center;
-
   padding: 2em;
 
+  text-align: center;
+
+  border: 1px solid #B3B3B3;
+  border-top: none;
   background-color: #FDFDFD;
 }
 
 #download button{
   font-size: 1em;
   text-transform: uppercase;
+  border: none;
+  background-color: #498F73;
 }
+
+/* information ***************/
+.areaCurriculum{
+  margin-bottom: 1.5em;
+  padding: 2em;
+
+  border: 1px solid #B3B3B3;
+
+  background-color: #FDFDFD;
+}
+
+.areaCurriculum h2{
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+.areaCurriculum h3{
+  padding: 0.5em 0em;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+
+.areaCurriculum p{
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.8em;
+}
+
+/* experience ***************/
+#collapseInformation{
+  margin-bottom: 1em;
+}
+
+#collapseInformation a{
+  color: #212529;
+  text-decoration: none;
+}
+
+#collapseInformation .collapseTitle{
+  padding-left: 1em;
+  margin-left: 1em;
+  border-left: 2px solid #B3B3B3;
+}
+
+#collapseInformation span{
+  font-weight: 100;
+}
+
+#collapseInformation span.collapseDate{
+  font-size: 1.5em
+}
+
+#collapseInformation h4{
+  font-weight: bold;
+}
+
 
 /* MEDIA QUERIES *************************/
 @media screen and (max-width: 1366px) {
@@ -204,5 +271,13 @@ nav ul li a{
 
   #title h3{
     font-size: 1.5em;
+  }
+
+  #collapseInformation .collapseDate{
+    display: none;
+  }
+
+  #collapseInformation .collapseTitle{
+    margin: 0;
   }
 }
