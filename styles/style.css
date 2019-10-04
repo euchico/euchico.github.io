@@ -7,37 +7,6 @@
   color: #498f73 !important;
 }
 
-/* content ***************/
-#contentHome{
-  position: absolute;
-  overflow: hidden;
-
-  top: 0px;
-  left: 0px;
-
-  width: 100%;
-  height: 100%;
-
-  padding: 1em;
-
-  border: 1em solid #F3F3F3;
-
-  font-family: 'Roboto', sans-serif;
-  color: #ECE1E6;
-
-  background-color: #498f73;
-}
-
-#contentCurriculum{
-  padding: 1em;
-
-  border: 1em solid #498F73;
-
-  font-family: 'Roboto', sans-serif;
-
-  background-color: #F3F3F3;
-}
-
 /* navegation ***************/
 #contentHome #navagation .navbar-toggler-icon{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 225, 230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -45,11 +14,6 @@
 
 #contentCurriculum #navagation .navbar-toggler-icon{
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(73, 143, 115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-#navagation{
-  margin-bottom: 2em;
-  padding: 0;
 }
 
 #navagation .navbar-toggler{
@@ -62,11 +26,9 @@ nav{
 
 nav h1{
   display: inline;
-
-  margin: 0;
-
   font-size: 1.3em;
   font-weight: 900;
+  color: #F3F3F3;
 }
 
 nav a,
@@ -91,27 +53,44 @@ nav ul li a{
 }
 
 /* HOME *************************/
+#contentHome{
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border: 1em solid #F3F3F3;
+  font-family: 'Roboto', sans-serif;
+  color: #F3F3F3;
+  background-color: #498F73;
+}
+
 #title{
   position: absolute;
   bottom: 0;
 }
 
 #title h2{
-  margin: 0;
-
-  text-transform: uppercase;
   font-size: 6.5em;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 #title h3{
-  margin: 0;
-
   font-size: 5em;
   font-weight: 300;
 }
 
 /* CURRICULUM *************************/
+#contentCurriculum{
+  border: 1em solid #498F73;
+
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #F3F3F3;
+}
+
 /* card ***************/
 .areaCard{
   margin-bottom: 2em;
@@ -273,9 +252,9 @@ nav ul li a{
     font-size: 1.5em;
   }
 
-  #collapseInformation .collapseDate{
+  /* #collapseInformation .collapseDate{
     display: none;
-  }
+  } */
 
   #collapseInformation .collapseTitle{
     margin: 0;

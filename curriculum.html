@@ -18,10 +18,10 @@
 
     <title>euChico - Curriculum</title>
   </head>
-  <body>
-    <main id="contentCurriculum">
-      <nav class="navbar navbar-expand-md navbar-dark " id="navagation">
-        <a class="abs" href="index.html"><h1 class="colorSecondary">euCHICO</h1></a>
+  <body id="curriculum">
+    <main id="contentCurriculum" class="p-3">
+      <nav class="navbar navbar-expand-md navbar-dark mb-4 p-0" id="navagation">
+        <a class="abs" href="index.html"><h1 class="m-0 colorSecondary">euCHICO</h1></a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -30,8 +30,8 @@
         <div class="navbar-collapse collapse" id="collapsingNavbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link colorSecondary" href="curriculum.html">curriculum</a></li>
-            <li class="nav-item"><a class="nav-link colorSecondary" href="#">blog</a></li>
-            <li class="nav-item"><a class="nav-link colorSecondary" href="#">contato</a></li>
+            <!-- <li class="nav-item"><a class="nav-link colorSecondary" href="#">blog</a></li>
+            <li class="nav-item"><a class="nav-link colorSecondary" href="#">contato</a></li> -->
           </ul>
         </div>
       </nav>
@@ -55,9 +55,9 @@
 
             <div id="download">
               <a href="files/curriculum.pdf" download>
-                <button type="button" class="btn btn-secondary btn-sm rounded-0">
+                <!-- <button type="button" class="btn btn-secondary btn-sm rounded-0">
                   <i class="fas fa-file-download"></i> download
-                </button>
+                </button> -->
               </a>
             </div>
           </div>
@@ -102,14 +102,21 @@
 
               <div id="collapseInformation" class="">
                 <a href="#collapseDetail1" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-                  <span class="float-left collapseDate"><strong>2013 - 2014</strong></span>
-
-                  <div class="d-inline-block collapseTitle">
-                    <h4>Vento Consulting </h4>
-                    <span>
-                      <strong>Estágio em Front-End</strong></span>
+                  <div class="row no-gutters">
+                    <div class="col-sm-3 d-none d-sm-block">
+                      <span class="float-left collapseDate"><strong>2013 - 2014</strong></span>
+                    </div>
+                    <div class="col-10 col-sm-7">
+                      <div class="d-inline-block collapseTitle">
+                        <h4>Vento Consulting </h4>
+                        <span>
+                          <strong>Estágio em Front-End</strong></span>
+                      </div>
+                    </div>
+                    <div class="col-2 col-sm-2">
+                      <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                    </div>
                   </div>
-                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
                 </a>
 
                 <div class="collapse" id="collapseDetail1">
@@ -122,14 +129,23 @@
 
               <div id="collapseInformation" class="">
                 <a href="#collapseDetail2" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-                  <span class="float-left collapseDate"><strong>2011 - 2013</strong></span>
+                  <div class="row no-gutters">
+                    <div class="col-sm-3 d-none d-sm-block">
+                      <span class="float-left collapseDate"><strong>2011 - 2013</strong></span>
+                    </div>
 
-                  <div class="d-inline-block collapseTitle">
-                    <h4>UERJ</h4>
-                    <span>
-                      <strong>Iniciação Científica em Computação Gráfica</strong></span>
+                    <div class="col-10 col-sm-7">
+                      <div class="d-inline-block collapseTitle">
+                        <h4>UERJ</h4>
+                        <span>
+                          <strong>Iniciação Científica em Computação Gráfica</strong></span>
+                      </div>
+                    </div>
+
+                    <div class="col-2 col-sm-2">
+                      <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                    </div>
                   </div>
-                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
                 </a>
 
                 <div class="collapse" id="collapseDetail2">
@@ -142,14 +158,23 @@
 
               <div id="collapseInformation" class="">
                 <a href="#collapseDetail3" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-                  <span class="float-left collapseDate"><strong>2010 - 2011</strong></span>
+                  <div class="row no-gutters">
+                    <div class="col-sm-3 d-none d-sm-block">
+                      <span class="float-left collapseDate"><strong>2010 - 2011</strong></span>
+                    </div>
 
-                  <div class="d-inline-block collapseTitle">
-                    <h4>UERJ</h4>
-                    <span>
-                      <strong>Desenvolvimento e Suporte</strong></span>
+                    <div class="col-10 col-sm-7">
+                      <div class="d-inline-block collapseTitle">
+                        <h4>UERJ</h4>
+                        <span>
+                          <strong>Desenvolvimento e Suporte</strong></span>
+                      </div>
+                    </div>
+
+                    <div class="col-2 col-sm-2">
+                      <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                    </div>
                   </div>
-                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
                 </a>
 
                 <div class="collapse" id="collapseDetail3">
@@ -162,11 +187,93 @@
               </div>
             </section>
 
-            <!--
+
             <section class="areaCurriculum">
               <h2>Formação</h2>
+
+              <div id="collapseInformation" class="">
+                <a href="#collapseDetail4" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
+                  <div class="row no-gutters">
+                    <div class="col-sm-4 d-none d-sm-block">
+                      <span class="float-left collapseDate"><strong>Presente</strong></span>
+                    </div>
+
+                    <div class="col-10 col-sm-7">
+                      <div class="d-inline-block collapseTitle">
+                        <h4>Estudo Pessoal</h4>
+                        <!-- <span><strong>Estágio em Front-End</strong></span> -->
+                      </div>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                      <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="collapse" id="collapseDetail4">
+                  <p class="pt-2">
+                    Para estar realmente atualizado e evoluindo no Desenvolvimento Web, ou qualquer área de conhecimento, é fundamental realizar estudos pessoais e criar projetos.
+                    Minha trajetória de estudo, fora de salas de aula, está sendo compartilhada no GitHub (<strong><a href="https://github.com/euchico/webdev" target="_blank">LINK</a></strong>).
+                  </p>
+                </div>
+              </div>
+
+              <div id="collapseInformation" class="">
+                <a href="#collapseDetail5" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
+                  <div class="row no-gutters">
+                    <div class="col-sm-4 d-none d-sm-block">
+                      <span class="float-left collapseDate"><strong>2017 - Presente</strong></span>
+                    </div>
+
+                    <div class="col-10 col-sm-7">
+                      <div class="d-inline-block collapseTitle">
+                        <h4>Licenciatura em Matemática</h4>
+                        <span><strong>IFRJ</strong></span>
+                      </div>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                      <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="collapse" id="collapseDetail5">
+                  <p class="pt-2">
+                    Curso essencial para desenvolver meu conhecimento matemático e ir além do conhecimento meramente técnico.
+                    Um curso fundamental para expansão da visão de mundo através da educação matemática, que é a área importantíssima.
+                  </p>
+                </div>
+              </div>
+
+              <div id="collapseInformation" class="">
+                <a href="#collapseDetail6" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
+                  <div class="row no-gutters">
+                    <div class="col-sm-4 d-none d-sm-block">
+                      <span class="float-left collapseDate"><strong>Não Concluído</strong></span>
+                    </div>
+
+                    <div class="col-10 col-sm-7">
+                      <div class="d-inline-block collapseTitle">
+                        <h4>Ciências da Computação</h4>
+                        <span><strong>UERJ</strong></span>
+                      </div>
+                    </div>
+
+                    <div class="col-2 col-sm-1">
+                      <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                    </div>
+                  </div>
+                </a>
+
+                <div class="collapse" id="collapseDetail6">
+                  <p class="pt-2">
+                    Faculdade que me possibilitou obter um conhecimento muito bom nos diversos campos da Computação como a programação em vários paradigmas, desenvolvimento de algoritmos, engenharia de software, entre outros, fundamentais para meus estudos e projetos.
+                  </p>
+                </div>
+              </div>
             </section>
-            -->
           </div>
         </div>
       </div>
@@ -175,6 +282,6 @@
     <!-- SCRIPTs -->
     <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/script-curriculum.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>
