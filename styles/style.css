@@ -32,9 +32,9 @@ nav h1{
 }
 
 nav a,
-nav a:hover,
-nav a:visited,
 nav a:link,
+nav a:visited,
+nav a:hover,
 nav a:active{
   cursor: pointer;
   text-decoration: none;
@@ -50,6 +50,11 @@ nav ul li a{
   text-align: right;
   font-size: 1.3em;
   font-weight: 100;
+}
+
+/* navegation ***************/
+section hr{
+  background-color: #498f73;
 }
 
 /* HOME *************************/
@@ -193,6 +198,10 @@ nav ul li a{
   line-height: 1.8em;
 }
 
+.areaCurriculum table td{
+  border-color: #498f73;
+}
+
 /* experience ***************/
 #collapseInformation{
   margin-bottom: 1em;
@@ -206,7 +215,7 @@ nav ul li a{
 #collapseInformation .collapseTitle{
   padding-left: 1em;
   margin-left: 1em;
-  border-left: 2px solid #B3B3B3;
+  border-left: 2px solid #498f73;
 }
 
 #collapseInformation span{
@@ -252,11 +261,19 @@ nav ul li a{
     font-size: 1.5em;
   }
 
-  /* #collapseInformation .collapseDate{
-    display: none;
-  } */
-
   #collapseInformation .collapseTitle{
     margin: 0;
   }
+}
+
+/* other ***************/
+.hrOther{
+  width: 30%;
+  height: 0.5em;
+  background-color: #498f73;
+}
+
+.areaCurriculum a{
+  color: #212529;
+  text-decoration: none;
 }
