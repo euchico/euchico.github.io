@@ -4,10 +4,10 @@ $('document').ready(function(){
     case ("home"):
       var texto1 = new Typed('#titleMain', {
         strings: ['Francisco de Paula'],
-        showCursor: false,
         typeSpeed: 40,
         backSpeed: 0,
-        loop: false
+        loop: false,
+        showCursor: false
       });
 
       var texto2 = new Typed('#titleQuote', {
@@ -17,9 +17,9 @@ $('document').ready(function(){
         startDelay: 2000,
         typeSpeed: 40,
         backSpeed: 10,
-        showCursor: false,
+        loop: true,
         fadeOut: true,
-        loop: true
+        showCursor: false
       });
       break;
 
