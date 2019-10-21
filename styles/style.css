@@ -88,6 +88,37 @@ nav ul li a{
   font-weight: 300;
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 1366px) {
+  #title h2{
+    font-size: 5em;
+  }
+
+  #title h3{
+    font-size: 3.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #title h2{
+    font-size: 3.5em;
+  }
+
+  #title h3{
+    font-size: 2em;
+  }
+}
+
+
+@media screen and (max-width: 420px) {
+  #title h2{
+    font-size: 2em;
+  }
+
+  #title h3{
+    font-size: 1.5em;
+  }
+}
 
 /* PÁGINA CURRICULUM *************************/
 #contentCurriculum{
