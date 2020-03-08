@@ -1,256 +1,50 @@
 /* GERAL *************************/
-hr{
-  height: 0.2em;
-  background-color: #498f73;
-  border: none;
-}
-
-.colorPrimary{
-  color: #F3F3F3 !important;
-}
-
-.colorSecondary{
-  color: #498F73 !important;
-}
-
-/* NAVEGAÇÃO ***************/
-#contentHome #navagation .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 225, 230, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-#contentCurriculum #navagation .navbar-toggler-icon{
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(73, 143, 115, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-#navagation .navbar-toggler{
-  border: none !important;
-}
-
-nav{
-  font-size: 1.3em;
-}
-
-nav h1{
-  display: inline;
-  font-size: 1.3em;
-  font-weight: 900;
-  color: #F3F3F3;
-}
-
-nav a,
-nav a:link,
-nav a:visited,
-nav a:hover,
-nav a:active{
-  text-decoration: none;
-  cursor: pointer;
-}
-
-nav ul li{
-  margin-left: 1em;
-}
-
-nav ul li a{
-  padding: 0 !important;
-  text-align: right;
-  font-size: 1.3em;
-  font-weight: 100;
-}
-
-
-/* PÁGINA HOME *************************/
-#contentHome{
+body{
   position: absolute;
   top: 0px;
   left: 0px;
+  overflow: hidden;
   width: 100%;
   height: 100%;
-  overflow: hidden;
   border: 1em solid #F3F3F3;
   font-family: 'Roboto', sans-serif;
   color: #F3F3F3;
-  background-color: #498F73;
+  background-color: #565C5E;
 }
 
+/* TÍTULOS *************************/
 #title{
   position: absolute;
   bottom: 0;
 }
 
-#title h2{
+#title h1{
   font-size: 6.5em;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-#title h3{
+#title h2{
   font-size: 5em;
   font-weight: 300;
 }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1366px) {
-  #title h2{
-    font-size: 5em;
-  }
-
-  #title h3{
-    font-size: 3.5em;
-  }
+  #title h1{ font-size: 5em; }
+  #title h2{ font-size: 3.5em; }
 }
 
 @media screen and (max-width: 768px) {
-  #title h2{
-    font-size: 3.5em;
-  }
-
-  #title h3{
-    font-size: 2em;
-  }
+  #title h1{ font-size: 3.5em; }
+  #title h2{ font-size: 2em; }
 }
-
 
 @media screen and (max-width: 420px) {
-  #title h2{
-    font-size: 2em;
-  }
-
-  #title h3{
-    font-size: 1.5em;
-  }
+  #title h1{ font-size: 2em; }
+  #title h2{ font-size: 1.5em; }
 }
 
-/* PÁGINA CURRICULUM *************************/
-#contentCurriculum{
-  border: 1em solid #498F73;
-  font-family: 'Roboto', sans-serif;
-  background-color: #F3F3F3;
-}
-
-/* CARD ***************/
-#card{
-  padding: 2em;
-  border: 1px solid #B3B3B3;
-  border-bottom: none;
-  background-color: #E6E6E6;
-}
-
-#card .avatar{
-  display: block;
-  margin-bottom: 2em;
-}
-
-#card .avatar img{
-  width: 12em;
-  height: auto;
-  border-radius: 50%;
-}
-
-#card h2{
-  font-size: 2.2em;
-  font-weight: 900;
-}
-
-#card h3{
-  padding-bottom: 0.7em;
-  font-size: 1.5em;
-}
-
-#card ul li{
-  padding: 0 0.3em;
-  font-size: 2em;
-}
-
-#card a,
-#card a:link,
-#card a:visited,
-#card a:hover,
-#card a:active{
-  text-decoration: none;
-  color: #212529;
-  cursor: pointer;
-}
-
-#download{
-  padding: 2em;
-  border: 1px solid #B3B3B3;
-  border-top: none;
-  background-color: #FDFDFD;
-}
-
-#download button{
-  font-size: 1em;
-  border: none;
-  text-transform: uppercase;
-  background-color: #498F73;
-}
-
-/* CURRICULUM ***************/
-.areaCurriculum{
-  margin-bottom: 1.5em;
-  padding: 2em;
-  border: 1px solid #B3B3B3;
-  background-color: #FDFDFD;
-}
-
-.areaCurriculum h2{
-  margin-bottom: 1.5em;
-  font-weight: bold;
-}
-
-.areaCurriculum h3{
-  padding: 0.5em 0em;
-  font-size: 1.3em;
-  font-weight: bold;
-}
-
-.areaCurriculum p{
-  font-size: 1em;
-  font-weight: 100;
-  line-height: 1.8em;
-}
-
-.areaCurriculum a{
-  color: #212529;
-  text-decoration: none;
-}
-
-.areaCurriculum table td{
-  border-width: 0.1em;
-  border-color: #498F73;
-}
-
-/* COLLAPSE ***************/
-#collapseInformation{
-  margin-bottom: 1em;
-}
-
-#collapseInformation .collapseTitle{
-  padding-left: 1em;
-  border-left: 0.2em solid #498F73;
-}
-
-#collapseInformation span{
-  font-weight: 100;
-}
-
-#collapseInformation span.collapseDate{
-  font-size: 1.5em;
-  font-weight: 400;
-}
-
-#collapseInformation h4{
-  font-weight: bold;
-}
-
-/* MEDIA QUERIES */
-@media screen and (max-width: 420px) {
-  #collapseInformation .collapseTitle{
-    margin: 0;
-  }
-}
-
-/* OUTROS INTERESSES ***************/
-.hrOther{
-  width: 30%;
-}
+/* CORES ***************/
+.colorBase{ color: #F3F3F3 !important; }
+.colorSecondary{ color: #498F73 !important; }
