@@ -55,12 +55,11 @@ hr
   margin: 0px
 
 .hr
-  &-tipo1
+  &-type1
     width: 100%
     border: 1px solid
-  &-tipo2
-    width: 150px
-    margin: $spacing-1 0px
+  &-type2
+    width: 100px
     border: 3px solid
 
 // Cores ===============
@@ -114,6 +113,19 @@ hr
 
 // Rodapé ===============
 footer
+  text-align: center
+  margin: $spacing-3 0
+  .hr-type1
+    margin: 0 auto $spacing-3 auto
+  .hr-type2
+    margin: $spacing-1 auto $spacing-2 auto
+  .email
+    font-size: $font-size2
+  .social
+    margin-top: $spacing-2
+    img
+      width: $spacing-3
+      margin: 0 $spacing-1
 
 
 // PÁGINA:SEÇÕES ==============================
@@ -127,6 +139,8 @@ header
     height: 200px
     float: right
     border-radius: 50%
+  hr
+    margin: $spacing-1 0px
   .title
     font-size: $font-size5
     font-weight: bold
@@ -176,7 +190,8 @@ header
       display: inline-block
       width: auto
       height: 35px
-  &-type
+      margin-right: -2px
+  &-category
     bottom: $spacing-1
     left: $spacing-1
     width: fit-content
@@ -184,10 +199,12 @@ header
     font-size: $font-size2
     border-radius: 50px
 
-@media (max-width: 768px)
-  .m-adjust-mobile
-    margin-top: 30px
-
+@media (max-width: (768px)-1)
+  #sec-home-portfolio
+    .m-adjust-mobile
+      margin-top: 30px
+    .hidden-mobile
+      display: none
 
 // DETALHES ==============================
 // Logo =============== 

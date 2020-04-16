@@ -29,12 +29,11 @@ h1 {
 hr {
   margin: 0px; }
 
-.hr-tipo1 {
+.hr-type1 {
   width: 100%;
   border: 1px solid; }
-.hr-tipo2 {
-  width: 150px;
-  margin: 12px 0px;
+.hr-type2 {
+  width: 100px;
   border: 3px solid; }
 
 .color-nv1 {
@@ -81,6 +80,21 @@ hr {
       padding: 0 !important;
       text-align: center; }
 
+footer {
+  text-align: center;
+  margin: 30px 0; }
+  footer .hr-type1 {
+    margin: 0 auto 30px auto; }
+  footer .hr-type2 {
+    margin: 12px auto 18px auto; }
+  footer .email {
+    font-size: 0.75em; }
+  footer .social {
+    margin-top: 18px; }
+    footer .social img {
+      width: 30px;
+      margin: 0 12px; }
+
 header {
   margin: 60px 0px 30px 0px; }
   header span {
@@ -90,6 +104,8 @@ header {
     height: 200px;
     float: right;
     border-radius: 50%; }
+  header hr {
+    margin: 12px 0px; }
   header .title {
     font-size: 2em;
     font-weight: bold; }
@@ -136,8 +152,9 @@ header {
     .job-btn-link .icon {
       display: inline-block;
       width: auto;
-      height: 35px; }
-  .job-btn-type {
+      height: 35px;
+      margin-right: -2px; }
+  .job-btn-category {
     bottom: 12px;
     left: 12px;
     width: fit-content;
@@ -145,9 +162,11 @@ header {
     font-size: 0.75em;
     border-radius: 50px; }
 
-@media (max-width: 768px) {
-  .m-adjust-mobile {
-    margin-top: 30px; } }
+@media (max-width: 767px) {
+  #sec-home-portfolio .m-adjust-mobile {
+    margin-top: 30px; }
+  #sec-home-portfolio .hidden-mobile {
+    display: none; } }
 .logo-part1 {
   font-size: 1.5em;
   font-weight: 300; }
