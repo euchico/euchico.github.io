@@ -1,13 +1,8 @@
-@charset "UTF-8";
-/* DEFINICÕES ============================== */
-/* Váriaveis =============== */
-/* HTML/Body =============== */
 html,
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px; }
 
-/* Link =============== */
 a,
 a:focus,
 a:link,
@@ -17,7 +12,6 @@ a:active {
   color: inherit;
   text-decoration: inherit; }
 
-/* Textos =============== */
 h1 {
   margin: 0px;
   font-size: inherit; }
@@ -32,7 +26,6 @@ h1 {
   font-size: 1em;
   font-weight: 300; }
 
-/* Hr =============== */
 hr {
   margin: 0px; }
 
@@ -44,7 +37,6 @@ hr {
   margin: 12px 0px;
   border: 3px solid; }
 
-/* Cores =============== */
 .color-nv1 {
   color: #333333; }
 
@@ -75,8 +67,6 @@ hr {
 .bg-color-nv5 {
   background-color: #F5F5F5; }
 
-/* PARTES FIXAS ============================== */
-/* Navegação =============== */
 #navagation .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 128, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
 
@@ -91,9 +81,6 @@ hr {
       padding: 0 !important;
       text-align: center; }
 
-/* Rodapé =============== */
-/* PÁGINA:SEÇÕES ============================== */
-/* Home:Header =============== */
 header {
   margin: 60px 0px 30px 0px; }
   header span {
@@ -121,7 +108,6 @@ header {
       float: inherit; }
     header hr {
       margin: 12px auto !important; } }
-/* Home:Portfólio =============== */
 #sec-home-portfolio {
   margin-top: 30px; }
 
@@ -162,8 +148,6 @@ header {
 @media (max-width: 768px) {
   .m-adjust-mobile {
     margin-top: 30px; } }
-/* DETALHES ============================== */
-/* Logo =============== */
 .logo-part1 {
   font-size: 1.5em;
   font-weight: 300; }
