@@ -1,6 +1,6 @@
 # Francisco de Paula ([euCHICO](https://euchico.github.io/))
 
-Sou Desenvolvedor Web e estudante de Matemática morando na Baixada do Rio de Janeiro, Brasil. Sempre tive interesse em matemática, lógica, programação e encontrei a paixão pelos processos e modos de pensar dentro dessas áreas.
+Sou Desenvolvedor Web e estudante de Matemática morando na Baixada do Rio de Janeiro, Brasil.
 
 <!--
 ## Portfólio
