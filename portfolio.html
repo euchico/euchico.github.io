@@ -6,45 +6,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- / METAs -->
 
-	<!-- STYLEs -->
+	<!-- ESTILOS -->
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <!-- / STYLEs -->
+  <!-- / ESTILOS -->
+
+  <!-- FONTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!-- / FONTE -->
+
+  <!-- SCRIPTS -->
+  <script src="https://kit.fontawesome.com/2afad5831f.js" crossorigin="anonymous"></script>
+  <!-- SCRIPTS -->
 
   <title>euCHICO - Portfólio</title>
 <head>
 
 <body>
-  <main class="container">
-    <!-- FUNDO NAVEGAÇÃO -->
-    <div>
-      <!-- NAVEGAÇÃO -->
-      <nav class="navbar navbar-expand-sm navbar-light" id="navagation">
-        <a class="" href="index.html"><h1 class="">euCHICO</h1></a>
+  <!-- FUNDO NAVEGAÇÃO -->
+  <div class="bg-navagation bg-color-nv2">
+    <!-- NAVEGAÇÃO -->
+    <nav id="navagation" class="container navbar navbar-expand-sm">
+      <a href="index.html"><h1><span class="logo-part1 color-nv4">eu</span><span class="logo-part2 color-nv5">CHICO</span></h1></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="navbar-collapse collapse" id="collapsingNavbar">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="">sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="curriculo.html">currículo</a></li>
-          </ul>
-        </div>
-      </nav>
-      <!-- / NAVEGAÇÃO -->
+      <div id="collapsingNavbar" class="navbar-collapse collapse ">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item color-nv5"><a class="nav-link txt-up" href="sobre.html">sobre</a></li>
+          <li class="nav-item color-nv5"><a class="nav-link txt-up" href="blog.html">blog</a></li>
+          <li class="nav-item color-nv5"><a class="nav-link txt-bold txt-up" href="curriculo.html">currículo</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- / NAVEGAÇÃO -->
+  </div>
+  <!-- / FUNDO NAVEGAÇÃO -->
+
+  <!-- SEÇÃO: RESUMO -->
+  <section class="container sec-base">
+    <div class="text-center">
+      <img class="" src="images/img-portfolio-1.png">
+
+      <h3 class="color-nv1">Lorem Ipsum</h3>
+      <h4 class="color-nv2">Consectetur Adipiscing</h4>
+
+      <hr class="hr-type1 color-nv4">
     </div>
-    <!-- / FUNDO NAVEGAÇÃO -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </section>
+  <!-- / SEÇÃO: RESUMO -->
+
+  <!-- SEÇÃO: MATEMÁTICA -->
+  <div class="sec-featured bg-color-nv3">
+    <section class="container text-center">
+      <div class="row">
+        <div class="col-5">
+          <img class="" src="images/img-portfolio-2.png">
+        </div>
+        
+        <div class="col-6">
+          <p class="text-left color-nv5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- / SEÇÃO: MATEMÁTICA -->
 
     
-  </main>
+  <!-- RODAPÉ -->
+  <footer class="container">
+    <hr class="hr-type2 color-nv4">
 
-  <!-- SCRIPTs -->
+    <span class="logo-part1 txt-size4 color-nv3">eu</span><span class="logo-part2 txt-size4 color-nv1">CHICO</span>
+    <hr class="hr-type1 color-nv4">
+    <span class="email color-nv1">eu.francisco@outlook.com</span>
+    <div class="social">          
+      <a href=""><img src="images/social-github.png"></a>
+      <a href=""><img src="images/social-mastodon.png" alt=""></a>
+      <a href=""><img src="images/social-linkedin.png" alt=""></a>
+    </div>
+  </footer>
+  <!-- / RODAPÉ -->
+
+  <!-- SCRIPTS -->
 	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-	<!-- / SCRIPTs -->
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
+	<!-- / SCRIPTS -->
 </body>
 </html>

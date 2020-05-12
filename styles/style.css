@@ -6,8 +6,23 @@ body {
 section {
   margin: 30px 0; }
 
+.sec-base img {
+  margin-bottom: 60px; }
+.sec-base h3 {
+  margin-bottom: 12px; }
+.sec-base hr {
+  margin: 12px auto 18px auto; }
+.sec-base p {
+  font-size: 1em;
+  color: #808080; }
+.sec-base .title {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block; }
+
 .sec-featured {
-  padding: 30px 0; }
+  padding: 30px 0;
+  font-weight: 300; }
 
 h1, h2, h3, h4 {
   margin: 0px; }
@@ -151,7 +166,7 @@ footer {
     left: 12px;
     width: fit-content;
     padding: 5px 20px;
-    font-size: 0.75em;
+    font-size: 0.9em;
     border-radius: 50px; }
 
 @media (max-width: 767px) {
@@ -197,18 +212,6 @@ header {
       float: inherit; }
     header hr {
       margin: 12px auto !important; } }
-#sec-biography img {
-  margin-bottom: 60px; }
-#sec-biography hr {
-  margin: 12px auto 18px auto; }
-#sec-biography p {
-  font-size: 1em;
-  color: #808080; }
-#sec-biography .title {
-  font-size: 1.5em;
-  font-weight: bold;
-  display: block; }
-
 @media (max-width: 768px) {
   .job-type1 {
     max-height: 350px; } }
@@ -221,37 +224,73 @@ header {
 #sec-art .gallery img {
   margin-top: 30px; }
 
+#sec-blog {
+  margin-top: 60px; }
+
+#sec-resume {
+  margin-top: 60px; }
+
 #card {
-  padding: 30px; }
+  padding: 30px;
+  border-radius: 7px 7px 0px 0px; }
+  #card h4 {
+    margin: 12px auto 30px auto; }
   #card .img-profile {
     margin-bottom: 30px; }
 
-#card .avatar img {
-  border-radius: 50%; }
-
-#card h2 {
-  font-size: 2.2em;
-  font-weight: 900; }
-
-#card h3 {
-  padding-bottom: 0.7em;
-  font-size: 1.5em; }
-
-#card ul li {
-  padding: 0 0.3em;
-  font-size: 2em; }
-
-#download {
+#card-download {
+  margin-bottom: 30px;
   padding: 1.6em;
-  border: 1px solid #B3B3B3;
-  border-top: none;
-  background-color: #FDFDFD; }
+  border-radius: 0px 0px 7px 7px; }
+  #card-download #card-download-btn {
+    width: fit-content;
+    display: grid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #F5F5F5; }
+    #card-download #card-download-btn img {
+      width: 35px;
+      vertical-align: sub; }
 
-#download button {
+.information {
+  margin: 0px 0px 30px 0px;
+  padding: 30px;
+  border-radius: 7px; }
+  .information-title {
+    margin-bottom: 30px;
+    font-weight: bold; }
+  .information p {
+    font-size: 0.9em;
+    font-weight: 300; }
+  .information ul {
+    padding: 0px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    font-size: 0.9em;
+    font-weight: 300;
+    list-style-type: none; }
+    .information ul strong {
+      font-weight: bold; }
+  .information table {
+    font-size: 0.9em; }
+  .information .hr-type1 {
+    margin-left: 0px; }
+
+.collapse-date {
   font-size: 1em;
-  border: none;
-  text-transform: uppercase;
-  background-color: #498F73; }
+  font-weight: 300; }
+.collapse-area {
+  margin-bottom: 12px;
+  padding-left: 1em;
+  border-left: 0.2em solid #808080; }
+.collapsetitle {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .logo-part1 {
   font-size: 1.5em;

@@ -8,7 +8,7 @@ $color-nv5: #F5F5F5
 
 $font-size-base: 18px
 $font-size1: 0.66em
-$font-size2: 0.75em
+$font-size2: 0.90em
 $font-size3: 1em
 $font-size4: 1.5em
 $font-size5: 2em
@@ -29,8 +29,24 @@ body
 section
   margin: $spacing-3 0
 
+.sec-base
+  img
+    margin-bottom: $spacing-4
+  h3
+    margin-bottom: $spacing-1
+  hr
+    margin: $spacing-1 auto $spacing-2 auto
+  p
+    font-size: $font-size3
+    color: $color-nv2
+  .title
+    font-size: $font-size4
+    font-weight: bold
+    display: block
+
 .sec-featured
   padding: $spacing-3 0
+  font-weight: 300
 
 // Textos ===============
 h1, h2, h3, h4
@@ -122,12 +138,14 @@ hr
   .hidden-mobile
     display: none
 
+
 // PARTES FIXAS ==============================
 // Navegação ===============
 .bg-navagation
   #navagation
     .navbar-toggler-icon
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220, 220, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+
 #navagation
   .navbar-toggler-icon
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 128, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
@@ -199,23 +217,26 @@ footer
 
 // Social ===============
 .social
-    margin-top: $spacing-2
-    a
-      display: inline-block  
-    img
-      height: 40px 
-      margin: 0 10px
+  margin-top: $spacing-2
+  a
+    display: inline-block  
+  img
+    height: 40px 
+    margin: 0 10px
 
 // Postagem ===============
 .post-author
   display: block
   font-weight: bold
+  
 .post-date
   display: block
   font-weight: 300
+
 .post-resume
   margin: $spacing-2
   font-weight: 300
+
 
 // PÁGINA:SEÇÕES ==============================
 // Home:Header ===============
@@ -241,20 +262,6 @@ header
       margin: $spacing-1 auto !important
 
 // Sobre:Biografia ===============
-#sec-biography
-  img
-    margin-bottom: $spacing-4
-    
-  hr
-    margin: $spacing-1 auto $spacing-2 auto
-  p
-    font-size: $font-size3
-    color: $color-nv2
-  .title
-    font-size: $font-size4
-    font-weight: bold
-    display: block
-
 @media (max-width: 768px)
   .job-type1
     max-height: 350px
@@ -272,43 +279,81 @@ header
     img
       margin-top: $spacing-3
 
-// Currículo:Currículo ===============
-// Cartão
+// Blog:Postagem ===============
+#sec-blog
+  margin-top: $spacing-4
+
+// Currículo:Geral ===============
+#sec-resume
+  margin-top: $spacing-4
+
+// Currículo:Cartão ===============
 #card
   padding: $spacing-3
+  border-radius: 7px 7px 0px 0px
+  h4
+    margin: $spacing-1 auto $spacing-3 auto
   .img-profile
     margin-bottom: $spacing-3
 
-#card .avatar img
-  border-radius: 50%
-
-
-#card h2
-  font-size: 2.2em
-  font-weight: 900
-
-
-#card h3
-  padding-bottom: 0.7em
-  font-size: 1.5em
-
-
-#card ul li
-  padding: 0 0.3em
-  font-size: 2em
-
-#download
+#card-download
+  margin-bottom: $spacing-3
   padding: 1.6em
-  border: 1px solid #B3B3B3
-  border-top: none
-  background-color: #FDFDFD
+  border-radius: 0px 0px 7px 7px
+  #card-download-btn
+    width: fit-content
+    display: grid
+    padding: 10px 20px
+    border: none
+    border-radius: 50px
+    font-size: $font-size3
+    font-weight: bold
+    text-transform: uppercase
+    background-color: $color-nv5
+    img
+      width: 35px
+      vertical-align: sub
 
+// Currículo:Informações ===============
+.information
+  margin: 0px 0px $spacing-3 0px
+  padding: $spacing-3
+  border-radius: 7px
+  &-title
+    margin-bottom: $spacing-3
+    font-weight: bold
+  p
+    font-size: $font-size2
+    font-weight: 300
+  ul
+    padding: 0px
+    margin-top: $spacing-2
+    margin-bottom: 0px
+    font-size: $font-size2
+    font-weight: 300
+    list-style-type: none
+    strong
+      font-weight: bold
+  table
+    font-size: $font-size2
+  .hr-type1
+    margin-left: 0px
+  
+// Caixa de Informação =====
+.collapse
+  &-date
+    font-size: $font-size3
+    font-weight: 300
+  &-area
+    margin-bottom: $spacing-1
+    padding-left: 1em
+    border-left: 0.2em solid $color-nv2
+  &title
+    display: block
+    font-weight: bold
+    text-transform: uppercase
 
-#download button
-  font-size: 1em
-  border: none
-  text-transform: uppercase
-  background-color: #498F73
+// Portfólio:Resumo ===============
 
 
 // DETALHES ==============================

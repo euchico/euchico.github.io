@@ -45,15 +45,15 @@
   <!-- / NAVEGAÇÃO -->
 
   <!-- SEÇÃO: CURRÍCULO -->
-  <section class="container">
+  <section id="sec-resume" class="container">
     <div class="row">
       <!-- CARTÃO -->
       <div class="col-lg-5">
         <div id="card" class="text-center bg-color-nv5">
           <img class="img-profile" src="images/profile.png">
 
-          <h3>Francisco de Paula</h3>
-          <h4>Desenvolvedor Web</h4>
+          <h3 class="color-nv1">Francisco de Paula</h3>
+          <h4 class="color-nv2">Desenvolvedor Web</h4>
 
           <div class="social">          
             <a href=""><img src="images/social-github.png"></a>
@@ -62,331 +62,318 @@
           </div>
         </div>
 
-        <div id="download" class="text-center">
+        <div id="card-download" class="text-center bg-color-nv2">
           <a href="" download>
-            <button type="button" class="btn btn-secondary btn-sm rounded-0">
-              <i class="fas fa-file-download"></i> download
-            </button>
+            <div id="card-download-btn" class="mx-auto color-nv2">
+             <div><img src="images/icon-dowload.png"> download</div> 
+            </div>
           </a>
         </div>
       </div>
-
-      <div class="col-5 ">
-        <div>
-          <!-- <img src="images/euchico-perfil.jpg"> -->
-
-          <h3>Francisco de Paula</h3>
-          <h4>Desenvolvedor Web</h4>
-          
-          
-        </div>
-
-        <div>
-          <button type="button" class="">
-            <i class="fas fa-file-download"></i> download
-          </button>
-        </div>
-      </div>
       <!-- / CARTÃO -->
+
+      <!-- INFORMAÇÕES -->
+      <div class="col-lg-7">
+        <!-- ÁREA: SOBRE MIM -->
+        <section class="information color-nv1 bg-color-nv5">
+          <h4 class="information-title">Sobre Mim</h4>
+
+          <p>
+            Sou um grande admirador da Programação e Desenvolvimento Web.
+            Curso Licenciatura em Matemática no IFRJ, cursei Ciência da Computação na UERJ <em>(não concluído)</em> e, além disso, realizo muitos estudos independentes.
+            Sempre tive interesse em matemática, lógica, programação e encontrei a paixão pelos processos e modos de pensar dentro dessas áreas.
+            Ampliei a minha visão através do contato com outros campos, como design e arte, mas tudo unido para o meu desenvolvimento pessoal e profissional.
+          </p>
+
+          <hr class="hr-type2 color-nv4">
+
+          <span class="information-title">Informações Pessoais</span>
+
+          <div class="row">
+            <div class="col-md-6">
+              <ul>
+                <li><strong>Nome:</strong> Francisco de Paula</li>
+                <li><strong>Idade:</strong> 29 anos</li>
+                <li><strong>Endereço:</strong> Mesquita, RJ/Brasil</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <ul>
+                <li><strong>Telefone:</strong> (21) 99716-4318 </li>
+                <li><strong>E-mail:</strong> eu.francisco@outlook.com</li>
+                <li><strong>Freelance:</strong> <i class="fas fa-check-circle color-nv3"></i> Disponível</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- / ÁREA: SOBRE MIM -->
+
+        <!-- ÁREA: EXPERIÊNCIAS -->
+        <section class="information color-nv1 bg-color-nv5">
+          <h4 class="information-title">Experiências</h4>
+
+          <!-- EXPERIÊNCIA 1 -->
+          <div id="collapse" class="info-collapse">
+            <a href="#collapse-1" class="d-block h-100" data-toggle="collapse" data-parent="#collapse">
+              <div class="row no-gutters">
+                <div class="col-sm-3 d-none d-sm-block">
+                  <span class="float-left collapse-date">2013 - 2014</span>
+                </div>
+                
+                <div class="col-10 col-sm-8">
+                  <div class="d-inline-block collapse-area">
+                    <span class="collapse-title">Vento Consulting</span>
+                    <span class="collapse-subtitle">Estágio em Front-End</span>
+                  </div>
+                </div>
+                
+                <div class="col-2 col-sm-1">
+                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                </div>
+              </div>
+            </a>
+
+            <div id="collapse-1" class="collapse">
+              <p>
+                Minhas principais responsabilidades envolviam desenvolvimento front-end <em>(HTML, CSS e Javascript)</em>, criação de templates e manutenção de sites em Wordpress, criação de layout para sistemas web e criação/edição de imagens.
+                Além disso, participava diretamente das várias etapas de idealização e desenvolvimento dos projetos.
+              </p>
+            </div>
+          </div>
+          <!-- / EXPERIÊNCIA 1 -->
+
+          <!-- EXPERIÊNCIA 2 -->
+          <div id="collapse" class="info-collapse">
+            <a href="#collapse-2" class="d-block h-100" data-toggle="collapse" data-parent="#collapse">
+              <div class="row no-gutters">
+                <div class="col-sm-3 d-none d-sm-block">
+                  <span class="float-left collapse-date">2011 - 2013</span>
+                </div>
+                
+                <div class="col-10 col-sm-8">
+                  <div class="d-inline-block collapse-area">
+                    <span class="collapse-title">UERJ</span>
+                    <span class="collapse-subtitle">Iniciação Científica em Computação Gráfica</span>
+                  </div>
+                </div>
+                
+                <div class="col-2 col-sm-1">
+                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                </div>
+              </div>
+            </a>
+
+            <div id="collapse-2" class="collapse">
+              <p>
+                Pesquisa de iniciação científica focada na área de Visão Computacional e interpretação de dados obtidos por Sensoriamento Remoto.
+                Além da pesquisa dentro do tema proposto, o projeto realizado em C++ tinha com objetivo retomar o desenvolvimento e atualização o software InterIMAGE.
+              </p>
+            </div>
+          </div>
+          <!-- / EXPERIÊNCIA 2 -->
+
+          <!-- EXPERIÊNCIA 1 -->
+          <div id="collapse" class="info-collapse">
+            <a href="#collapse-3" class="d-block h-100" data-toggle="collapse" data-parent="#collapse">
+              <div class="row no-gutters">
+                <div class="col-sm-3 d-none d-sm-block">
+                  <span class="float-left collapse-date">2010 - 2011</span>
+                </div>
+                
+                <div class="col-10 col-sm-8">
+                  <div class="d-inline-block collapse-area">
+                    <span class="collapse-title">UERJ</span>
+                    <span class="collapse-subtitle">Desenvolvimento e Suporte</span>
+                  </div>
+                </div>
+                
+                <div class="col-2 col-sm-1">
+                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                </div>
+              </div>
+            </a>
+
+            <div id="collapse-3" class="collapse">
+              <p>
+                Focado em divulgar o Software Livre, minha tarefa foi criar uma remasterização do Linux voltada para meio acadêmico.
+                Além disso, dei suporte ao laboratório de computação nos assuntos relacionados ao sistema operacional Linux.
+                Também ministrei aulas sobre Software Livre e instalação/uso do Linux para os alunos de um “cursos” livre.
+              </p>
+            </div>
+          </div>
+          <!-- / EXPERIÊNCIA 1 -->      
+        </section>
+        <!-- / ÁREA: EXPERIÊNCIAS -->
+
+        <!-- ÁREA: FORMAÇÃO -->
+        <section class="information color-nv1 bg-color-nv5">
+          <h4 class="information-title">Formação</h4>
+
+          <!-- FORMAÇÃO 1 -->
+          <div id="collapse" class="info-collapse">
+            <a href="#collapse-4" class="d-block h-100" data-toggle="collapse" data-parent="#collapse">
+              <div class="row no-gutters">
+                <div class="col-sm-3 d-none d-sm-block">
+                  <span class="float-left collapse-date">Presente</span>
+                </div>
+                
+                <div class="col-10 col-sm-8">
+                  <div class="d-inline-block collapse-area">
+                    <span class="collapse-title">Estudo Pessoal</span>
+                  </div>
+                </div>
+                
+                <div class="col-2 col-sm-1">
+                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                </div>
+              </div>
+            </a>
+
+            <div id="collapse-4" class="collapse">
+              <p>
+                Para estar realmente atualizado e evoluindo no Desenvolvimento Web, ou qualquer área de conhecimento, é fundamental a criação de projetos e realização estudos pessoais.
+                Minha trajetória de estudo fora das salas de aula será, sempre que possível, compartilhada no <strong><a href="https://github.com/euchico/webdev" target="_blank">GitHub</a></strong> e no <strong><a href="https://medium.com/@euchico" target="_blank">Medium</a></strong>.
+              </p>
+            </div>
+          </div>
+          <!-- / FORMAÇÃO 1 -->
+
+          <!-- FORMAÇÃO 2 -->
+          <div id="collapse" class="info-collapse">
+            <a href="#collapse-5" class="d-block h-100" data-toggle="collapse" data-parent="#collapse">
+              <div class="row no-gutters">
+                <div class="col-sm-3 d-none d-sm-block">
+                  <span class="float-left collapse-date">2017 - Presente</span>
+                </div>
+                
+                <div class="col-10 col-sm-8">
+                  <div class="d-inline-block collapse-area">
+                    <span class="collapse-title">Licenciatura em Matemática</span>
+                    <span class="collapse-subtitle">IFRJ</span>
+                  </div>
+                </div>
+                
+                <div class="col-2 col-sm-1">
+                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                </div>
+              </div>
+            </a>
+
+            <div id="collapse-5" class="collapse">
+              <p>
+                Curso fundamental para ampliar a minha visão de mundo unindo a área técnica da Matemática e o olhar humano da Educação.
+                São inúmeras as conexões entre da Ciência Computação e Licenciatura em Matemática, e meu desejo é conseguir compreendê-las e levar para minha prática profissional.
+              </p>
+            </div>
+          </div>
+          <!-- / FORMAÇÃO 2 -->
+
+          <!-- FORMAÇÃO 3 -->
+          <div id="collapse" class="info-collapse">
+            <a href="#collapse-6" class="d-block h-100" data-toggle="collapse" data-parent="#collapse">
+              <div class="row no-gutters">
+                <div class="col-sm-3 d-none d-sm-block">
+                  <span class="float-left collapse-date">Não Concluído</span>
+                </div>
+                
+                <div class="col-10 col-sm-8">
+                  <div class="d-inline-block collapse-area">
+                    <span class="collapse-title">Ciências da Computação</span>
+                    <span class="collapse-subtitle">UERJ</span>
+                  </div>
+                </div>
+                
+                <div class="col-2 col-sm-1">
+                  <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down"></i>
+                </div>
+              </div>
+            </a>
+
+            <div id="collapse-6" class="collapse">
+              <p>
+                Faculdade que me possibilitou obter os fundamentos dos diversos campos da Computação como a programação em vários paradigmas, desenvolvimento e análise de algoritmos, arquitetura e engenharia de software, entre outros conhecimentos importantíssimos para minha atuação hoje.
+              </p>
+            </div>
+          </div>
+          <!-- FORMAÇÃO 3 -->    
+        </section>
+        <!-- / ÁREA: FORMAÇÃO -->
+
+        <!-- ÁREA: COMPETÊNCIAS E HABILIDADES -->
+        <section class="information color-nv1 bg-color-nv5">
+          <h4 class="information-title">Competências e Habilidades</h4>
+
+          <table class="table text-center">
+            <tbody>
+              <tr class="d-flex">
+                <td class="border-0 col-sm-4">Inglês <em>(Básico)</em></td>
+                <td class="border-0 col-sm-4">Espanhol <em>(Básico)</em></td>
+                <td class="border-0 col-sm-4 d-none d-sm-block">Web Design <em>(Básico)</em></td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-sm-4">HTML5</td>
+                <td class="col-sm-4">CSS3</td>
+                <td class="col-sm-4 d-none d-sm-block">Javascript</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-sm-4">Bootstrap 4</td>
+                <td class="col-sm-4">Sass</td>
+                <td class="col-sm-4 d-none d-sm-block">jQuery</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-sm-4">PHP</td>
+                <td class="col-sm-4">WordPress</td>
+                <td class="col-sm-4 d-none d-sm-block">Git</td>
+              </tr>
+              <tr class="d-flex">
+                <td class="col-sm-4">Figma</td>
+                <td class="col-sm-4">Photoshop</td>
+                <td class="col-sm-4 d-none d-sm-block">GIMP</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <!-- / ÁREA: COMPETÊNCIAS E HABILIDADES -->
+
+        <!-- ÁREA: OUTROS INTERESSES -->
+        <section class="information color-nv1 bg-color-nv5">
+          <h4 class="information-title">Outros Interesses</h4>
+
+          <div class="row">
+            <div class="col-sm-6">
+              <strong class="">Arte</strong>
+              <hr class="hr-type1 color-nv4">
+
+              <p>
+                O desenho sempre fez parte da minha vida, em certos momentos de forma mais séria e outros por diversão.
+                Com isso, posso falar que arte é algo fundamental para mim e, mesmo tendo um pouco de receio, compartilho alguns desenhos no <strong><a href="https://www.instagram.com/eu.chico/" target="_blank">Instagram</a></strong>.
+              </p>
+            </div>
+
+            <div class="col-sm-6">
+              <strong class="">Blog</strong>
+              <hr class="hr-type1 color-nv4">
+
+              <p>
+                Eventualmente gosto de escrever alguns pensamentos e ideias pessoais, mas nunca “formalizei” ou compartilhei.
+                Vou organizar um blog no <strong><a href="https://medium.com/@euchico" target="_blank">Medium</a></strong> onde irei registrar minha trajetória de estudos e busca profissional na área de Desenvolvimento Web.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- / ÁREA: OUTROS INTERESSES -->
+
+      </div>
+      <!-- / INFORMAÇÕES -->
+
     </div>
   </section>
   <!-- / SEÇÃO: CURRÍCULO -->
 
   
 
-  <!-- INFORMAÇÕES -->
-  <!-- <div class="col-lg-7"> -->
-    <!-- ÁREA: SOBRE MIM -->
-    <!-- <section class="areaCurriculum">
-      <h>Sobre Mim</h>
-
-      <p>
-        Sou um grande admirador da Programação e Desenvolvimento Web.
-        Curso Licenciatura em Matemática no IFRJ, cursei Ciência da Computação na UERJ <em>(não concluído)</em> e, além disso, realizo muitos estudos independentes.
-        Sempre tive interesse em matemática, lógica, programação e encontrei a paixão pelos processos e modos de pensar dentro dessas áreas.
-        Ampliei a minha visão através do contato com outros campos, como design e arte, mas tudo unido para o meu desenvolvimento pessoal e profissional.
-      </p>
-
-      <hr>
-
-      <h>Informações Pessoais</h>
-
-      <div class="row">
-        <div class="col-6">
-          <ul class="">
-            <li><strong>Nome:</strong> Francisco de Paula</li>
-            <li><strong>Idade:</strong> 29 anos</li>
-            <li><strong>Endereço:</strong> Mesquita, RJ/Brasil</li>
-          </ul>
-        </div>
-
-        <div class="col-6">
-          <ul class="">
-            <li><strong>Telefone:</strong> (21) 99716-4318 </li>
-            <li><strong>E-mail:</strong> eu.francisco@outlook.com</li>
-            <li><strong>Freelance:</strong> <i class="fas fa-check-circle colorSecondary"></i> Disponível</li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-    <!-- / ÁREA: SOBRE MIM -->
-
-    <!-- ÁREA: EXPERIÊNCIAS -->
-    <!-- <section class="areaCurriculum">
-      <h>Experiências</h> -->
-
-      <!-- EXPERIÊNCIA 1 -->
-      <!-- <div id="collapseInformation" class="">
-        <a href="#collapseDetail1" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-          <div class="row no-gutters">
-            <div class="col-sm-4 d-none d-sm-block">
-              <span class="float-left collapseDate">2013 - 2014</span>
-            </div>
-            <div class="col-10 col-sm-7">
-              <div class="d-inline-block collapseTitle">
-                <h4>Vento Consulting </h4>
-                <span>
-                  <strong>Estágio em Front-End</strong></span>
-              </div>
-            </div>
-            <div class="col-2 col-sm-1">
-              <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down colorSecondary"></i>
-            </div>
-          </div>
-        </a>
-
-        <div class="collapse" id="collapseDetail1">
-          <p class="pt-2">
-            Minhas principais responsabilidades envolviam desenvolvimento front-end <em>(HTML, CSS e Javascript)</em>, criação de templates e manutenção de sites em Wordpress, criação de layout para sistemas web e criação/edição de imagens.
-            Além disso, participava diretamente das várias etapas de idealização e desenvolvimento dos projetos.
-          </p>
-        </div>
-      </div> -->
-      <!-- / EXPERIÊNCIA 1 -->
-
-      <!-- EXPERIÊNCIA 2 -->
-      <!-- <div id="collapseInformation" class="">
-        <a href="#collapseDetail2" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-          <div class="row no-gutters">
-            <div class="col-sm-4 d-none d-sm-block">
-              <span class="float-left collapseDate">2011 - 2013</span>
-            </div>
-
-            <div class="col-10 col-sm-7">
-              <div class="d-inline-block collapseTitle">
-                <h4>UERJ</h4>
-                <span>
-                  <strong>Iniciação Científica em Computação Gráfica</strong></span>
-              </div>
-            </div>
-
-            <div class="col-2 col-sm-1">
-              <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down colorSecondary"></i>
-            </div>
-          </div>
-        </a>
-
-        <div class="collapse" id="collapseDetail2">
-          <p class="pt-2">
-            Pesquisa de iniciação científica focada na área de Visão Computacional e interpretação de dados obtidos por Sensoriamento Remoto.
-            Além da pesquisa dentro do tema proposto, o projeto realizado em C++ tinha com objetivo retomar o desenvolvimento e atualização o software InterIMAGE.
-          </p>
-        </div>
-      </div> -->
-      <!-- EXPERIÊNCIA 2 -->
-
-      <!-- EXPERIÊNCIA 3 -->
-      <!-- <div id="collapseInformation" class="">
-        <a href="#collapseDetail3" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-          <div class="row no-gutters">
-            <div class="col-sm-4 d-none d-sm-block">
-              <span class="float-left collapseDate">2010 - 2011</span>
-            </div>
-
-            <div class="col-10 col-sm-7">
-              <div class="d-inline-block collapseTitle">
-                <h4>UERJ</h4>
-                <span>
-                  <strong>Desenvolvimento e Suporte</strong></span>
-              </div>
-            </div>
-
-            <div class="col-2 col-sm-1">
-              <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down colorSecondary"></i>
-            </div>
-          </div>
-        </a> -->
-
-        <!-- <div class="collapse" id="collapseDetail3">
-          <p class="pt-2">
-            Focado em divulgar o Software Livre, minha tarefa foi criar uma remasterização do Linux voltada para meio acadêmico.
-            Além disso, dei suporte ao laboratório de computação nos assuntos relacionados ao sistema operacional Linux.
-            Também ministrei aulas sobre Software Livre e instalação/uso do Linux para os alunos de um “cursos” livre.
-          </p>
-        </div>
-      </div> -->
-      <!-- / EXPERIÊNCIA 3 -->
-    <!-- </section> -->
-    <!-- / ÁREA: EXPERIÊNCIAS -->
-
-    <!-- ÁREA: FORMAÇÃO -->
-    <!-- <section class="areaCurriculum">
-      <h2>Formação</h2> -->
-
-      <!-- FORMAÇÃO 1 -->
-      <!-- <div id="collapseInformation">
-        <a href="#collapseDetail4" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-          <div class="row no-gutters">
-            <div class="col-sm-4 d-none d-sm-block">
-              <span class="float-left collapseDate">Presente</span>
-            </div>
-
-            <div class="col-10 col-sm-7">
-              <div class="d-inline-block collapseTitle">
-                <h4>Estudo Pessoal</h4>
-              </div>
-            </div>
-
-            <div class="col-2 col-sm-1">
-              <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down colorSecondary"></i>
-            </div>
-          </div>
-        </a>
-
-        <div class="collapse" id="collapseDetail4">
-          <p class="pt-2">
-            Para estar realmente atualizado e evoluindo no Desenvolvimento Web, ou qualquer área de conhecimento, é fundamental a criação de projetos e realização estudos pessoais.
-            Minha trajetória de estudo fora das salas de aula será, sempre que possível, compartilhada no <strong><a href="https://github.com/euchico/webdev" target="_blank">GitHub</a></strong> e no <strong><a href="https://medium.com/@euchico" target="_blank">Medium</a></strong>.
-          </p>
-        </div>
-      </div> -->
-      <!-- / FORMAÇÃO 1 -->
-
-      <!-- FORMAÇÃO 2 -->
-      <!-- <div id="collapseInformation">
-        <a href="#collapseDetail5" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-          <div class="row no-gutters">
-            <div class="col-sm-4 d-none d-sm-block">
-              <span class="float-left collapseDate">2017 - Presente</span>
-            </div>
-
-            <div class="col-10 col-sm-7">
-              <div class="d-inline-block collapseTitle">
-                <h4>Licenciatura em Matemática</h4>
-                <span><strong>IFRJ</strong></span>
-              </div>
-            </div>
-
-            <div class="col-2 col-sm-1">
-              <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down colorSecondary"></i>
-            </div>
-          </div>
-        </a>
-
-        <div class="collapse" id="collapseDetail5">
-          <p class="pt-2">
-            Curso fundamental para ampliar a minha visão de mundo unindo a área técnica da Matemática e o olhar humano da Educação.
-            São inúmeras as conexões entre da Ciência Computação e Licenciatura em Matemática, e meu desejo é conseguir compreendê-las e levar para minha prática profissional.
-          </p>
-        </div>
-      </div> -->
-      <!-- / FORMAÇÃO 2 -->
-
-      <!-- FORMAÇÃO 3 -->
-      <!-- <div id="collapseInformation">
-        <a href="#collapseDetail6" class="d-block h-100" data-toggle="collapse" data-parent="#collapseInformation">
-          <div class="row no-gutters">
-            <div class="col-sm-4 d-none d-sm-block">
-              <span class="float-left collapseDate">Não Concluído</span>
-            </div>
-
-            <div class="col-10 col-sm-7">
-              <div class="d-inline-block collapseTitle">
-                <h4>Ciências da Computação</h4>
-                <span><strong>UERJ</strong></span>
-              </div>
-            </div>
-
-            <div class="col-2 ">
-              <i class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down colorSecondary"></i>
-            </div>
-          </div>
-        </a>
-
-        <div class="" id="">
-          <p class="">
-            Faculdade que me possibilitou obter os fundamentos dos diversos campos da Computação como a programação em vários paradigmas, desenvolvimento e análise de algoritmos, arquitetura e engenharia de software, entre outros conhecimentos importantíssimos para minha atuação hoje.
-          </p>
-        </div>
-      </div> -->
-      <!-- / FORMAÇÃO 3 -->
-    <!-- </section> -->
-    <!-- / ÁREA: FORMAÇÃO -->
-
-    <!-- ÁREA: COMPETÊNCIAS E HABILIDADES -->
-    <!-- <section class="">
-      <h>Competências e Habilidades</h>
-
-      <table class="">
-        <tbody>
-        <tr class="">
-            <td class="col-4">Inglês <em>(Básico)</em></td>
-            <td class="col-4">Espanhol <em>(Básico)</em></td>
-            <td class="col-4">Web Design <em>(Básico)</em></td>
-          </tr>
-          <tr class="">
-            <td class="col-4">HTML5</td>
-            <td class="col-4">CSS3</td>
-            <td class="col-4k">Javascript</td>
-          </tr>
-          <tr class="">
-            <td class="col-4">Bootstrap 4</td>
-            <td class="col-4">Sass</td>
-            <td class="col-4">jQuery</td>
-          </tr>
-          <tr class="">
-            <td class="col-4">PHP</td>
-            <td class="col-4">WordPress</td>
-            <td class="col-4 ">Git</td>
-          </tr>
-          <tr class="">
-            <td class="col-4">Photoshop</td>
-            <td class="col-4">GIMP</td>
-            <td class="col-4">Inkscape</td>
-          </tr>
-        </tbody>
-      </table>
-    </section> -->
-    <!-- / ÁREA: COMPETÊNCIAS E HABILIDADES -->
-
-    <!-- ÁREA: OUTROS INTERESSES -->
-    <!-- <section class="areaCurriculum">
-      <h>Outros Interesses</h>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <hr>
-          <h class="">Arte</h>
-          <p>
-            O desenho sempre fez parte da minha vida, em certos momentos de forma mais séria e outros por diversão.
-            Com isso, posso falar que arte é algo fundamental para mim e, mesmo tendo um pouco de receio, compartilho alguns desenhos no <strong><a href="https://www.instagram.com/eu.chico/" target="_blank">Instagram</a></strong>.
-          </p>
-        </div>
-
-        <div class="col-sm-6">
-          <hr>
-          <h class="">Blog</h>
-          <p>
-            Eventualmente gosto de escrever alguns pensamentos e ideias pessoais, mas nunca “formalizei” ou compartilhei.
-            Vou organizar um blog no <strong><a href="https://medium.com/@euchico" target="_blank">Medium</a></strong> onde irei registrar minha trajetória de estudos e busca profissional na área de Desenvolvimento Web.
-          </p>
-        </div>
-      </div>
-    </section> -->
-    <!-- / ÁREA: OUTROS INTERESSES -->
-  <!-- </div> -->
-  <!-- / INFORMAÇÕES -->
-  <!-- / SEÇÃO: CURRÍCULO -->
+  
 
   <!-- RODAPÉ -->
   <footer class="container">
