@@ -1,38 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<html lang="pt-br">
-  <head>
-    <!-- METAs -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- / METAs -->
+<head>
+	<!-- METAS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- / METAS -->
 
-    <!-- STYLEs -->
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <!-- / STYLEs -->
+	<!-- ESTILOS -->
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <!-- / ESTILOS -->
 
-    <title>euChico - Francisco de Paula</title>
-  </head>
+  <!-- FONTE -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!-- / FONTE -->
 
-  <body>
-    <!-- CONTEÚDO PRINCIPAL -->
-    <main class="p-3">
-      <!-- TÍTULO E SUBTÍTULO -->
-      <div id="title">
-        <h2 id="titleQuote" class="m-0"></h2>
-        <h1 id="titleMain" class="m-0"></h1>
+  <!-- SCRIPTS -->
+  <script src="https://kit.fontawesome.com/2afad5831f.js" crossorigin="anonymous"></script>
+  <!-- SCRIPTS -->
+
+  <title>euCHICO - Francisco de Paula</title>
+<head>
+
+<body>
+  <!-- NAVEGAÇÃO -->
+  <nav id="navagation" class="container navbar navbar-expand-sm">
+    <a href="">
+      <h1>
+        <span class="logo-part1 color-nv3">eu</span><span class="logo-part2 color-nv1">CHICO</span>
+      </h1>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="collapsingNavbar" class="navbar-collapse collapse ">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item color-nv1"><a class="nav-link txt-up " href="sobre.html">sobre</a></li>
+        <li class="nav-item color-nv1"><a class="nav-link txt-up " href="blog.html">blog</a></li>
+        <li class="nav-item color-nv1"><a class="nav-link txt-bold txt-up " href="curriculo.html">currículo</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- / NAVEGAÇÃO -->
+
+  <!-- CABEÇALHO -->
+  <header class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h2 class="color-nv1">Francisco de Paula</h2>
+        <h3 class="color-nv2">Desenvolvedor Web</h3>
+        <hr class="hr-type1 color-nv4">
+        <p class="txt-featured color-nv2">
+          Desenvolvedor Web, focado no Front-end, compartilhando a trajetória de estudos e a construção de projetos pessoais.
+        </p>
       </div>
-      <!-- / TÍTULO E SUBTÍTULO -->
-    </main>
-    <!-- / CONTEÚDO PRINCIPAL -->
 
-    <!-- SCRIPTs -->
-    <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
-    <script type="text/javascript" src="scripts/typed.js"></script>
-    <script type="text/javascript" src="scripts/script.js"></script>
-    <!-- / SCRIPTs -->
-  </body>
+      <div class="col-md-5">
+        <img class="img-profile" src="images/euchico-perfil-1.jpg" alt="Arte Avatar euChico">
+      </div>
+    </div>
+
+    <hr class="hr-type2 color-nv4">
+  </header>
+  <!-- / CABEÇALHO -->
+
+  <!-- SEÇÃO: PORTFÓLIO -->
+  <section class="container">
+    <div class="row">
+      <!-- TRABALHO 1 -->
+      <div class="col-md-6" >
+        <a href="#">
+          <!-- <div class="col-md-12 job job-type1" style="background:transparent url('images/trabalho-1.png') no-repeat center center /cover"> -->
+          <div class="col-md-12 job job-type1" >
+            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
+            <div class="job-btn job-btn-category">Lorem/Ipsum</div>
+          </div>
+        </a>
+      </div>
+      <!-- / TRABALHO 1 -->
+
+      <!-- TRABALHO 2 -->
+      <div class="col-md-6 m-adjust-mobile">
+        <a href="#">
+          <!-- <div class="col-md-12 job job-type1" style="background:transparent url('images/trabalho-1.png') no-repeat center center /cover"> -->
+          <div class="col-md-12 job job-type1">
+            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
+            <div class="job-btn job-btn-category">Lorem/Ipsum</div>
+          </div>
+        </a> 
+      </div>
+      <!-- / TRABALHO 2 -->
+    </div>
+
+    <div class="row">
+      <!-- TRABALHO 3 -->
+      <div class="col-md-12">
+        <a href="#">
+          <!-- <div class="col-md-12 job job-type2" style="background:transparent url('images/trabalho-1.png') no-repeat center center /cover"> -->
+          <div class="col-md-12 job job-type2">
+            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
+            <div class="job-btn job-btn-category">Lorem/Ipsum</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- / TRABALHO 3 -->
+
+    <div class="row hidden-mobile">
+      <!-- TRABALHO 4 -->
+      <div class="col-md-4">
+        <a href="#">
+          <!-- <div class="col-md-12 job job-type1" style="background:transparent url('images/trabalho-1.png') no-repeat center center /cover"> -->
+          <div class="col-md-12 job job-type1">
+            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
+            <div class="job-btn job-btn-category">Lorem/Ipsum</div>
+          </div>
+        </a>
+      </div>
+      <!-- / TRABALHO 4 -->
+
+      <!-- TRABALHO 5 -->
+      <div class="col-md-4 m-adjust-mobile">
+        <a href="#">
+          <!-- <div class="col-md-12 job job-type1" style="background:transparent url('images/trabalho-1.png') no-repeat center center /cover"> -->
+          <div class="col-md-12 job job-type1">
+            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
+            <div class="job-btn job-btn-category">Lorem/Ipsum</div>
+          </div>
+        </a>
+      </div>
+      <!-- / TRABALHO 5 -->
+
+      <!-- TRABALHO 6 -->
+      <div class="col-md-4 m-adjust-mobile">
+        <a href="#">
+          <!-- <div class="col-md-12 job job-type1" style="background:transparent url('images/trabalho-1.png') no-repeat center center /cover"> -->
+          <div class="col-md-12 job job-type1">
+            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
+            <div class="job-btn job-btn-category">Lorem/Ipsum</div>
+          </div>
+        </a>
+      </div>
+      <!-- / TRABALHO 6 -->
+    </div>  
+  </section>
+  <!-- / SEÇÃO: PORTFÓLIO -->
+
+  <!-- RODAPÉ -->
+  <footer class="container">
+    <hr class="hr-type2 color-nv4">
+
+    <span class="logo-part1 txt-size4 color-nv3">eu</span><span class="logo-part2 txt-size4 color-nv1">CHICO</span>
+    
+    <hr class="hr-type1 color-nv4">
+
+    <a href="mailto:eu.francisco@outlook.com">
+      <span class="email color-nv2">eu.francisco@outlook.com</span>
+    </a> 
+
+    <div class="social">          
+      <a href="https://github.com/euchico" target="_blank">
+        <img src="images/social-github.png" alt="GitHub: @euchico">
+      </a>
+
+      <a href="https://mastodon.social/@euchico" rel="me" target="_blank">
+        <img src="images/social-mastodon.png" alt="Mastodon: @euchico">
+      </a>
+
+      <a href="https://www.linkedin.com/in/euchico/" target="_blank">
+        <img src="images/social-linkedin.png" alt="LinkedIn: @euchico">
+      </a>
+    </div>
+  </footer>
+  <!-- / RODAPÉ -->
+
+  <!-- SCRIPTS -->
+	<script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="scripts/script.js"></script>
+	<!-- / SCRIPTS -->
+</body>
 </html>
