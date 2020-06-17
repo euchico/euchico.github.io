@@ -144,6 +144,8 @@ footer {
   .job-type2 {
     height: 450px;
     margin: 30px 0px; }
+  .job-type3 {
+    height: 550px; }
 
 .job-btn {
   position: absolute;
@@ -153,27 +155,30 @@ footer {
   .job-btn-link {
     top: 12px;
     right: 12px;
-    width: 40px;
-    height: 40px;
-    line-height: 57px;
+    width: 30px;
+    height: 30px;
+    line-height: 38px;
     text-align: center;
     border-radius: 50%; }
     .job-btn-link .icon {
       display: inline-block;
       width: auto;
-      height: 35px;
-      margin-right: -2px; }
+      height: 25px;
+      margin-right: -1px; }
   .job-btn-category {
     bottom: 12px;
     left: 12px;
     width: fit-content;
     padding: 5px 20px;
-    font-size: 0.9em;
+    font-size: 0.66em;
     border-radius: 50px; }
 
 @media (max-width: 767px) {
   .m-adjust-mobile {
     margin-top: 30px; } }
+@media (max-width: 1023px) {
+  .job-type3 {
+    height: 350px; } }
 .social {
   margin-top: 18px; }
   .social a {
