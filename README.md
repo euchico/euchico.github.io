@@ -6,11 +6,6 @@ Desenvolvedor Web, focado no Front-end, compartilhando a trajetória de estudos 
 
 Sou e estou na área de desenvolvimento há cerca de 10 anos, porém minha trajetória não é linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…” (Saint-Exupéry).
 
-## Portfólio
-
-* [Moema Santiago](http://moemasantiago.com/)
-* [WebDev - Cookbook](https://euchico.github.io/webdev-cookbook/)
-
 ## Currículo ([Link](https://euchico.github.io/curriculo.html))
 
 * Apresentação
@@ -18,6 +13,11 @@ Sou e estou na área de desenvolvimento há cerca de 10 anos, porém minha traje
 * Formação
 * Competências e Habilidades
 * Outros Interesses
+
+### Portfólio
+
+* [Moema Santiago](http://moemasantiago.com/)
+* [WebDev - Cookbook](https://euchico.github.io/webdev-cookbook/)
 
 ## Redes Sociais
 ### Desenvolvimento
@@ -27,7 +27,6 @@ Sou e estou na área de desenvolvimento há cerca de 10 anos, porém minha traje
 
 ### Arte
 * Instagram ([euchico.artes](https://www.instagram.com/euchico.artes/))
-* ArtStation ([euchico](https://www.artstation.com/euchico))
 
 ## Inspirações
 
