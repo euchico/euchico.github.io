@@ -6,19 +6,10 @@ Desenvolvedor Web, focado no Front-end, compartilhando a trajetória de estudos 
 
 Sou e estou na área de desenvolvimento há cerca de 10 anos, porém minha trajetória não é linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…” (Saint-Exupéry).
 
-<!--
-## Blog ([Link](https://euchico.github.io/blog.html))
+## Portfólio
 
-### Principais Postagens
-* Post 1
-* Post 2
-* Post 3
-
-### Última Postagens
-* Post 1
-* Post 2
-* Post 3
--->
+* [Moema Santiago](http://moemasantiago.com/)
+* [WebDev - Cookbook](https://euchico.github.io/webdev-cookbook/)
 
 ## Currículo ([Link](https://euchico.github.io/curriculo.html))
 
@@ -28,22 +19,11 @@ Sou e estou na área de desenvolvimento há cerca de 10 anos, porém minha traje
 * Competências e Habilidades
 * Outros Interesses
 
-<!--
-## Portfólio
-
-* Trabalho 1
-* Trabalho 2
-* Trabalho 3
-* Trabalho 4
-* Trabalho 5
-* Trabalho 6
--->
-
 ## Redes Sociais
 ### Desenvolvimento
 * GitHub ([euchico](https://github.com/euchico))
-* Mastodon ([euchico](https://mastodon.social/@euchico))
-* LinkeIn ([euchico](https://www.linkedin.com/in/euchico/))
+* LinkeIn ([/in/euchico](https://www.linkedin.com/in/euchico/))
+* Instagram ([@eu.chico](https://www.instagram.com/eu.chico/))
 
 ### Arte
 * Instagram ([euchico.artes](https://www.instagram.com/euchico.artes/))
@@ -61,4 +41,3 @@ Francisco de Paula (euchico) - <eu.francisco@outlook.com>
 ## Licença
 
 [MIT License](https://github.com/euchico/euchico.github.io/blob/master/LICENSE.md)
-
