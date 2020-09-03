@@ -1,0 +1,91 @@
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: #FFFFFF;
+  background: transparent;
+  background-color: #040404; }
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+    background: #040404 url("../img/bg.jpg") top right no-repeat;
+    background-size: cover; }
+
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed; } }
+a {
+  color: #18D26E; }
+  a:hover {
+    text-decoration: none;
+    color: #18D26E; }
+
+h1, h2 {
+  font-family: "Raleway", sans-serif; }
+
+#main {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+  transition: ease-in-out 0.3s; }
+  #main * {
+    transition: ease-in-out 0.3s; }
+  #main h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif; }
+    #main h1 a,
+    #main h1 a:hover {
+      display: inline-block;
+      line-height: 1;
+      color: #FFFFFF; }
+  #main h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8); }
+    #main h2 span {
+      padding-bottom: 6px;
+      border-bottom: 2px solid #18D26E;
+      color: #FFFFFF; }
+  #main .social-links {
+    display: flex;
+    margin-top: 40px; }
+    #main .social-links a {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+      font-size: 16px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF; }
+      #main .social-links a:hover {
+        background: #18D26E; }
+
+@media (max-width: 992px) {
+  #main h1 {
+    font-size: 36px; }
+  #main h2 {
+    line-height: 30px;
+    font-size: 20px; }
+  #main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #main .social-links {
+    margin-top: 15px; } }
+
+/*# sourceMappingURL=main.css.map */

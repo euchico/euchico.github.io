@@ -1,37 +1,18 @@
 # Francisco de Paula ([euCHICO](https://euchico.github.io/))
 
-Desenvolvedor Web, focado no Front-end, compartilhando a trajetória de estudos e a construção de projetos pessoais.
+Desenvolvedor Web compartilhando estudos e projetos pessoais.
 
-## Sobre ([Link](https://euchico.github.io/sobre.html))
+## Links
 
-Sou e estou na área de desenvolvimento há cerca de 10 anos, porém minha trajetória não é linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…” (Saint-Exupéry).
-
-## Currículo ([Link](https://euchico.github.io/curriculo.html))
-
-* Apresentação
-* Experiências
-* Formação
-* Competências e Habilidades
-* Outros Interesses
-
-### Portfólio
-
-* [Moema Santiago](http://moemasantiago.com/)
-* [WebDev - Cookbook](https://euchico.github.io/webdev-cookbook/)
-
-## Redes Sociais
-### Desenvolvimento
-* GitHub ([euchico](https://github.com/euchico))
-* LinkeIn ([/in/euchico](https://www.linkedin.com/in/euchico/))
-* Instagram ([@eu.chico](https://www.instagram.com/eu.chico/))
-
-### Arte
-* Instagram ([euchico.artes](https://www.instagram.com/euchico.artes/))
+* Email: [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
+* Site: [???]()
+* GitHub: [euchico](https://github.com/euchico/)
+* LinkedIn: [in/euchico](https://www.linkedin.com/in/euchico/)
+* Instagram: [@eu.chico](https://www.instagram.com/eu.chico/)
 
 ## Inspirações
 
-* [Jess Designtan](http://jessdesigntan.com/)
-* [Ola Hamdy - Resume](https://www.behance.net/gallery/15144011/Free-clean-interactive-resume)
+* [Personal -  Bootstrap Made](https://bootstrapmade.com/personal-free-resume-bootstrap-template/)
 
 ## Contato
 

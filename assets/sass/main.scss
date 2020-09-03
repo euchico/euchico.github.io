@@ -1,0 +1,135 @@
+// VARIÁVEIS ==============================
+$color-primary: #18D26E;
+$color-bg: #040404;
+$color-white: #FFFFFF;
+
+
+// GERAL ==============================
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  color: $color-white;
+  background: transparent;
+  background-color: $color-bg;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: -1;
+    background: $color-bg url("../img/bg.jpg") top right no-repeat;
+    background-size: cover;
+  }
+}
+
+// MEDIA QUERY ===============
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+a {
+  color: $color-primary;
+  &:hover {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
+
+h1, h2 {
+  font-family: "Raleway", sans-serif;
+}
+
+// MAIN ==============================
+#main {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+  transition: ease-in-out 0.3s;
+  
+  * {
+    transition: ease-in-out 0.3s;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+
+    a,
+    a:hover {
+      display: inline-block;
+      line-height: 1;
+      color: $color-white;
+    }
+  }
+
+  h2 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.8);
+
+    span {
+      padding-bottom: 6px;
+      border-bottom: 2px solid $color-primary;
+      color: $color-white;
+    }
+  }
+  
+  .social-links {
+    display: flex;
+    margin-top: 40px;
+
+    a {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      margin-right: 8px;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+      font-size: 16px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: $color-white;
+
+      &:hover {
+        background: $color-primary;
+      }
+    }
+  }
+
+} 
+
+// MEDIA QUERY ===============
+@media (max-width: 992px) {
+  #main{
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      line-height: 30px;
+      font-size: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .social-links {
+      margin-top: 15px;
+    }
+  }
+}
