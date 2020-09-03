@@ -10,7 +10,7 @@ Desenvolvedor Web compartilhando estudos e projetos pessoais.
 * LinkedIn: [in/euchico](https://www.linkedin.com/in/euchico/)
 * Instagram: [@eu.chico](https://www.instagram.com/eu.chico/)
 
-## Inspirações
+## Template
 
 * [Personal -  Bootstrap Made](https://bootstrapmade.com/personal-free-resume-bootstrap-template/)
 
