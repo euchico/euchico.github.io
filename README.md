@@ -1,6 +1,6 @@
 <p  align="center">
 	<a  href="https://euchico.github.io/">
-		<img  src="https://euchico.github.io/assets/img/euchico-perfil-1.jpg"  height="150"  width="auto" style="border-radius:50%;"  alt="Francisco de Paula - euCHICO" />
+		<img src="https://euchico.github.io/assets/img/euchico-perfil-1.jpg"  height="150"  width="auto" alt="Francisco de Paula - euCHICO" />
 	</a>
 </p>
 
