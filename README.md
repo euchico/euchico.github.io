@@ -68,7 +68,7 @@ Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre par
 -->
 
 
-### Contato
+## Contato
 
 * **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
 * **Site:** [euchico.github.io](http://euchico.com/)
