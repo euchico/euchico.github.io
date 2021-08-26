@@ -1,6 +1,6 @@
 <p  align="center">
 	<a  href="https://euchico.github.io/">
-		<img src="https://euchico.github.io/assets/img/euchico-perfil-1.jpg"  height="150"  width="auto" alt="Francisco de Paula - euCHICO" />
+		<img src="https://raw.githubusercontent.com/euchico/euchico.github.io/master/assets/img/logo-euchico.png"  height="150"  width="auto" alt="Francisco de Paula - euCHICO" />
 	</a>
 </p>
 
@@ -20,18 +20,20 @@
 Sou um grande admirador da Programação e Desenvolvimento Web. Curso Licenciatura em Matemática no IFRJ, cursei Ciência da Computação na UERJ _(não concluído)_ e, além disso, realizo muitos estudos independentes. Sempre tive interesse em matemática, lógica, codificação e ampliei a minha visão através do contato com outros campos, como Design e Arte, realizando a união para o meu desenvolvimento pessoal e profissional.
 
 
+## Conteúdos
+
+* [Início](https://euchico.github.io/)
+* [Sobre](https://euchico.github.io/sobre)
+* [Currículo](https://euchico.github.io/curriculo)
+	* Currículo direto em .pdf ([Link](https://euchico.github.io/file/franciscodepaula-curriculo.pdf)).
+
+
 <!--
-Conteúdos
-
-===
-
-* [Sobre](##sobre)
-* [Loterias](###loterias)
-* [Como Utilizar](###como-utilizar)
 * [Contribuição](###contribuicao)
 * [Licença](##licenca)
+-->
 
-
+<!--
 ## Sobre
 
 Nesse repositório reunirei todos os algoritmos e estudos relacionados as loterias oficiais do Brasil. Por desenvolver sozinho, farei de forma gradual e continua em parceria com todo o projeto Matemática da Sorte.
@@ -71,10 +73,10 @@ Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre par
 ## Contato
 
 * **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
-* **Site:** [euchico.github.io](http://euchico.com/)
+* **Site:** [euchico.github.io](https://euchico.github.io/)
 * **GitHub:** [euchico](https://github.com/euchico/)
 * **LinkedIn:** [in/euchico](https://www.linkedin.com/in/euchico/)
-* **Instagram:** [@eu.chico](https://www.instagram.com/eu.chico/)
+* **Instagram:** [@eu.chico](https://www.instagram.com/euchicodev/)
 
 
 ## Licença
