@@ -63,19 +63,18 @@ hr {
 
 #navagation .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 128, 128, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
-.navbar {
-  padding: 30px 15px 0px 15px; }
-  .navbar li {
-    margin-left: 18px;
-    padding: 0px;
-    font-size: 1em; }
-    .navbar li:last-of-type {
-      font-weight: bold; }
-    .navbar li a {
-      padding: 0 !important;
-      text-align: center;
-      text-transform: uppercase; }
+#navagation li {
+  display: inline-block;
+  float: right;
+  margin-left: 18px;
+  padding: 0px;
+  font-size: 1em; }
+  #navagation li:last-of-type {
+    font-weight: bold; }
+  #navagation li a {
+    padding: 0 !important;
+    text-align: center;
+    text-transform: uppercase; }
 
 .bg-navagation {
   background-color: #212529; }
