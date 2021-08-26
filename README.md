@@ -25,7 +25,7 @@ Sou um grande admirador da Programação e Desenvolvimento Web. Curso Licenciatu
 * [Início](https://euchico.github.io/)
 * [Sobre](https://euchico.github.io/sobre)
 * [Currículo](https://euchico.github.io/curriculo)
-	* Currículo direto em .pdf ([Link](https://euchico.github.io/file/franciscodepaula-curriculo.pdf)).
+	* _Arquivo em .PDF ([Link](https://euchico.github.io/file/franciscodepaula-curriculo.pdf))._
 
 
 <!--
