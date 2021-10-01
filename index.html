@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<!-- METAS -->
   <meta charset="utf-8">
+
+	<!-- METAS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO -->
-  <meta http-equiv="content-language" content="pt-br">
+  <meta http-equiv="content-language" content="pt-BR">
   <meta name="author" content="Francisco de Paula (euCHICO)">
-  <meta name="description" content="Buscando oportunidades e compartilhando conhecimento através de estudos e projetos pessoais.">
+  <meta name="description" content="{{DESCRIÇÃO}}">
   <meta name="creator" content="Francisco de Paula (euCHICO)">
   <meta name="robots" content="index, follow">
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="euCHICO - Francisco de Paula">
-  <meta property="og:description" content="Buscando oportunidades e compartilhando conhecimento através de estudos e projetos pessoais.">
+  <meta property="og:description" content="{{DESCRIÇÃO}}">
   <meta property="og:url" content="https://euchico.github.io">
   <meta property="og:site_name" content="euCHICO">
-  <meta property="og:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
+  <meta property="og:image" content="{{IMAGEM}}">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
 
   <meta name="twitter:card" value="summary">
+  <meta name="twitter:domain" content="euchico.github.io">
   <meta name="twitter:site" content="@eueuchico">
   <meta name="twitter:creator" content="@eueuchico">
   <meta name="twitter:title" content="euCHICO - Francisco de Paula">
-  <meta name="twitter:description" content="Buscando oportunidades e compartilhando conhecimento através de estudos e projetos pessoais.">
-  <meta name="twitter:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
+  <meta name="twitter:description" content="{{DESCRIÇÃO}}">
+  <meta name="twitter:image" content="{{IMAGEM}}">
   <!-- / SEO -->
   <!-- / METAS -->
 
@@ -51,27 +53,44 @@
 
 <body id="home">
   <!-- NAVEGAÇÃO -->
-  <!-- <nav id="navagation" class="container navbar navbar-expand-sm"> -->
-  <nav id="navagation" class="container d-flex flex-wrap justify-content-start align-items-center py-2">
-    <a href="/">
-      <h1>
-        <span class="logo-part1">eu</span><span class="logo-part2">CHICO</span>
-      </h1>
-    </a>
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h1 class="logo">
+          <span>eu</span><span>CHICO</span>
+        </h1>
+      </a>
 
-    <!-- <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar" aria-controls="collapsingNavbar" aria-expanded="false" aria-label="Toggle Navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
+      <!-- ícone de tema -->
+      <a class="theme navbar-toggler ms-auto">
+        <i class="theme-icon fas fa-sun"></i>
+      </a>
+      
+      <!-- ícone menu mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false" aria-label="Botão Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- opções -->
+      <div class="collapse navbar-collapse" id="menu-options">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item active"><a class="nav-link disabled"  href="#" data-nav="inicio">início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">sobre</a></li>      
+          <li class="nav-item"><a class="nav-link" href="#">portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">currículo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-nav="blog">blog</a></li>
 
-    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-
-    <div class="ms-auto">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="sobre">sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="curriculo">currículo</a></li>
-      </ul>
+          <li class="nav-item d-none d-sm-block">
+            <!-- ícone de tema -->
+            <a class="theme nav-link">
+              <i class="theme-icon fas fa-sun"></i>
+            </a> 
+          </li>
+        </ul>
+      </div>
+      
+      <!-- checkbox de tema -->
+      <input id="theme-checkbox" type="checkbox"  name="theme-checkbox">
     </div>
   </nav>
   <!-- / NAVEGAÇÃO -->
@@ -79,89 +98,152 @@
   <!-- CABEÇALHO -->
   <header class="container">
     <div class="row justify-content-center">
-      <div class="col-md-6 text-center ">
+      <div class="col-md-6 text-center">
         <h2>Francisco de Paula</h2>
         <h3>Desenvolvedor Web</h3> 
-        <hr class="hr-type1 mx-auto">
-        <p class="txt-featured ">
-          Buscando oportunidades e compartilhando conhecimento através de estudos e projetos pessoais.
+        <hr class="hr-short">
+        <p>
+          Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.
         </p>
       </div>
     </div>
 
-    <hr class="hr-type2">
+    <hr class="hr-standart">
   </header>
   <!-- / CABEÇALHO -->
 
-  <!-- SEÇÃO: PESSOAL -->
+  <!-- PROJETO EM DESTAQUE -->
   <section class="container">
-    <!-- ESTUDO 1 -->
-    <div class="row">
-      <div class="col-lg-4">
-        <a href="https://euchico.github.io/webdev-study/" target="_blank">
-          <div class="col-md-12 job" style="background:#F8F9FA url('assets/img/webdev-study.jpg') no-repeat center center /cover">
-            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
-            <div class="job-btn job-btn-category">Pessoal/Estudos</div>
-          </div>
-        </a>
+    <!-- Projeto 1 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <img class="img-fluid d-none d-lg-block mb-2" src="assets/img/portfolio-home-1.png" alt="{{ALT}}">
+        <img class="img-fluid d-block d-lg-none mb-2" src="assets/img/portfolio-home-2.png" alt="{{ALT}}">
       </div>
-      <!-- / ESTUDO 1 -->
 
-      <!-- ESTUDO 2 -->
-      <div class="col-lg-4">
-        <a href="https://github.com/euchico/webdev-challenge" target="_blank">
-          <div class="col-md-12 job" style="background:#F8F9FA url('assets/img/webdev-challenge.jpg') no-repeat center center /cover">
-            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
-            <div class="job-btn job-btn-category">Pessoal/Desafios</div>
-          </div>
-        </a>
-      </div>
-      <!-- / ESTUDO 2 -->
-
-      <!-- ESTUDO 3 -->
-      <div class="col-lg-4">
-        <a href="https://euchico.github.io/webdev-cookbook/" target="_blank">
-          <div class="col-md-12 job" style="background: #F8F9FA url('assets/img/webdev-cookbook.jpg') no-repeat center center /cover">
-            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
-            <div class="job-btn job-btn-category">Pessoal/Anotações</div>
-          </div>
-        </a>
+      <div class="col-lg-6">
+        <div class="project-box">
+          <h4 class="project-title">Lorem ipsum dolor</h4>
+          <p class="project-resume">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Fuga explicabo eius, quidem expedita pariatur esse. 
+            Nisi perspiciatis commodi dignissimos quia optio in quae! 
+            Nisi asperiores voluptate quasi inventore reprehenderit officiis!  
+          </p>
+          <a class="project-link" href="#">Veja Mais >></a>
+        </div>
       </div>
     </div>
-    <!-- / ESTUDO 3 -->
+    <!-- / Projeto 1 -->
+
+    <!-- Projeto 2 -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6 ">
+        <div class="project-box">
+          <h4 class="project-title">Lorem ipsum dolor</h4>
+          <p class="project-resume">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Fuga explicabo eius, quidem expedita pariatur esse. 
+            Nisi perspiciatis commodi dignissimos quia optio in quae! 
+            Nisi asperiores voluptate quasi inventore reprehenderit officiis!  
+          </p>
+          <a class="project-link" href="#">Veja Mais >></a>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img class="img-fluid" src="assets/img/portfolio-home-1.png" alt="{{ALT}">
+        <img class="img-fluid" src="assets/img/portfolio-home-2.png" alt="{{ALT}">
+      </div>
+    </div>
+    <!-- / Projeto 2 -->
   </section>
-  <!-- / SEÇÃO: PESSOAL -->
+  <!-- / PROJETO EM DESTAQUE -->
+
+  <!-- PROJETO DE ESTUDO -->
+  <section class="container">
+    <div class="row">
+      <!-- Projeto 1 -->
+      <div class="col">
+        <div>
+          <i class="fas fa-star"></i>
+        </div>
+        <div>
+          <h2>Featured title</h2>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a class=""  href="#">Primary button >></a>
+        </div>
+      </div>
+      <!-- / Projeto 1 -->
+
+      <!-- Projeto 2 -->
+      <div class="col">
+        <div>
+          <i class="fas fa-star"></i>
+        </div>
+        <div>
+          <h2>Featured title</h2>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a class=""  href="#">Primary button >></a>
+        </div>
+      </div>
+      <!-- / Projeto 2 -->
+
+      <!-- Projeto 3 -->
+      <div class="col">
+        <div>
+          <i class="fas fa-star"></i>
+        </div>
+        <div>
+          <h2>Featured title</h2>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a class=""  href="#">Primary button >></a>
+        </div>
+      </div>
+      <!-- / Projeto 3 -->
+    </div>
+  </section>
+  <!-- / PROJETO DE ESTUDO -->
+
 
   <!-- RODAPÉ -->
   <footer class="container">
-    <hr class="hr-type2">
-
-    <span class="logo-part1">eu</span><span class="logo-part2">CHICO</span>
+    <hr class="hr-standart">
     
-    <hr class="hr-type1">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center">
+        <h6 class="logo">
+          <span>eu</span><span>CHICO</span>
+        </h6>
+        
+        <hr class="hr-short">
 
-    <a href="mailto:eu.francisco@outlook.com">
-      <span class="email">eu.francisco@outlook.com</span>
-    </a> 
+        <a href="mailto:eu.francisco@outlook.com">
+          <span class="email">eu.francisco@outlook.com</span>
+        </a> 
 
-    <div class="social">          
-      <a href="https://github.com/euchico" target="_blank">
-        <img src="assets/img/social-github.png" alt="GitHub: @euchico">
-      </a>
+        <div class="social">     
+          <a class="d-inline-block" href="https://github.com/euchico" target="_blank">
+            <img src="assets/img/social-github.png" alt="GitHub: @euchico">
+          </a>
 
-      <a href="https://www.linkedin.com/in/euchico" target="_blank">
-        <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
-      </a>
-      
-      <a href="https://instragram.com/eu.chico" target="_blank">
-        <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
-      </a>
+          <a class="d-inline-block" href="https://www.linkedin.com/in/euchico" target="_blank">
+            <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
+          </a>
+          
+          <a class="d-inline-block" href="https://instragram.com/eu.chico" target="_blank">
+            <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- / RODAPÉ -->
 
+
   <!-- SCRIPTS -->
   <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 	<!-- / SCRIPTS -->
 </body>
 </html>

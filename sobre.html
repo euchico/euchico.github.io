@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<!-- METAs -->
   <meta charset="utf-8">
+
+	<!-- METAs -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO -->
-  <meta http-equiv="content-language" content="pt-br">
+  <meta http-equiv="content-language" content="pt-BR">
   <meta name="author" content="Francisco de Paula (euChico)">
-  <meta name="description" content="Francisco de Paula, minha trajetória não é linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…”.">
+  <meta name="description" content="{{DESCRIÇÃO}}">
   <meta name="creator" content="Francisco de Paula (euChico)">
   <meta name="robots" content="index, follow">
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="euCHICO - Sobre">
-  <meta property="og:description" content="Francisco de Paula, minha trajetória não é linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…”.">
+  <meta property="og:description" content="{{DESCRIÇÃO}}">
   <meta property="og:url" content="http://euchico.com/sobre">
   <meta property="og:site_name" content="euCHICO">
-  <meta property="og:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
+  <meta property="og:image" content="{{IMAGEM}}">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
 
   <meta name="twitter:card" value="summary">
+  <meta name="twitter:domain" content="euchico.github.io/sobre">
   <meta name="twitter:site" content="@eueuchico">
   <meta name="twitter:creator" content="@eueuchico">
   <meta name="twitter:title" content="euCHICO - Sobre">
-  <meta name="twitter:description" content="Francisco de Paula, minha trajetória não é linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…”.">
-  <meta name="twitter:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
+  <meta name="twitter:description" content="{{DESCRIÇÃO}}">
+  <meta name="twitter:image" content="{{IMAGEM}}">
   <!-- / SEO -->
   <!-- / METAs -->
 
@@ -50,39 +52,59 @@
 <head>
 
 <body id="about">
-  <!-- FUNDO NAVEGAÇÃO -->
-  <div class="bg-navagation">
+  <div class="bg-navbar"> <!-- background navbar -->
     <!-- NAVEGAÇÃO -->
-    <nav id="navagation" class="container navbar navbar-expand-sm">
-      <a href="/">
-        <h1>
-          <span class="logo-part1">eu</span><span class="logo-part2">CHICO</span>
-        </h1>
-      </a>
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <h1 class="logo">
+            <span>eu</span><span>CHICO</span>
+          </h1>
+        </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- ícone de tema -->
+        <a class="theme navbar-toggler ms-auto">
+          <i class="theme-icon fas fa-sun"></i>
+        </a>
+        
+        <!-- ícone menu mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false" aria-label="Botão Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- opções -->
+        <div class="collapse navbar-collapse" id="menu-options">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item"><a class="nav-link" href="#" data-nav="inicio">início</a></li>
+            <li class="nav-item active"><a class="nav-link disabled" href="#">sobre</a></li>      
+            <li class="nav-item"><a class="nav-link" href="#">portfólio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">currículo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-nav="blog">blog</a></li>
 
-      <div id="collapsingNavbar" class="navbar-collapse collapse ">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a class="nav-link" href="sobre">sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="curriculo">currículo</a></li>
-        </ul>
+            <li class="nav-item d-none d-sm-block">
+              <!-- ícone de tema -->
+              <a class="theme nav-link">
+                <i class="theme-icon fas fa-sun"></i>
+              </a> 
+            </li>
+          </ul>
+        </div>
+        
+        <!-- checkbox de tema -->
+        <input id="theme-checkbox" type="checkbox"  name="theme-checkbox">
       </div>
     </nav>
     <!-- / NAVEGAÇÃO -->
-  </div>
-  <!-- / FUNDO NAVEGAÇÃO -->
+  </div> <!-- / background navegador -->
 
   <!-- SEÇÃO: BIOGRAFIA -->
-  <section id="sec-biography" class="container">
+  <section class="container">
     <div class="text-center">
-      <img class="img-profile" src="assets/img/euchico-perfil-2.jpg" alt="Avatar euChico">
+      <img class="img-fluid" src="assets/img/euchico-perfil-2.jpg" alt="Avatar euChico">
 
       <h2>Francisco de Paula</h2>
 
-      <hr class="hr-type1">
+      <hr>
     </div>
 
     <p>
@@ -93,25 +115,29 @@
       Nunca deixei a programação e constantemente tento utilizar os conhecimentos na minha vida, acadêmica e cotidiana. Isso fez retornar o estudo e o desejo que encontrar novas oportunidades com os códigos. Esse site é um espaço para compartilhar minha trajetória de estudos e apresentar projetos, pessoais e profissionais. Todos os detalhes e informações estarão descritos no <a href="/curriculo" target="_self"><strong>Currículo</strong></a>.
     </p>
 
-    <!-- PORTFÓLIO -->
-    <!-- TRABALHO 4 -->
+    <!-- Trabalho -->
     <div class="row">
-      <div class="col-md-12">
-        <a href="https://github.com/euchico/matematica-sorte" target="_blank">
-          <div class="col-md-12 job" style="background: #F8F9FA url('assets/img/projeto-mds.jpg') no-repeat top center /cover">
-            <div class="job-btn job-btn-link"><i class="fas fa-angle-right icon"></i></div>
-            <div class="job-btn job-btn-category">Projeto Pessoal</div>
-          </div>
-        </a>
+      <div class="col-6">
+        <img class="img-fluid" src="https://getbootstrap.com/docs/5.1/examples/heroes/bootstrap-themes.png" alt="{{ALT}}">
+      </div>
+
+      <div class="col-6">
+        <h4>Lorem ipsum dolor</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Fuga explicabo eius, quidem expedita pariatur esse. 
+          Nisi perspiciatis commodi dignissimos quia optio in quae! 
+          Nisi asperiores voluptate quasi inventore reprehenderit officiis! 
+          <a href="#">Veja Mais >></a>
+        </p>
       </div>
     </div>
-    <!-- / TRABALHO 4 -->
-    <!-- / PORTFÓLIO -->
+    <!-- / Trabalho -->
   </section>
   <!-- / SEÇÃO: BIOGRAFIA -->
 
   <!-- SEÇÃO: MATEMÁTICA -->
-  <div id="sec-math">
+  <div>
     <section class="container text-center">
       <h2>Matemática</h2>
       <hr class="hr-type1">
@@ -130,61 +156,70 @@
   <!-- / SEÇÃO: MATEMÁTICA -->
 
   <!-- SEÇÃO: ARTE -->
-  <section id="sec-art" class="container text-center">
+  <section class="container text-center">
     <h2>Arte</h2>
 
-    <hr class="hr-type1">
+    <hr>
 
     <div class="social">          
       <a href="https://www.instagram.com/euchicoart/" target="_blank">
-        <img src="assets/img/social-instagram-1.png" alt="Instagram: @euchicoart">
+        <img class="img-fluid" src="assets/img/social-instagram-1.png" alt="Instagram: @euchicoart">
       </a>
     </div>
 
     <div class="row gallery">
-      <img class="col-sm-4 img-fluid" src="assets/img/euchico-arte-1.jpg" alt="Cartola, Arte por euChico">
-      <img class="col-sm-4 img-fluid" src="assets/img/euchico-arte-2.jpg" alt="Hanna Lashay, Arte por euChico">
-      <img class="col-sm-4 img-fluid" src="assets/img/euchico-arte-3.jpg" alt="Louis Armstrong, Arte por euChico">
+      <img class="col-4 img-fluid" src="assets/img/euchico-arte-1.jpg" alt="Cartola, Arte por euChico">
+      <img class="col-4 img-fluid" src="assets/img/euchico-arte-2.jpg" alt="Hanna Lashay, Arte por euChico">
+      <img class="col-4 img-fluid" src="assets/img/euchico-arte-3.jpg" alt="Louis Armstrong, Arte por euChico">
     </div>
 
     <div class="row gallery hidden-mobile">
-      <img class="col-sm-4 img-fluid" src="assets/img/euchico-arte-4.jpg" alt="Talita Barbosa, Arte por euChico">
-      <img class="col-sm-4 img-fluid" src="assets/img/euchico-arte-5.jpg" alt="John Lennon, Arte por euChico">
-      <img class="col-sm-4 img-fluid" src="assets/img/euchico-arte-6.jpg" alt="Flavia Machado, Arte por euChico">
+      <img class="col-4 img-fluid" src="assets/img/euchico-arte-4.jpg" alt="Talita Barbosa, Arte por euChico">
+      <img class="col-4 img-fluid" src="assets/img/euchico-arte-5.jpg" alt="John Lennon, Arte por euChico">
+      <img class="col-4 img-fluid" src="assets/img/euchico-arte-6.jpg" alt="Flavia Machado, Arte por euChico">
     </div>
   </section>
   <!-- / SEÇÃO: ARTE -->
 
+
   <!-- RODAPÉ -->
   <footer class="container">
-    <hr class="hr-type2">
-
-    <span class="logo-part1">eu</span><span class="logo-part2">CHICO</span>
+    <hr class="hr-standart">
     
-    <hr class="hr-type1">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center">
+        <h6 class="logo">
+          <span>eu</span><span>CHICO</span>
+        </h6>
+        
+        <hr class="hr-short">
 
-    <a href="mailto:eu.francisco@outlook.com">
-      <span class="email">eu.francisco@outlook.com</span>
-    </a> 
+        <a href="mailto:eu.francisco@outlook.com">
+          <span class="email">eu.francisco@outlook.com</span>
+        </a> 
 
-    <div class="social">          
-      <a href="https://github.com/euchico" target="_blank">
-        <img src="assets/img/social-github.png" alt="GitHub: @euchico">
-      </a>
+        <div class="social">     
+          <a class="d-inline-block" href="https://github.com/euchico" target="_blank">
+            <img src="assets/img/social-github.png" alt="GitHub: @euchico">
+          </a>
 
-      <a href="https://www.linkedin.com/in/euchico" target="_blank">
-        <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
-      </a>
-      
-      <a href="https://instragram.com/eu.chico" target="_blank">
-        <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
-      </a>
+          <a class="d-inline-block" href="https://www.linkedin.com/in/euchico" target="_blank">
+            <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
+          </a>
+          
+          <a class="d-inline-block" href="https://instragram.com/eu.chico" target="_blank">
+            <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- / RODAPÉ -->
 
   <!-- SCRIPTS -->
+
   <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
 	<!-- / SCRIPTS -->
 </body>
 </html>

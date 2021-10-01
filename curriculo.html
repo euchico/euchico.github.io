@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-	<!-- METAS -->
   <meta charset="utf-8">
+
+	<!-- METAS -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- SEO -->
-  <meta http-equiv="content-language" content="pt-br">
+  <meta http-equiv="content-language" content="pt-BR">
   <meta name="author" content="Francisco de Paula (euChico)">
-  <meta name="description" content="Curso Licenciatura em Matemática e sempre tive interesse em matemática, lógica, programação e encontrei a paixão pelo modo de pensar dentro dessas áreas.">
+  <meta name="description" content="{{DESCRIÇÃO}}">
   <meta name="creator" content="Francisco de Paula (euChico)">
   <meta name="robots" content="index, follow">
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="euCHICO - Currículo">
-  <meta property="og:description" content="Curso Licenciatura em Matemática e sempre tive interesse em matemática, lógica, programação e encontrei a paixão pelo modo de pensar dentro dessas áreas.">
+  <meta property="og:description" content="{{DESCRIÇÃO}}">
   <meta property="og:url" content="https://euchico.github.io/">
   <meta property="og:site_name" content="euCHICO">
-  <meta property="og:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
+  <meta property="og:image" content="{{IMAGEM}}">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
 
   <meta name="twitter:card" value="summary">
+  <meta name="twitter:domain" content="euchico.github.io/curriculo">
   <meta name="twitter:site" content="@eueuchico">
   <meta name="twitter:creator" content="@eueuchico">
   <meta name="twitter:title" content="euCHICO - Currículo">
-  <meta name="twitter:description" content="Curso Licenciatura em Matemática e sempre tive interesse em matemática, lógica, programação e encontrei a paixão pelo modo de pensar dentro dessas áreas.">
-  <meta name="twitter:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
+  <meta name="twitter:description" content="{{DESCRIÇÃO}}">
+  <meta name="twitter:image" content="{{IMAGEM}}">
   <!-- / SEO -->  
   <!-- / METAS -->
 
@@ -50,23 +52,45 @@
 <head>
 
 <body id="resume">
-   <!-- NAVEGAÇÃO -->
-   <nav id="navagation" class="container navbar navbar-expand-sm">
-    <a href="/">
-      <h1>
-        <span class="logo-part1">eu</span><span class="logo-part2">CHICO</span>
-      </h1>
-    </a>
+  <!-- NAVEGAÇÃO -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <h1 class="logo">
+          <span>eu</span><span>CHICO</span>
+        </h1>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- ícone de tema -->
+      <a class="theme navbar-toggler ms-auto">
+        <i class="theme-icon fas fa-sun"></i>
+      </a>
+      
+      <!-- ícone menu mobile -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false" aria-label="Botão Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      
+      <!-- opções -->
+      <div class="collapse navbar-collapse" id="menu-options">
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item"><a class="nav-link" href="#" data-nav="inicio">início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">sobre</a></li>      
+          <li class="nav-item"><a class="nav-link" href="#">portfólio</a></li>
+          <li class="nav-item active"><a class="nav-link disabled" href="#">currículo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-nav="blog">blog</a></li>
 
-    <div id="collapsingNavbar" class="navbar-collapse collapse ">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link" href="sobre">sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="curriculo">currículo</a></li>
-      </ul>
+          <li class="nav-item d-none d-sm-block">
+            <!-- ícone de tema -->
+            <a class="theme nav-link">
+              <i class="theme-icon fas fa-sun"></i>
+            </a> 
+          </li>
+        </ul>
+      </div>
+      
+      <!-- checkbox de tema -->
+      <input id="theme-checkbox" type="checkbox"  name="theme-checkbox">
     </div>
   </nav>
   <!-- / NAVEGAÇÃO -->
@@ -395,28 +419,34 @@
 
   <!-- RODAPÉ -->
   <footer class="container">
-    <hr class="hr-type2">
-
-    <span class="logo-part1">eu</span><span class="logo-part2">CHICO</span>
+    <hr class="hr-standart">
     
-    <hr class="hr-type1">
+    <div class="row justify-content-center">
+      <div class="col-6 text-center">
+        <h6 class="logo">
+          <span>eu</span><span>CHICO</span>
+        </h6>
+        
+        <hr class="hr-short">
 
-    <a href="mailto:eu.francisco@outlook.com">
-      <span class="email">eu.francisco@outlook.com</span>
-    </a> 
+        <a href="mailto:eu.francisco@outlook.com">
+          <span class="email">eu.francisco@outlook.com</span>
+        </a> 
 
-    <div class="social">          
-      <a href="https://github.com/euchico" target="_blank">
-        <img src="assets/img/social-github.png" alt="GitHub: @euchico">
-      </a>
+        <div class="social">     
+          <a class="d-inline-block" href="https://github.com/euchico" target="_blank">
+            <img src="assets/img/social-github.png" alt="GitHub: @euchico">
+          </a>
 
-      <a href="https://www.linkedin.com/in/euchico" target="_blank">
-        <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
-      </a>
-      
-      <a href="https://instragram.com/eu.chico" target="_blank">
-        <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
-      </a>
+          <a class="d-inline-block" href="https://www.linkedin.com/in/euchico" target="_blank">
+            <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
+          </a>
+          
+          <a class="d-inline-block" href="https://instragram.com/eu.chico" target="_blank">
+            <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- / RODAPÉ -->
