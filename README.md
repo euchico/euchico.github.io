@@ -72,11 +72,12 @@ Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre par
 
 ## Contato
 
-* **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
-* **Site:** [euchico.github.io](https://euchico.github.io/)
 * **GitHub:** [euchico](https://github.com/euchico/)
 * **LinkedIn:** [in/euchico](https://www.linkedin.com/in/euchico/)
-* **Instagram:** [@eu.chico](https://www.instagram.com/euchicodev/)
+* **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
+* **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev/)
+* **Site:** [euchico.github.io](https://euchico.github.io/)
+* **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
 
 
 ## Licença
