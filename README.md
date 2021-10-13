@@ -5,7 +5,7 @@
 </p>
 
 <p  align="center" width="550px">
-  Buscando oportunidades e compartilhando conhecimento através de Estudos e Projetos Pessoais.
+  Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.
 </p>
 
 <p  align="center">
