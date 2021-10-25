@@ -1,3 +1,11 @@
+@charset "UTF-8";
+/*!
+ * euCHICO (https://euchico.github.io/)
+ * Copyleft 2021 - Francisco de Paula
+ * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
+ */
+/* VÁRIAVEIS  ============================== */
+/* Váriaveis: CSS =============== */
 :root {
   --txt-base: #212529;
   --txt-nv1: #6C757D;
@@ -14,6 +22,7 @@
   --txt-reverse: #212529;
   --bg-reverse: #F8F9FA; }
 
+/* GERAL ============================== */
 html, body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
@@ -28,6 +37,7 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   text-decoration: inherit;
   color: inherit; }
 
+/* Geral: Texto =============== */
 h1, h2, h3,
 h4, h5, h6 {
   margin: 0px; }
@@ -41,6 +51,7 @@ h4, h5, h6 {
     font-weight: bold;
     color: var(--txt-base); }
 
+/* Geral: HR =============== */
 .hr-standart {
   width: 100%;
   border: 1px solid;
@@ -51,12 +62,53 @@ h4, h5, h6 {
   border: 3px solid;
   color: var(--txt-nv2); }
 
+/* Geral: Imagem =============== */
+.img-profile {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; }
+
+/* Conteúdo: Box =============== */
+.project-title {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--txt-base); }
+.project-abstract {
+  margin-bottom: 15px;
+  font-size: 1.15em;
+  color: var(--txt-nv1); }
+.project-link {
+  margin-bottom: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--txt-base); }
+  .project-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""; }
+
+.webdev {
+  text-align: center; }
+  .webdev-icon {
+    color: var(--txt-base); }
+  .webdev-title {
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--txt-base); }
+  .webdev-abstract {
+    font-size: 1.15em;
+    color: var(--txt-nv1); }
+
+/* NAVEGAÇÃO ============================== */
 .navbar .nav-item {
   float: right;
   font-size: 1em; }
-  .navbar .nav-item.active {
-    color: var(--txt-nv1);
-    border-bottom: 2px solid var(--txt-nv1); }
   .navbar .nav-item .nav-link {
     text-align: center;
     text-transform: uppercase;
@@ -70,7 +122,10 @@ h4, h5, h6 {
     .navbar .nav-item .nav-link:link, .navbar .nav-item .nav-link:visited, .navbar .nav-item .nav-link:active, .navbar .nav-item .nav-link:focus {
       color: var(--txt-base); }
     .navbar .nav-item .nav-link:hover {
-      color: var(--txt-nv1); }
+      color: var(--txt-nv1) !important; }
+  .navbar .nav-item.active {
+    color: var(--txt-nv1);
+    border-bottom: 2px solid var(--txt-nv1); }
 .navbar .navbar-toggler,
 .navbar .navbar-toggler:focus {
   border: none;
@@ -92,16 +147,22 @@ h4, h5, h6 {
     .bg-navbar .navbar .nav-item .nav-link:link, .bg-navbar .navbar .nav-item .nav-link:visited, .bg-navbar .navbar .nav-item .nav-link:active, .bg-navbar .navbar .nav-item .nav-link:focus {
       color: var(--txt-reverse); }
 
+/* Media Query =============== */
 @media (max-width: 575px) {
   .navbar .nav-item.active {
     border-bottom: none; } }
+/* Sobrescrever Bootstrap =============== */
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: inherit; }
+
+/* RODAPÉ ============================== */
 footer {
   padding: 30px 0; }
   footer .email {
     font-size: 1em;
     font-weight: normal;
     letter-spacing: .05em;
-    color: var(--txt-nv2); }
+    color: var(--txt-nv1); }
   footer .social {
     margin-top: 10px; }
     footer .social img {
@@ -109,36 +170,78 @@ footer {
       height: auto;
       margin: 0 5px; }
 
-body#home header {
+/* PÁGINA: INDEX ============================== */
+body#page-home header {
   margin: 50px auto 30px auto; }
-  body#home header h2 {
+  body#page-home header h2 {
     margin: 5px;
     font-size: 2.25em;
     font-weight: bold;
     text-transform: uppercase;
     color: var(--txt-base); }
-  body#home header h3 {
-    font-size: 1.5em;
+  body#page-home header h3 {
+    font-size: 1.75em;
     font-weight: bold;
     color: var(--txt-nv1); }
-  body#home header p {
-    font-size: 1em;
+  body#page-home header p {
+    font-size: 1.25em;
     font-weight: 300;
     color: var(--txt-nv1); }
-body#home .project-title {
+
+/* PÁGINA: SOBRE ============================== */
+body#about {
+  /* Sobre: Biografia =============== */
+  /* Sobre: Matemática =============== */ }
+  body#about #sec-biography h2 {
+    margin: 15px 0px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--txt-base); }
+  body#about #sec-biography p.abstract {
+    font-size: 1.15em;
+    color: var(--txt-base); }
+  body#about .bg-math {
+    background-color: var(--bg-reverse); }
+  body#about #sec-math h2 {
+    margin: 15px 0px;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--txt-reverse); }
+  body#about #sec-math .hr-short {
+    color: var(--txt-nv2); }
+  body#about #sec-math .sec-math-abstract {
+    font-size: 1.15em;
+    color: var(--txt-nv2); }
+
+/* PÁGINA: PORTFÓLIO ============================== */
+.portfolio-box .portfolio-thumbnail {
+  height: 250px;
+  width: 200px; }
+  .portfolio-box .portfolio-thumbnail img {
+    display: block;
+    object-fit: cover; }
+.portfolio-box .portfolio-category {
+  font-weight: bold; }
+  .portfolio-box .portfolio-category.frontend {
+    color: #4E9F3D; }
+.portfolio-box .portfolio-title {
   margin-bottom: 15px;
   font-size: 1.5em;
   font-weight: bold;
-  text-transform: uppercase;
   color: var(--txt-base); }
-body#home .project-resume {
-  margin-bottom: 15px;
-  font-size: 1em;
+.portfolio-box .portfolio-abstract {
   color: var(--txt-nv1); }
-body#home .project-link {
-  margin-bottom: 15px;
-  font-size: 1em;
-  font-weight: bold;
+.portfolio-box .portfolio-link {
   color: var(--txt-base); }
+  .portfolio-box .portfolio-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: ""; }
 
 /*# sourceMappingURL=main.css.map */

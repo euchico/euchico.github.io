@@ -9,17 +9,17 @@
   <!-- SEO -->
   <meta http-equiv="content-language" content="pt-BR">
   <meta name="author" content="Francisco de Paula (euCHICO)">
-  <meta name="description" content="{{DESCRIÇÃO}}">
+  <meta name="description" content="Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.">
   <meta name="creator" content="Francisco de Paula (euCHICO)">
   <meta name="robots" content="index, follow">
 
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="euCHICO - Francisco de Paula">
-  <meta property="og:description" content="{{DESCRIÇÃO}}">
+  <meta property="og:description" content="Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.">
   <meta property="og:url" content="https://euchico.github.io">
   <meta property="og:site_name" content="euCHICO">
-  <meta property="og:image" content="{{IMAGEM}}">
+  <meta property="og:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
 
@@ -28,8 +28,8 @@
   <meta name="twitter:site" content="@eueuchico">
   <meta name="twitter:creator" content="@eueuchico">
   <meta name="twitter:title" content="euCHICO - Francisco de Paula">
-  <meta name="twitter:description" content="{{DESCRIÇÃO}}">
-  <meta name="twitter:image" content="{{IMAGEM}}">
+  <meta name="twitter:description" content="Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.">
+  <meta name="twitter:image" content="https://euchico.github.io/assets/img/euchico-perfil-1.jpg">
   <!-- / SEO -->
   <!-- / METAS -->
 
@@ -51,11 +51,11 @@
   <title>euCHICO - Francisco de Paula</title>
 <head>
 
-<body id="home">
+<body id="page-home">
   <!-- NAVEGAÇÃO -->
   <nav class="navbar navbar-expand-sm navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand">
         <h1 class="logo">
           <span>eu</span><span>CHICO</span>
         </h1>
@@ -73,11 +73,11 @@
       
       <!-- opções -->
       <div class="collapse navbar-collapse" id="menu-options">
-        <ul class="navbar-nav ms-auto ">
-          <li class="nav-item active"><a class="nav-link disabled"  href="#" data-nav="inicio">início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">sobre</a></li>      
-          <li class="nav-item"><a class="nav-link" href="#">portfólio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">currículo</a></li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active"><a class="nav-link disabled" data-nav="inicio">início</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">sobre</a></li>      
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="curriculo.html">currículo</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-nav="blog">blog</a></li>
 
           <li class="nav-item d-none d-sm-block">
@@ -98,7 +98,7 @@
   <!-- CABEÇALHO -->
   <header class="container">
     <div class="row justify-content-center">
-      <div class="col-md-6 text-center">
+      <div class="col-md-5 text-center">
         <h2>Francisco de Paula</h2>
         <h3>Desenvolvedor Web</h3> 
         <hr class="hr-short">
@@ -115,7 +115,7 @@
   <!-- PROJETO EM DESTAQUE -->
   <section class="container">
     <!-- Projeto 1 -->
-    <div class="row align-items-center mb-5">
+    <div class="row position-relative align-items-center mb-5">
       <div class="col-lg-6">
         <img class="img-fluid d-none d-lg-block mb-2" src="assets/img/portfolio-home-1.png" alt="{{ALT}}">
         <img class="img-fluid d-block d-lg-none mb-2" src="assets/img/portfolio-home-2.png" alt="{{ALT}}">
@@ -124,7 +124,7 @@
       <div class="col-lg-6">
         <div class="project-box">
           <h4 class="project-title">Lorem ipsum dolor</h4>
-          <p class="project-resume">
+          <p class="project-abstract">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Fuga explicabo eius, quidem expedita pariatur esse. 
             Nisi perspiciatis commodi dignissimos quia optio in quae! 
@@ -137,11 +137,11 @@
     <!-- / Projeto 1 -->
 
     <!-- Projeto 2 -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6 ">
-        <div class="project-box">
+    <div class="row position-relative align-items-center mb-5">
+      <div class="col-md-6 order-2 order-md-1">
+        <div class="project-box ">
           <h4 class="project-title">Lorem ipsum dolor</h4>
-          <p class="project-resume">
+          <p class="project-abstract">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
             Fuga explicabo eius, quidem expedita pariatur esse. 
             Nisi perspiciatis commodi dignissimos quia optio in quae! 
@@ -151,9 +151,9 @@
         </div>
       </div>
 
-      <div class="col-md-6">
-        <img class="img-fluid" src="assets/img/portfolio-home-1.png" alt="{{ALT}">
-        <img class="img-fluid" src="assets/img/portfolio-home-2.png" alt="{{ALT}">
+      <div class="col-md-6 order-1 order-md-2">
+        <img class="img-fluid d-none d-lg-block mb-2" src="assets/img/portfolio-home-1.png" alt="{{ALT}}">
+        <img class="img-fluid d-block d-lg-none mb-2" src="assets/img/portfolio-home-2.png" alt="{{ALT}}">
       </div>
     </div>
     <!-- / Projeto 2 -->
@@ -161,43 +161,43 @@
   <!-- / PROJETO EM DESTAQUE -->
 
   <!-- PROJETO DE ESTUDO -->
-  <section class="container">
+  <section class="container mt-5">
     <div class="row">
       <!-- Projeto 1 -->
-      <div class="col">
+      <div class="col-md-4 mb-5 mb-md-0 webdev">
         <div>
-          <i class="fas fa-star"></i>
-        </div>
-        <div>
-          <h2>Featured title</h2>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a class=""  href="#">Primary button >></a>
+          <i class="fas fa-book fa-2x webdev-icon"></i>
+          <h2 class="webdev-title">Estudo</h2>
+          <p class="webdev-abstract">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#">
+            <button class="btn btn-dark btn-sm" href="#">Acesse</button>
+          </a>
         </div>
       </div>
       <!-- / Projeto 1 -->
 
       <!-- Projeto 2 -->
-      <div class="col">
+      <div class="col-md-4 mb-5 mb-md-0 webdev">
         <div>
-          <i class="fas fa-star"></i>
-        </div>
-        <div>
-          <h2>Featured title</h2>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a class=""  href="#">Primary button >></a>
+          <i class="fas fa-trophy fa-2x icon"></i>
+          <h2 class="webdev-title">Desafio</h2>
+          <p class="webdev-abstract">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#">
+            <button class="btn btn-dark btn-sm" href="#">Acesse</button>
+          </a>
         </div>
       </div>
       <!-- / Projeto 2 -->
 
       <!-- Projeto 3 -->
-      <div class="col">
+      <div class="col-md-4 mb-5 mb-md-0 webdev">
         <div>
-          <i class="fas fa-star"></i>
-        </div>
-        <div>
-          <h2>Featured title</h2>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-          <a class=""  href="#">Primary button >></a>
+          <i class="fas fa-clipboard fa-2x icon"></i>
+          <h2 class="webdev-title">Receita</h2>
+          <p class="webdev-abstract">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#">
+            <button class="btn btn-dark btn-sm" href="#">Acesse</button>
+          </a>
         </div>
       </div>
       <!-- / Projeto 3 -->
@@ -223,16 +223,16 @@
         </a> 
 
         <div class="social">     
-          <a class="d-inline-block" href="https://github.com/euchico" target="_blank">
+          <a class="d-inline-block" href="http://github.com/euchico" target="_blank">
             <img src="assets/img/social-github.png" alt="GitHub: @euchico">
           </a>
 
-          <a class="d-inline-block" href="https://www.linkedin.com/in/euchico" target="_blank">
+          <a class="d-inline-block" href="http://www.linkedin.com/in/euchico" target="_blank">
             <img src="assets/img/social-linkedin.png" alt="LinkedIn: @euchico">
           </a>
           
-          <a class="d-inline-block" href="https://instragram.com/eu.chico" target="_blank">
-            <img src="assets/img/social-instagram-2.png" alt="Instram: @eu.chico">
+          <a class="d-inline-block" href="http://instragram.com/euchicodev" target="_blank">
+            <img src="assets/img/social-instagram-2.png" alt="Instram: @euchicodev">
           </a>
         </div>
       </div>

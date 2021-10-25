@@ -1,0 +1,70 @@
+/* NAVEGAÇÃO ============================== */
+.navbar{
+  .nav-item{
+    float: right;
+    font-size: 1em;
+
+    .nav-link{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: var(--txt-base);
+      transition: .3s;
+
+      &[data-nav="inicio"]{ font-weight: 100; }
+      &[data-nav="blog"]{ font-weight: 600; }
+      
+      &:link, &:visited, &:active, &:focus{ color: var(--txt-base); }
+      &:hover{ color: var(--txt-nv1) !important; }
+    }
+
+    &.active{
+      color: var(--txt-nv1);
+      border-bottom: 2px solid var(--txt-nv1);
+    }
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--txt-base);
+  }
+
+  .navbar-toggler{
+    .navbar-toggler-icon{ color: var(--txt-base); }    
+  }
+
+  #theme-checkbox{ display: none; }
+}
+
+.bg-navbar{
+  height: 250px;
+  background-color: var(--bg-reverse);
+
+  .navbar{
+    .logo{
+      span{
+        &:nth-child(1){  color: var(--txt-nv1); }
+        &:nth-child(2){ color: var(--txt-reverse); }
+      }
+    }
+
+    .nav-item{
+      .nav-link{
+        color: var(--txt-reverse);
+        
+        &:link, &:visited, &:active, &:focus{ color: var(--txt-reverse); } 
+      }
+    }
+  }
+}
+
+/* Media Query =============== */
+@media (max-width: (576px)-1){
+  .navbar .nav-item.active{ border-bottom: none; }
+}
+
+/* Sobrescrever Bootstrap =============== */
+.navbar-light .navbar-nav .nav-link.disabled{
+  color: inherit;
+}

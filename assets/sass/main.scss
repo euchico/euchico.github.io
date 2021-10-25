@@ -1,217 +1,18 @@
-// VÁRIAVEIS  ==============================
-// váriaveis: sass ===============
-$c-black: #212529;
-$c-white: #F8F9FA;
-
-$c-gray-1: #6C757D;
-$c-gray-2: #A9A9A9;
-
-// váriaveis: css ===============
-:root{
-  --txt-base: #{$c-black};
-  --txt-nv1: #{$c-gray-1};
-  --txt-nv2: #{$c-gray-2};
-
-  --bg-body: #{$c-white};
-
-  --txt-reverse: #{$c-white};
-  --bg-reverse: #{$c-black};
-}
-
-.dark-theme:root{
-  --txt-base: #{$c-white};
-  --txt-nv1: #{$c-gray-2};
-  --txt-nv2: #{$c-gray-1};
-
-  --bg-body: #{$c-black};
-
-  --txt-reverse: #{$c-black};
-  --bg-reverse: #{$c-white};
-}
+/*!
+ * euCHICO (https://euchico.github.io/)
+ * Copyleft 2021 - Francisco de Paula
+ * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
+ */
 
 
-// GERAL ==============================
-html, body{
-  font-family: 'Roboto', sans-serif;
-  font-size: 1em;
-
-  background-color: var(--bg-body);
-  transition: .5s;
-}
-
-section{ margin: 30px 0px; }
-
-a,a:link,a:visited,a:hover,a:active, a:focus{
-  font-weight: bold;
-  text-decoration: inherit;
-  color: inherit;
-}
-
-// .img-profile{
-//   width: 200px;
-//   height: auto;
-//   border-radius: 50%;
-// }
-
-
-// TEXTO ===============
-h1, h2, h3,
-h4, h5, h6{
-  margin: 0px;
-}
-
-.logo{
-  font-size: 1.5em;
-
-  span{
-    &:nth-child(1){
-      font-weight: 300;
-      color: var(--txt-nv1);
-    }
-
-    &:nth-child(2){
-      font-weight: bold;
-      color: var(--txt-base);
-    }
-  }
-}
-
-// h1{
-//   margin: 0px;
-//   font-size: inherit;
-// }
-
-// h2{
-//   margin: 0px;
-//   font-weight: bold;
-//   text-transform: uppercase;
-// }
-
-// h3{
-//   margin: 0px;
-//   font-weight: bold;
-//   text-transform: uppercase;
-//   font-size: $font-size4; 
-// }
-
-// .txt-featured{
-//   display: block;
-//   font-size: $font-size3;
-//   font-weight: 300;
-// }
-
-
-
-
-// HR ===============
-.hr{
-  &-standart{
-    width: 100%;
-    border: 1px solid;
-    color: var(--txt-nv1);
-  }
-  &-short{
-    width: 100px;
-    margin: 5px auto 10px;
-    border: 3px solid;
-    color: var(--txt-nv2);
-  }
-}
-// hr{ margin: 0px; }
-
-//   &-type3{
-//     width: 100%;
-//     border: 1px solid;
-//     margin: $spacing-2 auto;
-//   }
-// }
-
-
-// GERAL: NAVEGAÇÃO ===============
-.navbar{
-  .nav-item{
-    float: right;
-    font-size: 1em;
-
-    &.active{
-      color: var(--txt-nv1);
-      border-bottom: 2px solid var(--txt-nv1);
-    }
-
-    .nav-link{
-      text-align: center;
-      text-transform: uppercase;
-      font-weight: 400;
-      color: var(--txt-base);
-      transition: .3s;
-
-      &[data-nav="inicio"]{
-        font-weight: 100;
-      }
-      &[data-nav="blog"]{
-        font-weight: 600;
-      }
-      
-      &:link, &:visited, &:active, &:focus{
-        color: var(--txt-base);
-      }
-      &:hover{
-        color: var(--txt-nv1);
-      }
-    }
-  }
-
-  .navbar-toggler,
-  .navbar-toggler:focus{
-    border: none;
-    color: var(--txt-base);
-  }
-
-  .navbar-toggler{
-    .navbar-toggler-icon{
-      color: var(--txt-base);
-    }    
-  }
-
-  #theme-checkbox{
-    display: none;
-  }
-}
-
-.bg-navbar{
-  height: 250px;
-  background-color: var(--bg-reverse);
-
-  .navbar{
-    .logo{
-      span{
-        &:nth-child(1){
-          color: var(--txt-nv1);
-        }
-  
-        &:nth-child(2){
-          color: var(--txt-reverse);
-        }
-      }
-    }
-
-    .nav-item{
-      .nav-link{
-        color: var(--txt-reverse);
-        
-        &:link, &:visited, &:active, &:focus{
-          color: var(--txt-reverse);
-        } 
-      }
-    }
-  }
-}
-
-@media (max-width: (576px)-1){
-  .navbar .nav-item.active{
-    border-bottom: none;
-  }
-}
+// IMPORTS ===============
+@import "variables";
+@import "general";
+@import "navigation";
+@import "footer";
+@import "page-index";
+@import "page-sobre";
+@import "page-portfolio";
 
 
 // GERAL:PORTFÓLIO ===============
@@ -262,27 +63,6 @@ h4, h5, h6{
 // }
 
 
-// GERAL:RODAPÉ ===============
-footer{
-  padding: 30px 0;
-
-  .email{
-    font-size: 1em;
-    font-weight: normal;
-    letter-spacing: .05em;
-    color: var(--txt-nv2);
-  }
-
-  .social{
-    margin-top: 10px;
-
-    img{
-      width: 30px;
-      height: auto;
-      margin: 0 5px;
-    }
-  }
-}
 // footer{
 //   text-align: center;
 //   margin: $spacing-3 0;
@@ -309,53 +89,7 @@ footer{
 // }
 
 
-// HOME:CABEÇALHO ===============
-body#home{
-  header{
-    margin: 50px auto 30px auto;
-    
-    h2{
-      margin: 5px;
-      font-size: 2.25em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: var(--txt-base);
-    }
 
-    h3{
-      font-size: 1.5em;
-      font-weight: bold;
-      color: var(--txt-nv1);
-    }
-
-    p{
-      font-size: 1em;
-      font-weight: 300;
-      color: var(--txt-nv1);
-    }
-  }
-
-  .project{
-    &-title{
-      margin-bottom: 15px;
-      font-size: 1.5em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: var(--txt-base);
-    }
-    &-resume{
-      margin-bottom: 15px;
-      font-size: 1em;
-      color: var(--txt-nv1);
-    }
-    &-link{
-      margin-bottom: 15px;
-      font-size: 1em;
-      font-weight: bold;
-      color: var(--txt-base);
-    }
-  }
-}
 
    
   
@@ -418,50 +152,6 @@ body#home{
 // }
 
 
-// SOBRE:BIOGRAFIA ===============
-// #sec-biography{
-//   img{ margin-bottom: $spacing-4; }
-//   h3{ margin-bottom: $spacing-1; }
-//   hr{ margin: $spacing-1 auto $spacing-2 auto; }
-//   p{
-//     font-size: $font-size3;
-//     color: $c-nv2;
-//   }
-
-//   .title{
-//     font-size: $font-size4;
-//     font-weight: bold;
-//     display: block;
-//   }
-//   .post-date{ margin-bottom: $spacing-4; }
-// }
-
-
-// SOBRE:MATEMÁTICA ===============
-// #sec-math{
-//   padding: $spacing-3 0;
-//   font-weight: 300;
-//   background-color: $c-nv2;
-
-//   section{
-//     margin: 0px auto;
-//     font-weight: 300;
-
-//     h2,
-//     p{ color: $c-white; }
-//     img{ margin-top: $spacing-3; }
-
-//     .hr-type1{ color: $c-nv2; }
-//   }
-// }
-
-
-// SOBRE:ARTE ===============
-// #sec-art{
-//   .gallery{
-//     img{ margin-top: $spacing-3; }
-//   }
-// }
 
 
 // CURRÍCULO ===============

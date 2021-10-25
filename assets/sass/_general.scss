@@ -1,0 +1,143 @@
+/* GERAL ============================== */
+html, body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+
+  background-color: var(--bg-body);
+  transition: .5s;
+}
+
+section{ margin: 30px 0px; }
+
+a,a:link,a:visited,a:hover,a:active, a:focus{
+  font-weight: bold;
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* Geral: Texto =============== */
+h1, h2, h3,
+h4, h5, h6{
+  margin: 0px;
+}
+
+.logo{
+  font-size: 1.5em;
+
+  span{
+    &:nth-child(1){
+      font-weight: 300;
+      color: var(--txt-nv1);
+    }
+
+    &:nth-child(2){
+      font-weight: bold;
+      color: var(--txt-base);
+    }
+  }
+}
+
+// h1{
+//   margin: 0px;
+//   font-size: inherit;
+// }
+
+// h2{
+//   margin: 0px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+// }
+
+// h3{
+//   margin: 0px;
+//   font-weight: bold;
+//   text-transform: uppercase;
+//   font-size: $font-size4; 
+// }
+
+// .txt-featured{
+//   display: block;
+//   font-size: $font-size3;
+//   font-weight: 300;
+// }
+
+
+/* Geral: HR =============== */
+.hr{
+  &-standart{
+    width: 100%;
+    border: 1px solid;
+    color: var(--txt-nv1);
+  }
+  &-short{
+    width: 100px;
+    margin: 5px auto 10px;
+    border: 3px solid;
+    color: var(--txt-nv2);
+  }
+}
+// hr{ margin: 0px; }
+
+//   &-type3{
+//     width: 100%;
+//     border: 1px solid;
+//     margin: $spacing-2 auto;
+//   }
+// }
+
+
+/* Geral: Imagem =============== */
+.img-profile{
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+/* Conteúdo: Box =============== */
+.project{
+  &-title{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--txt-base);
+  }
+  &-abstract{
+    margin-bottom: 15px;
+    font-size: 1.15em;
+    color: var(--txt-nv1);
+  }
+  &-link{
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--txt-base);
+    &::after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      content: "";
+    }
+  }
+}
+
+.webdev{
+  text-align: center;
+
+  &-icon{ color: var(--txt-base); }
+
+  &-title{
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--txt-base);
+  }
+
+  &-abstract{
+    font-size: 1.15em;
+    color: var(--txt-nv1);
+  }
+}
