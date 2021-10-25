@@ -5,7 +5,7 @@
 </p>
 
 <p  align="center" width="550px">
-  Buscando oportunidades e compartilhando conhecimento através de Estudos e Projetos Pessoais.
+  Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.
 </p>
 
 <p  align="center">
@@ -17,7 +17,7 @@
 
 
 # Francisco de Paula - euCHICO
-Sou um grande admirador da Programação e Desenvolvimento Web. Curso Licenciatura em Matemática no IFRJ, cursei Ciência da Computação na UERJ _(não concluído)_ e, além disso, realizo muitos estudos independentes. Sempre tive interesse em matemática, lógica, codificação e ampliei a minha visão através do contato com outros campos, como Design e Arte, realizando a união para o meu desenvolvimento pessoal e profissional.
+Sou Francisco de Paula, moro no Rio de Janeiro, mais especificamente na Baixada e tenho 31 anos. Cursei Ciência da Computação, hoje faço Licenciatura em Matemática e sou Arte Amador, isso mostra que minha trajetória não é nada linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…” (Saint-Exupéry).
 
 
 ## Conteúdos
@@ -72,11 +72,12 @@ Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre par
 
 ## Contato
 
-* **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
-* **Site:** [euchico.github.io](https://euchico.github.io/)
 * **GitHub:** [euchico](https://github.com/euchico/)
 * **LinkedIn:** [in/euchico](https://www.linkedin.com/in/euchico/)
-* **Instagram:** [@eu.chico](https://www.instagram.com/euchicodev/)
+* **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
+* **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev/)
+* **Site:** [euchico.github.io](https://euchico.github.io/)
+* **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
 
 
 ## Licença
