@@ -1,0 +1,66 @@
+/* PÁGINA: PORTFÓLIO ============================== */
+body#portolio{
+  
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--cor-invertido-texto);
+  }
+
+  main{
+    h2{
+      margin: 15px 0px;
+      font-size: 1.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-base-texto);
+    }
+  }
+
+  .portfolio-box{
+    .portfolio-thumbnail{
+      height: 250px;
+      width: 200px;
+      
+      img{
+        display: block;
+        object-fit: cover;
+      }
+    }
+
+    .portfolio{
+      &-category{
+        font-weight: bold;
+
+        &.frontend{
+          color: $cat-front;
+        }
+      }
+
+      &-title{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--cor-base-texto);
+      }
+
+      &-abstract{
+        color: var(--cor-nivel-1-texto);
+      }
+
+      &-link{
+        color: var(--cor-base-texto);
+
+        &::after{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+          content: "";
+        }
+      }
+    }
+  }
+}

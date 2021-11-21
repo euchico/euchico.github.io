@@ -1,0 +1,65 @@
+/* PÁGINA: SOBRE =============== */
+body#about{
+
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--cor-invertido-texto);
+  }
+  
+  // Sobre: Biografia ==========
+  #sec-biography{
+    h2{
+      margin: 15px 0px;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-base-texto);
+    }
+
+    p.abstract{
+      font-size: 1.15em;
+      color: var(--cor-base-texto);
+    }
+
+    section{
+      .project{
+        &-link{
+          color: var(--cor-base-texto);
+        }
+      }
+    }
+  }
+
+
+  // Sobre: Matemática ==========
+  .bg-math{ background-color: var(--cor-invertido-fundo); }
+
+  #sec-math{
+    h3{
+      margin: 15px 0px;
+      font-size: 1.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-invertido-texto);
+    }
+
+    .hr-short{ color: var(--cor-nivel-2-texto); }
+
+    .sec-math-abstract{
+      font-size: 1.15em;
+      color: var(--cor-nivel-2-texto);
+    }
+  }
+
+  // Sobre: Arte ==========
+  #sec-art{
+    h3{
+      margin: 15px 0px;
+      font-size: 1.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-base-texto);
+    }
+  }
+}

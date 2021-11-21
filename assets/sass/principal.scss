@@ -5,16 +5,25 @@
  */
 
 
-// IMPORTS ===============
-@import "variables";
-@import "general";
-@import "navigation";
-@import "footer";
-@import "page-index";
-@import "page-sobre";
-@import "page-portfolio";
+// IMPORTAÇÕES ===============
+// Configurações Gerais ==========
+@import "variaveis";
+@import "geral";
+
+// Componentes ==========
+@import "componentes";
+
+// Seções ==========
+@import "navegacao";
+@import "rodape";
+
+// Páginas ==========
+@import "pagina-index";
+@import "pagina-sobre";
+@import "pagina-portfolio";
 
 
+// APAGAR ==============================
 // GERAL:PORTFÓLIO ===============
 // .job{
 //   position: relative;
@@ -63,19 +72,6 @@
 // }
 
 
-// footer{
-//   text-align: center;
-//   margin: $spacing-3 0;
-
-//   .logo-part1{ color: $c-nv2; }
-//   .logo-part2{ color: $c-black; }
-  
-//   .email{
-//     font-size: $font-size3;
-//     color: $c-nv2;
-//   }
-// }
-
 
 // GERAL:SOCIAL ===============
 // .social{
@@ -89,10 +85,6 @@
 // }
 
 
-
-
-   
-  
   //     color: $c-black;
   //   }
   //   h3{ 
@@ -141,18 +133,6 @@
 //     hr{ margin: $spacing-1 auto !important; }
 //   }
 // }
-
-
-// SOBRE ===============
-// #about{
-//   h2{
-//     font-size: $font-size4;
-//     color: $c-black;
-//   }
-// }
-
-
-
 
 // CURRÍCULO ===============
 // #resume{

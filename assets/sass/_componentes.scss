@@ -1,0 +1,59 @@
+/* COMPONENTES =============== */
+// Conteúdo: Projetos ==========
+.project{
+  &-title{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-base-texto);
+  }
+  &-abstract{
+    margin-bottom: 15px;
+    font-size: 1.15em;
+    color: var(--cor-nivel-1-texto);
+  }
+  &-link{
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--cor-base-texto);
+    
+    span{ margin-right: 5px; }
+
+    &::after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      content: "";
+    }
+  }
+}
+
+
+// Conteúdo: WebDev ==========
+.webdev{
+  text-align: center;
+
+  &-icon{ color: var(--cor-base-texto); }
+  &-title{
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--cor-base-texto);
+  }
+  &-abstract{
+    font-size: 1.15em;
+    color: var(--cor-nivel-1-texto);
+  }
+
+  .btn{
+    padding: 5px 15px;
+    color: var(--cor-invertido-texto);
+    background-color: var(--cor-invertido-fundo);
+  }
+}

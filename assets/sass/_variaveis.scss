@@ -1,0 +1,34 @@
+/* VÁRIAVEIS  =============== */
+// Váriaveis: SASS ==========
+// Cores =====
+$cor-preto: #212529;
+$cor-branco: #F8F9FA;
+
+$cor-cinza-escuro: #6C757D;
+$cor-cinza-claro: #A9A9A9;
+
+$cat-front: #4E9F3D;
+
+
+// Váriaveis: CSS ==========
+// Tema Principal =====
+:root{
+  --cor-base-texto: #{$cor-preto};
+  --cor-nivel-1-texto: #{$cor-cinza-escuro};
+  --cor-nivel-2-texto: #{$cor-cinza-claro};
+  --cor-fundo: #{$cor-branco};
+
+  --cor-invertido-texto: #{$cor-branco};
+  --cor-invertido-fundo: #{$cor-preto};
+}
+
+// Tema Escuro =====
+.dark-theme:root{
+  --cor-base-texto: #{$cor-branco};
+  --cor-nivel-1-texto: #{$cor-cinza-claro};
+  --cor-nivel-2-texto: #{$cor-cinza-escuro};
+  --cor-fundo: #{$cor-preto};
+
+  --cor-invertido-texto: #{$cor-preto};
+  --cor-invertido-fundo: #{$cor-branco};
+}
