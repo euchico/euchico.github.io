@@ -65,12 +65,12 @@ h4, h5, h6{
 
 // HRs ==========
 .hr{
-  &-standart{
+  &-padrao{
     width: 100%;
     border: 1px solid;
     color: var(--cor-nivel-1-texto);
   }
-  &-short{
+  &-curto{
     width: 100px;
     margin: 5px auto 10px;
     border: 3px solid;
@@ -88,7 +88,7 @@ h4, h5, h6{
 
 
 // Imagens ==========
-.img-profile{
+.img-perfil{
   width: 200px;
   height: auto;
   border-radius: 50%;

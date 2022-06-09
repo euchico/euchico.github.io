@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * euCHICO (https://euchico.github.io/)
- * Copyleft 2021 - Francisco de Paula
+ * Copyleft 2022 - Francisco de Paula
  * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
  */
 /* VÁRIAVEIS  =============== */
@@ -50,49 +50,51 @@ h4, h5, h6 {
     font-weight: bold;
     color: var(--cor-base-texto); }
 
-.hr-standart {
+.hr-padrao {
   width: 100%;
   border: 1px solid;
   color: var(--cor-nivel-1-texto); }
-.hr-short {
+.hr-curto {
   width: 100px;
   margin: 5px auto 10px;
   border: 3px solid;
   color: var(--cor-nivel-2-texto); }
 
-.img-profile {
+.img-perfil {
   width: 200px;
   height: auto;
   border-radius: 50%; }
 
 /* COMPONENTES =============== */
-.project-title {
+.projeto-titulo {
   margin-bottom: 15px;
   font-size: 1.5em;
   font-weight: bold;
-  text-transform: uppercase;
   color: var(--cor-base-texto); }
-.project-abstract {
+.projeto-resumo {
   margin-bottom: 15px;
   font-size: 1.15em;
   color: var(--cor-nivel-1-texto); }
-.project-link {
+.projeto-link {
   margin-bottom: 15px;
   display: inline-flex;
   align-items: center;
   font-size: 1em;
-  font-weight: bold;
-  color: var(--cor-base-texto); }
-  .project-link span {
-    margin-right: 5px; }
-  .project-link::after {
+  font-weight: bold; }
+  .projeto-link span {
+    margin-right: 5px;
+    color: var(--cor-base-texto); }
+  .projeto-link .fa-angle-right {
+    color: var(--cor-base-texto); }
+  .projeto-link::after {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 1;
-    content: ""; }
+    content: "";
+    color: var(--cor-base-texto); }
 
 .webdev {
   text-align: center; }
@@ -101,22 +103,25 @@ h4, h5, h6 {
   .webdev-title {
     margin: 15px 0;
     font-weight: bold;
-    color: var(--cor-base-texto); }
+    color: var(--cor-nivel-1-texto); }
   .webdev-abstract {
     font-size: 1.15em;
     color: var(--cor-nivel-1-texto); }
   .webdev .btn {
     padding: 5px 15px;
+    border: none;
     color: var(--cor-invertido-texto);
     background-color: var(--cor-invertido-fundo); }
+    .webdev .btn:hover {
+      background-color: var(--cor-nivel-1-texto); }
 
 /* NAVEGAÇÃO =============== */
 .navbar .nav-item {
   float: right;
-  font-size: 1em; }
+  font-size: 1.2em; }
   .navbar .nav-item .nav-link {
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 400;
     color: var(--cor-base-texto);
     transition: .3s; }

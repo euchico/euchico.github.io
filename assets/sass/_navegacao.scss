@@ -2,11 +2,11 @@
 .navbar{
   .nav-item{
     float: right;
-    font-size: 1em;
+    font-size: 1.2em;
 
     .nav-link{
       text-align: center;
-      text-transform: uppercase;
+      text-transform: lowercase;
       font-weight: 400;
       color: var(--cor-base-texto);
       transition: .3s;

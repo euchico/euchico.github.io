@@ -1,14 +1,13 @@
 /* COMPONENTES =============== */
 // Conteúdo: Projetos ==========
-.project{
-  &-title{
+.projeto{
+  &-titulo{
     margin-bottom: 15px;
     font-size: 1.5em;
     font-weight: bold;
-    text-transform: uppercase;
     color: var(--cor-base-texto);
   }
-  &-abstract{
+  &-resumo{
     margin-bottom: 15px;
     font-size: 1.15em;
     color: var(--cor-nivel-1-texto);
@@ -19,9 +18,9 @@
     align-items: center;
     font-size: 1em;
     font-weight: bold;
-    color: var(--cor-base-texto);
-    
-    span{ margin-right: 5px; }
+
+    span{ margin-right: 5px; color: var(--cor-base-texto); }
+    .fa-angle-right{ color: var(--cor-base-texto); }
 
     &::after{
       position: absolute;
@@ -31,6 +30,7 @@
       left: 0;
       z-index: 1;
       content: "";
+      color: var(--cor-base-texto);
     }
   }
 }
@@ -44,7 +44,7 @@
   &-title{
     margin: 15px 0;
     font-weight: bold;
-    color: var(--cor-base-texto);
+    color: var(--cor-nivel-1-texto);
   }
   &-abstract{
     font-size: 1.15em;
@@ -53,7 +53,12 @@
 
   .btn{
     padding: 5px 15px;
+    border: none;
     color: var(--cor-invertido-texto);
     background-color: var(--cor-invertido-fundo);
+    
+    &:hover{
+      background-color: var(--cor-nivel-1-texto);
+    }
   }
 }
