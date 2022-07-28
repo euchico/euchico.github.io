@@ -5,7 +5,7 @@
 </p>
 
 <p  align="center" width="550px">
-  Compartilhando conhecimento e buscando oportunidades através de estudos e projetos pessoais.
+Compartilhando minha trajetória profissional, projetos pessoais e estudos de desenvolvimento.
 </p>
 
 <p  align="center">
