@@ -15,7 +15,7 @@
 	<img  alt="GitHub Licença"  src="https://img.shields.io/github/license/euchico/euchico.github.io?style=for-the-badge">
 </p>
 
-
+<!--
 # Francisco de Paula - euCHICO
 Sou Francisco de Paula, moro no Rio de Janeiro, mais especificamente na Baixada e tenho 31 anos. Cursei Ciência da Computação, hoje faço Licenciatura em Matemática e sou Arte Amador, isso mostra que minha trajetória não é nada linear, por isso minha frase preferida é “Quando a gente anda sempre em frente, não pode ir muito longe…” (Saint-Exupéry).
 
@@ -28,7 +28,7 @@ Sou Francisco de Paula, moro no Rio de Janeiro, mais especificamente na Baixada 
 	* _Arquivo em .PDF ([Link](https://euchico.github.io/file/franciscodepaula-curriculo.pdf))._
 
 
-<!--
+
 * [Contribuição](###contribuicao)
 * [Licença](##licenca)
 -->
@@ -67,7 +67,7 @@ Todo o conteúdo está sobre licença livre e está disponível para download e 
 ### Contribuição
 
 Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre para ler, baixar, modificar... Enfim, utilizar da forma que preferir. Qualquer dúvida entre em contato através das redes sociais.
--->
+
 
 
 ## Contato
@@ -78,8 +78,8 @@ Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre par
 * **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev/)
 * **Site:** [euchico.github.io](https://euchico.github.io/)
 * **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
-
+-->
 
 ## Licença
 
-MIT © [Matemática da Sorte](https://github.com/sortematematica)
+MIT © [euChico](https://euchico.github.io)
