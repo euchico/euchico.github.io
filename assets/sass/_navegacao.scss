@@ -1,0 +1,69 @@
+/* NAVEGAÇÃO =============== */
+.navbar{
+  .nav-item{
+    float: right;
+    font-size: 1.2em;
+
+    .nav-link{
+      text-align: center;
+      text-transform: lowercase;
+      font-weight: 400;
+      color: var(--cor-base-texto);
+      transition: .3s;
+
+      &[data-nav="inicio"]{ font-weight: 100; }
+      &[data-nav="blog"]{ font-weight: 600; }
+      
+      &:link, &:visited, &:active, &:focus{ color: var(--cor-base-texto); }
+      &:hover{ color: var(--cor-nivel-1-texto) !important; }
+    }
+
+    &.active{
+      color: var(--cor-nivel-1-texto);
+      border-bottom: 2px solid var(--cor-nivel-1-texto);
+    }
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--cor-base-texto);
+  }
+
+  .navbar-toggler{
+    .navbar-toggler-icon{ color: var(--cor-base-texto); }    
+  }
+
+  #tema-checkbox{ display: none; }
+}
+
+.bg-navbar{
+  height: 250px;
+  background-color: var(--cor-invertido-fundo);
+
+  .navbar{
+    .logo{
+      span{
+        &:nth-child(1){ color: var(--cor-nivel-1-texto); }
+        &:nth-child(2){ color: var(--cor-invertido-texto); }
+      }
+    }
+
+    .nav-item{
+      .nav-link{
+        color: var(--cor-invertido-texto);
+        
+        &:link, &:visited, &:active, &:focus{ color: var(--cor-invertido-texto); } 
+      }
+    }
+  }
+}
+  
+
+// Media Query
+@media (max-width: (576px-1)){
+  .navbar .nav-item.active{ border-bottom: none; }
+}
+
+// Sobrescrever Bootstrap
+.navbar-light .navbar-nav .nav-link.disabled{ color: inherit; }

@@ -1,0 +1,20 @@
+/*!
+ * euCHICO (https://euchico.github.io/)
+ * Copyleft 2022 - Francisco de Paula
+ * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
+ */
+
+// IMPORTAÇÕES ===============
+// Configurações Gerais ==========
+@import "variaveis";
+@import "geral";
+
+// Componentes ==========
+@import "componentes";
+
+// Seções ==========
+@import "navegacao";
+@import "rodape";
+
+// Páginas ==========
+@import "pagina-inicio";
