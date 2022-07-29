@@ -6,6 +6,7 @@
  */
 /* VÁRIAVEIS  =============== */
 :root {
+  --cor-principal: red;
   --cor-base-texto: #212529;
   --cor-nivel-1-texto: #6C757D;
   --cor-nivel-2-texto: #A9A9A9;
@@ -40,15 +41,6 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 h1, h2, h3,
 h4, h5, h6 {
   margin: 0px; }
-
-.logo {
-  font-size: 1.5em; }
-  .logo span:nth-child(1) {
-    font-weight: 300;
-    color: var(--cor-nivel-1-texto); }
-  .logo span:nth-child(2) {
-    font-weight: bold;
-    color: var(--cor-base-texto); }
 
 .hr-padrao {
   width: 100%;
@@ -142,6 +134,14 @@ h4, h5, h6 {
   color: var(--cor-base-texto); }
 .navbar .navbar-toggler .navbar-toggler-icon {
   color: var(--cor-base-texto); }
+.navbar .logo {
+  font-size: 1.5em; }
+  .navbar .logo span:nth-child(1) {
+    font-weight: 300;
+    color: var(--cor-principal); }
+  .navbar .logo span:nth-child(2) {
+    font-weight: bold;
+    color: var(--cor-principal); }
 .navbar #tema-checkbox {
   display: none; }
 

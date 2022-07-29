@@ -34,6 +34,22 @@
     .navbar-toggler-icon{ color: var(--cor-base-texto); }    
   }
 
+  .logo{
+    font-size: 1.5em;
+  
+    span{
+      &:nth-child(1){
+        font-weight: 300;
+        color: var(--cor-principal);
+      }
+  
+      &:nth-child(2){
+        font-weight: bold;
+        color: var(--cor-principal);
+      }
+    }
+  }
+
   #tema-checkbox{ display: none; }
 }
 

@@ -22,21 +22,7 @@ h4, h5, h6{
   margin: 0px;
 }
 
-.logo{
-  font-size: 1.5em;
 
-  span{
-    &:nth-child(1){
-      font-weight: 300;
-      color: var(--cor-nivel-1-texto);
-    }
-
-    &:nth-child(2){
-      font-weight: bold;
-      color: var(--cor-base-texto);
-    }
-  }
-}
 
 // HRs ==========
 .hr{
