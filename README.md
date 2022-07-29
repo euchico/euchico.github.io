@@ -1,6 +1,6 @@
 <p  align="center">
 	<a  href="https://euchico.github.io/">
-		<img src="https://raw.githubusercontent.com/euchico/euchico.github.io/master/assets/img/logo-euchico.png"  height="auto"  width="300" alt="Francisco de Paula - euCHICO" />
+		<img src="https://raw.githubusercontent.com/euchico/euchico.github.io/master/assets/img/logo-euchico.png"  height="auto"  width="300" alt="Francisco de Paula - euChico" />
 	</a>
 </p>
 
@@ -67,19 +67,16 @@ Todo o conteúdo está sobre licença livre e está disponível para download e 
 ### Contribuição
 
 Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre para ler, baixar, modificar... Enfim, utilizar da forma que preferir. Qualquer dúvida entre em contato através das redes sociais.
-
-
-
-## Contato
-
-* **GitHub:** [euchico](https://github.com/euchico/)
-* **LinkedIn:** [in/euchico](https://www.linkedin.com/in/euchico/)
-* **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
-* **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev/)
-* **Site:** [euchico.github.io](https://euchico.github.io/)
-* **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
 -->
 
-## Licença
+## Redes
+* **LinkedIn:** [in/euchico](https://www.linkedin.com/in/euchico)
+* **GitHub:** [euchico](https://github.com/euchico)
+* **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
+* **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
 
-MIT © [euChico](https://euchico.github.io)
+## Contato
+* **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
+
+## Licença
+MIT (c) [euChico](https://euchico.github.io)

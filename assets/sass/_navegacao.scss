@@ -40,12 +40,12 @@
     span{
       &:nth-child(1){
         font-weight: 300;
-        color: var(--cor-principal);
+        color: var(--cor-nivel-1-texto);
       }
   
       &:nth-child(2){
         font-weight: bold;
-        color: var(--cor-principal);
+        color: var(--cor-base-texto);
       }
     }
   }

@@ -6,7 +6,6 @@
  */
 /* VÁRIAVEIS  =============== */
 :root {
-  --cor-principal: red;
   --cor-base-texto: #212529;
   --cor-nivel-1-texto: #6C757D;
   --cor-nivel-2-texto: #A9A9A9;
@@ -138,10 +137,10 @@ h4, h5, h6 {
   font-size: 1.5em; }
   .navbar .logo span:nth-child(1) {
     font-weight: 300;
-    color: var(--cor-principal); }
+    color: var(--cor-nivel-1-texto); }
   .navbar .logo span:nth-child(2) {
     font-weight: bold;
-    color: var(--cor-principal); }
+    color: var(--cor-base-texto); }
 .navbar #tema-checkbox {
   display: none; }
 
