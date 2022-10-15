@@ -71,7 +71,6 @@ Obrigado por estar interessado em tornar este projeto melhor. Sinta-se livre par
 
 ## Redes
 * **LinkedIn:** [in/euchico](https://www.linkedin.com/in/euchico)
-* **GitHub:** [euchico](https://github.com/euchico)
 * **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
 * **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
 
