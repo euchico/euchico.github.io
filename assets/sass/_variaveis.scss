@@ -1,0 +1,47 @@
+// FUNÇÕES ======================================
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+/* VÁRIAVEIS  =================================== */
+// Váriaveis: SASS ==============================
+// Cores ========================================
+$cor-preto: #212529;
+$cor-cinza-escuro: #6C757D;
+$cor-cinza-claro: #A9A9A9;
+$cor-branco: #F8F9FA;
+
+$cor-destaque-claro: #C21010;
+$cor-destaque-escuro: #A0DC41;
+
+//$cat-1: #4E9F3D;
+
+
+// Váriaveis: CSS ===============================
+// Tema Principal ===============================
+:root{
+  --cor-base-texto: #{$cor-preto};
+  --cor-media-texto: #{$cor-cinza-escuro};
+  --cor-fundo: #{$cor-branco};
+
+  --cor-invertido-texto: #{$cor-branco};
+  --cor-invertido-fundo: #{$cor-preto};
+
+  --cor-destaque: #{$cor-destaque-claro};
+  --cor-destaque-rgb: #{hexToRGB($cor-destaque-claro)};
+  --cor-destaque-invertido: #{$cor-destaque-escuro};
+}
+
+// Tema Escuro ==================================
+.tema-escuro:root{
+  --cor-base-texto: #{$cor-branco};
+  --cor-media-texto: #{$cor-cinza-claro};
+  --cor-fundo: #{$cor-preto};
+
+  --cor-invertido-texto: #{$cor-preto};
+  --cor-invertido-fundo: #{$cor-branco};
+
+  --cor-destaque: #{$cor-destaque-escuro};
+  --cor-destaque-rgb: #{hexToRGB($cor-destaque-escuro)};
+  --cor-destaque-invertido: #{$cor-destaque-claro};
+}

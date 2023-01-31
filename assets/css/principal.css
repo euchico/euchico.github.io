@@ -1,7 +1,125 @@
+@charset "UTF-8";
 /*!
  * euCHICO (https://euchico.github.io/)
  * Copyleft 2023 - Francisco de Paula
  * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
  */
+/* VÁRIAVEIS  =================================== */
+:root {
+  --cor-base-texto: #212529;
+  --cor-media-texto: #6C757D;
+  --cor-fundo: #F8F9FA;
+  --cor-invertido-texto: #F8F9FA;
+  --cor-invertido-fundo: #212529;
+  --cor-destaque: #C21010;
+  --cor-destaque-rgb: 194, 16, 16;
+  --cor-destaque-invertido: #A0DC41; }
+
+.tema-escuro:root {
+  --cor-base-texto: #F8F9FA;
+  --cor-media-texto: #A9A9A9;
+  --cor-fundo: #212529;
+  --cor-invertido-texto: #212529;
+  --cor-invertido-fundo: #F8F9FA;
+  --cor-destaque: #A0DC41;
+  --cor-destaque-rgb: 160, 220, 65;
+  --cor-destaque-invertido: #C21010; }
+
+/* GERAL ======================================== */
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  background-color: var(--cor-fundo);
+  transition: .5s; }
+
+/* COMPONENTES ================================== */
+/* NAVEGAÇÃO ==================================== */
+/* NAVEGAÇÃO =============== */
+.navbar .nav-item {
+  float: right;
+  font-size: 1.2em; }
+  .navbar .nav-item .nav-link {
+    padding: 0;
+    margin: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: lowercase;
+    font-weight: 400;
+    color: var(--cor-base-texto);
+    transition: .3s;
+    cursor: pointer; }
+    .navbar .nav-item .nav-link[data-nav="inicio"] {
+      font-weight: 200; }
+    .navbar .nav-item .nav-link[data-nav="blog"] {
+      font-weight: 600; }
+    .navbar .nav-item .nav-link:link, .navbar .nav-item .nav-link:visited, .navbar .nav-item .nav-link:active, .navbar .nav-item .nav-link:focus {
+      color: var(--cor-base-texto); }
+    .navbar .nav-item .nav-link .decoracao {
+      background: var(--cor-destaque);
+      --mask:
+        radial-gradient(7.21px at 50% calc(100% + 2.75px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 4px + .5px)/20px 8px repeat-x,
+        radial-gradient(7.21px at 50% -2.75px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 4px)/20px 8px repeat-x;
+      -webkit-mask: var(--mask);
+      mask: var(--mask); }
+      .navbar .nav-item .nav-link .decoracao.decoracao-animada {
+        opacity: 0.5;
+        background: linear-gradient(to right, var(--cor-destaque) 50%, transparent 0);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.3s linear; }
+    .navbar .nav-item .nav-link div.decoracao {
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      position: absolute; }
+      .navbar .nav-item .nav-link div.decoracao:hover {
+        background-position: left bottom; }
+  .navbar .nav-item.active {
+    color: var(--cor-media-texto); }
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:focus {
+  border: none;
+  color: var(--cor-base-texto); }
+.navbar .navbar-toggler .navbar-toggler-icon {
+  color: var(--cor-base-texto); }
+.navbar .logo {
+  font-size: 1.5em; }
+  .navbar .logo span:nth-child(1) {
+    font-weight: 300;
+    color: var(--cor-media-texto); }
+  .navbar .logo span:nth-child(2) {
+    font-weight: bold;
+    color: var(--cor-base-texto); }
+.navbar #tema-checkbox {
+  display: none; }
+
+.fundo-navegacao {
+  height: 250px;
+  background-color: var(--cor-invertido-fundo); }
+  .fundo-navegacao .navbar .logo span:nth-child(1) {
+    color: var(--cor-media-texto); }
+  .fundo-navegacao .navbar .logo span:nth-child(2) {
+    color: var(--cor-invertido-texto); }
+  .fundo-navegacao .navbar .nav-item .nav-link {
+    color: var(--cor-invertido-texto); }
+    .fundo-navegacao .navbar .nav-item .nav-link:link, .fundo-navegacao .navbar .nav-item .nav-link:visited, .fundo-navegacao .navbar .nav-item .nav-link:active, .fundo-navegacao .navbar .nav-item .nav-link:focus {
+      color: var(--cor-invertido-texto); }
+    .fundo-navegacao .navbar .nav-item .nav-link .decoracao {
+      background: var(--cor-destaque-invertido); }
+      .fundo-navegacao .navbar .nav-item .nav-link .decoracao.decoracao-animada {
+        opacity: 0.5;
+        background: linear-gradient(to right, var(--cor-destaque-invertido) 50%, transparent 0);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.3s linear; }
+    .fundo-navegacao .navbar .nav-item .nav-link div.decoracao:hover {
+      background-position: left bottom; }
+
+@media (max-width: 575px) {
+  .navbar .nav-item.active {
+    border-bottom: none; } }
+.navbar-light .navbar-nav .nav-link.disabled {
+  color: inherit; }
 
 /*# sourceMappingURL=principal.css.map */

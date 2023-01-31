@@ -4,4 +4,16 @@
  * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
  */
 
- 
+// IMPORTAÇÕES ==================================
+// Configurações Gerais =========================
+@import "variaveis";
+@import "geral";
+
+// Componentes ==================================
+@import "componentes";
+
+// Seções =======================================
+@import "navegacao";
+
+// Páginas ======================================
+@import "pagina-inicio";
