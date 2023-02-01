@@ -12,7 +12,6 @@
   --cor-invertido-texto: #F8F9FA;
   --cor-invertido-fundo: #212529;
   --cor-destaque: #C21010;
-  --cor-destaque-rgb: 194, 16, 16;
   --cor-destaque-invertido: #A0DC41; }
 
 .tema-escuro:root {
@@ -22,7 +21,6 @@
   --cor-invertido-texto: #212529;
   --cor-invertido-fundo: #F8F9FA;
   --cor-destaque: #A0DC41;
-  --cor-destaque-rgb: 160, 220, 65;
   --cor-destaque-invertido: #C21010; }
 
 /* GERAL ======================================== */
@@ -31,6 +29,24 @@ html, body {
   font-size: 1em;
   background-color: var(--cor-fundo);
   transition: .5s; }
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+  font-weight: bold;
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer; }
+
+.hr-padrao {
+  width: 100%;
+  border: 1px solid;
+  color: var(--cor-destaque);
+  opacity: .25; }
+.hr-curto {
+  width: 100px;
+  margin: 5px auto 10px;
+  border: 3px solid;
+  color: var(--cor-destaque);
+  opacity: .5; }
 
 /* COMPONENTES ================================== */
 /* NAVEGAÇÃO ==================================== */
@@ -121,5 +137,51 @@ html, body {
     border-bottom: none; } }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: inherit; }
+
+/* RODAPÉ =============== */
+footer {
+  padding: 30px 0; }
+  footer .logo {
+    font-size: 1.5em; }
+    footer .logo span:nth-child(1) {
+      font-weight: 300;
+      color: var(--cor-media-texto); }
+    footer .logo span:nth-child(2) {
+      font-weight: bold;
+      color: var(--cor-base-texto); }
+  footer .email {
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: .05em;
+    color: var(--cor-base-texto); }
+  footer .social {
+    margin-top: 10px; }
+    footer .social img {
+      width: 30px;
+      height: auto;
+      margin: 0 5px; }
+
+/* PÁGINA: Início =============== */
+body#pagina-inicio header {
+  margin: 50px auto 30px auto; }
+  body#pagina-inicio header h2 {
+    margin: 5px;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-destaque); }
+  body#pagina-inicio header h3 {
+    font-size: 1.75em;
+    font-weight: bold;
+    color: var(--cor-base-texto); }
+  body#pagina-inicio header p {
+    font-size: 1.25em;
+    font-weight: 300;
+    color: var(--cor-base-texto); }
+body#pagina-inicio section .project-link {
+  color: var(--cor-base-texto); }
+body#pagina-inicio section .webdev-title {
+  font-size: 1.75em; }
 
 /*# sourceMappingURL=principal.css.map */

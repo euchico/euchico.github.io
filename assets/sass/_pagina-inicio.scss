@@ -1,0 +1,43 @@
+/* PÁGINA: Início =============== */
+body#pagina-inicio{
+
+  // Index: Header ==========
+  header{
+    margin: 50px auto 30px auto;
+    
+    h2{
+      margin: 5px;
+      font-family: 'Covered By Your Grace', cursive;
+      font-size: 4em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-destaque);
+    }
+
+    h3{
+      font-size: 1.75em;
+      font-weight: bold;
+      color: var(--cor-base-texto);
+    }
+
+    p{
+      font-size: 1.25em;
+      font-weight: 300;
+      color: var(--cor-base-texto);
+    }
+  }
+
+  // Index: Projetos ==========
+  section{
+    .project{
+      &-link{ color: var(--cor-base-texto); }
+    }
+  }
+
+  // Index: WebDev ==========
+  section{
+    .webdev{
+      &-title{ font-size: 1.75em; }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+/* RODAPÉ =============== */
+footer{
+  padding: 30px 0;
+
+  .logo{
+    font-size: 1.5em;
+  
+    span{
+      &:nth-child(1){
+        font-weight: 300;
+        color: var(--cor-media-texto);
+      }
+  
+      &:nth-child(2){
+        font-weight: bold;
+        color: var(--cor-base-texto);
+      }
+    }
+  }
+
+  .email{
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: .05em;
+    color: var(--cor-base-texto);
+  }
+
+  .social{
+    margin-top: 10px;
+
+    img{
+      width: 30px;
+      height: auto;
+      margin: 0 5px;
+    }
+  }
+}

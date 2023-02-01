@@ -28,7 +28,7 @@ $cor-destaque-escuro: #A0DC41;
   --cor-invertido-fundo: #{$cor-preto};
 
   --cor-destaque: #{$cor-destaque-claro};
-  --cor-destaque-rgb: #{hexToRGB($cor-destaque-claro)};
+  //--cor-destaque-rgb: #{hexToRGB($cor-destaque-claro)};
   --cor-destaque-invertido: #{$cor-destaque-escuro};
 }
 
@@ -42,6 +42,6 @@ $cor-destaque-escuro: #A0DC41;
   --cor-invertido-fundo: #{$cor-branco};
 
   --cor-destaque: #{$cor-destaque-escuro};
-  --cor-destaque-rgb: #{hexToRGB($cor-destaque-escuro)};
+  //--cor-destaque-rgb: #{hexToRGB($cor-destaque-escuro)};
   --cor-destaque-invertido: #{$cor-destaque-claro};
 }
