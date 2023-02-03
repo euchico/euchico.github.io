@@ -1,1 +1,36 @@
 /* COMPONENTES ================================== */
+// CONTEÚDO: Projetos ===========================
+.projeto{
+  &-titulo{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--cor-base-texto);
+  }
+  &-resumo{
+    margin-bottom: 15px;
+    font-size: 1.15em;
+    color: var(--cor-media-texto);
+  }
+  &-link{
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+
+    span{ margin-right: 5px; color: var(--cor-destaque); }
+    .fa-angle-right{ color: var(--cor-destaque); }
+
+    &:after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      content: "";
+      color: var(--cor-base-texto);
+    }
+  }
+}

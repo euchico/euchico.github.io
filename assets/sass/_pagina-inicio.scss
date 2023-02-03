@@ -1,7 +1,7 @@
-/* PÁGINA: Início =============== */
+/* PÁGINA: Início =============================== */
 body#pagina-inicio{
 
-  // Index: Header ==========
+  // Início: Cabeçalho ==========================
   header{
     margin: 50px auto 30px auto;
     
@@ -27,14 +27,14 @@ body#pagina-inicio{
     }
   }
 
-  // Index: Projetos ==========
+  // Início: Projetos ===========================
   section{
     .project{
       &-link{ color: var(--cor-base-texto); }
     }
   }
 
-  // Index: WebDev ==========
+  // Início: Compartilhar =======================
   section{
     .webdev{
       &-title{ font-size: 1.75em; }

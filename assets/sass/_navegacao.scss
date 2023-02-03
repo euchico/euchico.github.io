@@ -1,5 +1,4 @@
 /* NAVEGAÇÃO ==================================== */
-/* NAVEGAÇÃO =============== */
 .navbar{
   .nav-item{
     float: right;
@@ -122,10 +121,10 @@
 }
   
 
-// Media Query
+// Media Query ==================================
 @media (max-width: (576px-1)){
   .navbar .nav-item.active{ border-bottom: none; }
 }
 
-// Sobrescrever Bootstrap
+// Sobrescrever Bootstrap =======================
 .navbar-light .navbar-nav .nav-link.disabled{ color: inherit; }
