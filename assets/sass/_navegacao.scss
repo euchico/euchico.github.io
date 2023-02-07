@@ -119,7 +119,12 @@
     }
   }
 }
-  
+
+// Tema Escuro ==================================
+.tema-escuro:root {
+  .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.8; }
+}
+
 
 // Media Query ==================================
 @media (max-width: (576px-1)){

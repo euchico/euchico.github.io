@@ -1,4 +1,7 @@
-// FUNÇÃO: MUDANÇA DE TEMA ==============================
+// FUNÇÃO: Inicializaçã AOS =====================
+AOS.init();
+
+// FUNÇÃO: Tema Escuro ==========================
 const $html = document.querySelector("html");
 const $tema = document.querySelectorAll(".tema");
 const $temaCheckbox = document.querySelector("#tema-checkbox");
@@ -6,7 +9,8 @@ let temaAtual = localStorage.getItem("tema");
 
 // recupera estado do tema salvo
 if (temaAtual == "escuro") {
-  $html.classList.add("tema-escuro");
+  $html.classList.toggle("tema-escuro");
+  $html.classList.toggle("tema-claro");
 
   let iconeTema = document.getElementsByClassName("tema-icone");
   for(let i = 0; i < iconeTema.length; i++){
@@ -31,11 +35,38 @@ $tema.forEach(function(el){
 // troca tema e salva estado do tema
 $temaCheckbox.addEventListener("change", function(){
   $html.classList.toggle("tema-escuro");
+  $html.classList.toggle("tema-claro");
 
   let tema = "light";
   if ($html.classList.contains("tema-escuro")) {
     tema = "escuro";
   }
 
-  localStorage.setItem("tema", tema); // variável local com estado
+  // variável local com estado
+  localStorage.setItem("tema", tema); 
 });
+
+
+// FUNÇÃO: Exibição Aleatória de Projetos =======
+const bodyId = document.getElementsByTagName("body")[0].id;
+// Página Inicial ===============================
+if (bodyId == 'pagina-inicio'){
+  const divsProjetosLinha1 = document.querySelectorAll(".projetos-inicio-linha-1");
+  const divsProjetosLinha2 = document.querySelectorAll(".projetos-inicio-linha-2");
+  const randomIndex1 = Math.floor(Math.random() * divsProjetosLinha1.length);
+  const randomIndex2 = Math.floor(Math.random() * divsProjetosLinha2.length);
+
+  divsProjetosLinha1.forEach(div => div.classList.add("d-none"));
+  divsProjetosLinha2.forEach(div => div.classList.add("d-none"));
+
+  divsProjetosLinha1[randomIndex1].classList.remove("d-none");
+  divsProjetosLinha2[randomIndex2].classList.remove("d-none");
+
+// Página Sobre =================================
+}else if (bodyId == 'pagina-sobre'){
+  const divsProjetos = document.querySelectorAll(".projetos-sobre");
+  const randomIndex1 = Math.floor(Math.random() * divsProjetos.length);
+
+  divsProjetos.forEach(div => div.classList.add("d-none"));
+  divsProjetos[randomIndex1].classList.remove("d-none");
+}

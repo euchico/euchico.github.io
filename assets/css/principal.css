@@ -63,12 +63,15 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   display: inline-flex;
   align-items: center;
   font-size: 1em;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: opacity 0.5s ease-out; }
   .projeto-link span {
     margin-right: 5px;
     color: var(--cor-destaque); }
   .projeto-link .fa-angle-right {
     color: var(--cor-destaque); }
+  .projeto-link:hover {
+    opacity: 0.6; }
   .projeto-link:after {
     position: absolute;
     top: 0;
@@ -78,6 +81,29 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
     z-index: 1;
     content: "";
     color: var(--cor-base-texto); }
+
+.estudo {
+  text-align: center; }
+  .estudo-icone {
+    color: var(--cor-base-texto); }
+  .estudo-titulo {
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--cor-destaque); }
+  .estudo-resumo {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.1em;
+    color: var(--cor-media-texto); }
+  .estudo .btn {
+    padding: 5px 15px;
+    border: none;
+    color: var(--cor-invertido-texto);
+    background-color: var(--cor-destaque);
+    transition: opacity 0.5s ease-out; }
+    .estudo .btn:hover {
+      opacity: 0.6;
+      background-color: var(--cor-destaque); }
 
 /* NAVEGAÇÃO ==================================== */
 .navbar .nav-item {
@@ -160,6 +186,9 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
         transition: all 0.3s linear; }
     .fundo-navegacao .navbar .nav-item .nav-link div.decoracao:hover {
       background-position: left bottom; }
+
+.tema-escuro:root .navbar .nav-item .decoracao.decoracao-animada {
+  opacity: 0.8; }
 
 @media (max-width: 575px) {
   .navbar .nav-item.active {

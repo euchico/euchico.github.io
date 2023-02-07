@@ -18,10 +18,12 @@
     align-items: center;
     font-size: 1em;
     font-weight: bold;
+    transition: opacity 0.5s ease-out;
 
     span{ margin-right: 5px; color: var(--cor-destaque); }
     .fa-angle-right{ color: var(--cor-destaque); }
 
+    &:hover{ opacity: 0.6; }
     &:after{
       position: absolute;
       top: 0;
@@ -31,6 +33,40 @@
       z-index: 1;
       content: "";
       color: var(--cor-base-texto);
+
+      
+    }
+  }
+}
+
+
+// CONTEÚDO: Estudos ============================
+.estudo{
+  text-align: center;
+
+  &-icone{ color: var(--cor-base-texto); }
+  &-titulo{
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--cor-destaque);
+  }
+  &-resumo{
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.1em;
+    color: var(--cor-media-texto);
+  }
+
+  .btn{
+    padding: 5px 15px;
+    border: none;
+    color: var(--cor-invertido-texto);
+    background-color: var(--cor-destaque);
+    transition: opacity 0.5s ease-out;
+    
+    &:hover{
+      opacity: 0.6;
+      background-color: var(--cor-destaque);
     }
   }
 }
