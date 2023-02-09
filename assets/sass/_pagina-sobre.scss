@@ -1,0 +1,63 @@
+/* PÁGINA: Sobre ================================ */
+body#pagina-sobre{
+  /*
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--cor-invertido-texto);
+  }
+  */
+
+  // Sobre: Biografia ==========
+  #secao-biografia{
+    h2{
+      margin: 15px 0px;
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-base-texto);
+    }
+
+    p.resumo{
+      font-size: 1.15em;
+      color: var(--cor-base-texto);
+
+      a{ 
+        font-weight: bold;
+        color: var(---cor-destaque);
+      }
+    }
+  }
+
+
+  // Sobre: Matemática ==========
+  .fundo-secao-ads{ background-color: var(--cor-invertido-fundo); }
+
+  #secao-ads{
+    h3{
+      margin: 15px 0px;
+      font-size: 1.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-invertido-texto);
+    }
+
+    .hr-curto{ color: var(--cor-destaque-invertido); }
+
+    .secao-ads-resumo{
+      font-size: 1.15em;
+      color: var(--cor-invertido-texto);
+    }
+  }
+
+  // Sobre: Arte ==========
+  #sec-art{
+    h3{
+      margin: 15px 0px;
+      font-size: 1.75em;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: var(--cor-base-texto);
+    }
+  }
+}

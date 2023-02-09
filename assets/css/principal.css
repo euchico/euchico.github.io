@@ -48,6 +48,11 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
   color: var(--cor-destaque);
   opacity: .5; }
 
+.img-perfil {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; }
+
 /* COMPONENTES ================================== */
 .projeto-titulo {
   margin-bottom: 15px;
@@ -241,5 +246,46 @@ body#pagina-inicio section .project-link {
   color: var(--cor-base-texto); }
 body#pagina-inicio section .webdev-title {
   font-size: 1.75em; }
+
+/* PÁGINA: Sobre ================================ */
+body#pagina-sobre {
+  /*
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--cor-invertido-texto);
+  }
+  */ }
+  body#pagina-sobre #secao-biografia h2 {
+    margin: 15px 0px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-base-texto); }
+  body#pagina-sobre #secao-biografia p.resumo {
+    font-size: 1.15em;
+    color: var(--cor-base-texto); }
+    body#pagina-sobre #secao-biografia p.resumo a {
+      font-weight: bold;
+      color: var(---cor-destaque); }
+  body#pagina-sobre .fundo-secao-ads {
+    background-color: var(--cor-invertido-fundo); }
+  body#pagina-sobre #secao-ads h3 {
+    margin: 15px 0px;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-invertido-texto); }
+  body#pagina-sobre #secao-ads .hr-curto {
+    color: var(--cor-destaque-invertido); }
+  body#pagina-sobre #secao-ads .secao-ads-resumo {
+    font-size: 1.15em;
+    color: var(--cor-invertido-texto); }
+  body#pagina-sobre #sec-art h3 {
+    margin: 15px 0px;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-base-texto); }
 
 /*# sourceMappingURL=principal.css.map */
