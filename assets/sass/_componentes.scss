@@ -42,7 +42,11 @@
 
 // CONTEÚDO: Estudos ============================
 .estudo{
+  padding: 20px;
+  border-radius: 0.365rem;
+  border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
   text-align: center;
+  background-color: var(--cor-fundo-destaque);
 
   &-icone{ color: var(--cor-base-texto); }
   &-titulo{
