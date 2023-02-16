@@ -1,14 +1,14 @@
 /* PÁGINA: Sobre ================================ */
 body#pagina-sobre{
-  /*
-  .navbar-toggler,
-  .navbar-toggler:focus{
-    border: none;
-    color: var(--cor-invertido-texto);
-  }
-  */
 
-  // Sobre: Biografia ==========
+  // ajuste navegação =====
+  .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.8; }
+
+  .img-perfil{
+    border: 7px solid var(--cor-destaque);
+  }
+  
+  // Sobre: Biografia ===========================
   #secao-biografia{
     h2{
       margin: 15px 0px;
@@ -30,7 +30,7 @@ body#pagina-sobre{
   }
 
 
-  // Sobre: Matemática ==========
+  // Sobre: Matemática ==========================
   .fundo-secao-ads{ background-color: var(--cor-invertido-fundo); }
 
   #secao-ads{
@@ -50,7 +50,7 @@ body#pagina-sobre{
     }
   }
 
-  // Sobre: Arte ==========
+  // Sobre: Arte ================================
   #sec-art{
     h3{
       margin: 15px 0px;
@@ -60,4 +60,9 @@ body#pagina-sobre{
       color: var(--cor-base-texto);
     }
   }
+}
+
+// ajuste navegação =====
+.tema-escuro:root body#pagina-sobre {
+  .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.5; }
 }
