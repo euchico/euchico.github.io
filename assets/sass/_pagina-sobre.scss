@@ -3,6 +3,7 @@ body#pagina-sobre{
 
   // ajuste navegação =====
   .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.8; }
+  .navbar .navbar-toggler, .navbar .navbar-toggler{ color: var(--cor-invertido-texto); }
 
   .img-perfil{
     border: 7px solid var(--cor-destaque);
@@ -30,7 +31,7 @@ body#pagina-sobre{
   }
 
 
-  // Sobre: Matemática ==========================
+  // Sobre: ADS =================================
   .fundo-secao-ads{ background-color: var(--cor-invertido-fundo); }
 
   #secao-ads{
@@ -42,7 +43,7 @@ body#pagina-sobre{
       color: var(--cor-invertido-texto);
     }
 
-    .hr-curto{ color: var(--cor-destaque-invertido); }
+    .separador-curto{ background-color: var(--cor-destaque-invertido); }
 
     .secao-ads-resumo{
       font-size: 1.15em;

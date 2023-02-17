@@ -270,6 +270,8 @@ body#pagina-inicio section .webdev-title {
 /* PÁGINA: Sobre ================================ */
 body#pagina-sobre .navbar .nav-item .decoracao.decoracao-animada {
   opacity: 0.8; }
+body#pagina-sobre .navbar .navbar-toggler, body#pagina-sobre .navbar .navbar-toggler {
+  color: var(--cor-invertido-texto); }
 body#pagina-sobre .img-perfil {
   border: 7px solid var(--cor-destaque); }
 body#pagina-sobre #secao-biografia h2 {
@@ -292,8 +294,8 @@ body#pagina-sobre #secao-ads h3 {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--cor-invertido-texto); }
-body#pagina-sobre #secao-ads .hr-curto {
-  color: var(--cor-destaque-invertido); }
+body#pagina-sobre #secao-ads .separador-curto {
+  background-color: var(--cor-destaque-invertido); }
 body#pagina-sobre #secao-ads .secao-ads-resumo {
   font-size: 1.15em;
   color: var(--cor-invertido-texto); }
