@@ -51,54 +51,181 @@
   <title>euChico - Portfólio</title>
 </head>
 
-<body id="portfolio">
-  <!-- NAVEGAÇÃO -->
-  <nav class="navbar navbar-expand-sm navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <h1 class="user-select-none logo">
-          <span>eu</span><span>Chico</span>
-        </h1>
-      </a>
+<body id="pagina-portfolio">
+   <!-- FUNDO NAVEGAÇÃO -->
+   <div class="fundo-navegacao">
+    <!-- NAVEGAÇÃO -->
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <h1 class="user-select-none logo">
+            <span>eu</span><span>Chico</span>
+          </h1>
+        </a>
 
-      <!-- ícone de tema -->
-      <a class="tema navbar-toggler ms-auto">
-        <i class="tema-icone fas fa-sun"></i>
-      </a>
-      
-      <!-- ícone menu mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false" aria-label="Botão Menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      
-      <!-- opções -->
-      <div class="collapse navbar-collapse" id="menu-options">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/" data-nav="inicio"><div class="decoracao decoracao-animada"></div>início</a></li>
-          <li class="nav-item"><a class="nav-link" href="sobre"><div class="decoracao decoracao-animada"></div>sobre</a></li>      
-          <li class="nav-item active"><a class="nav-link" disabled><div class="decoracao"></div>portfólio</a></li>
-          <li class="nav-item"><a class="nav-link" href="curriculo"><div class="decoracao decoracao-animada"></div>currículo</a></li>
-          
-          <li class="nav-item"><a class="nav-link" href="https://dev.to/euchicodev" target="_blank" data-nav="blog">blog</a></li>
+        <!-- ícone de tema -->
+        <a class="tema navbar-toggler ms-auto">
+          <i class="tema-icone fas fa-sun"></i>
+        </a>
+        
+        <!-- ícone menu mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-options" aria-controls="menu-options" aria-expanded="false" aria-label="Botão Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- opções -->
+        <div class="collapse navbar-collapse" id="menu-options">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/" data-nav="inicio"><div class="decoracao decoracao-animada"></div>início</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre"><div class="decoracao decoracao-animada"></div>sobre</a></li>      
+            <li class="nav-item active"><a class="nav-link" disabled><div class="decoracao"></div>portfólio</a></li>
+            <li class="nav-item"><a class="nav-link" href="curriculo"><div class="decoracao decoracao-animada"></div>currículo</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="https://dev.to/euchicodev" target="_blank" data-nav="blog">blog</a></li>
 
-          <li class="nav-item d-none d-sm-block">
-            <!-- ícone de tema -->
-            <a class="tema nav-link">
-              <i class="tema-icone fas fa-sun"></i>
-            </a> 
-          </li>
-        </ul>
+            <li class="nav-item d-none d-sm-block">
+              <!-- ícone de tema -->
+              <a class="tema nav-link">
+                <i class="tema-icone fas fa-sun"></i>
+              </a> 
+            </li>
+          </ul>
+        </div>
+        
+        <!-- checkbox de tema -->
+        <input id="tema-checkbox" type="checkbox"  name="tema-checkbox">
       </div>
-      
-      <!-- checkbox de tema -->
-      <input id="tema-checkbox" type="checkbox"  name="tema-checkbox">
+    </nav>
+    <!-- / NAVEGAÇÃO -->  
+  </div>
+  <!-- / FUNDO NAVEGAÇÃO -->
+  
+  <!-- SEÇÃO: PORTFOLIO -->
+  <section id="secao-portfolio" class="container mt-5">
+    <div class="text-center mb-5">
+      <h3>Portfólio</h3>
+      <div class="separador-curto"></div>
     </div>
-  </nav>
-  <!-- / NAVEGAÇÃO -->
+
+    <!-- Projeto Principal -->
+    <div class="row">
+      <div class="col-md-12 portfolio-artigo">
+        <div class="row border rounded overflow-hidden mb-4 h-md-250 position-relative g-0">
+          <div class="col d-flex flex-column p-4">
+            <span class="d-inline-block mb-2 portfolio-categoria frontend">front-end</span>
+            <h3 class="portfolio-titulo">Featured post</h3>
+            <p class="card-text mb-auto portfolio-resumo">O projeto tem como objetivo realizar sorteios, análises estatísticas e levantamentos de loterias</p>
+            <a class="portfolio-link" href="/portfolio/projeto-template.html"> <span>Veja Mais</span> <i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="col-auto p-0 d-none d-lg-block">
+            <div class="portfolio-thumbnail">
+              <img src="assets/img/portfolio/exemplo1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Projeto Principal -->
+    
+    <div class="row">
+      <!-- Projeto 1 -->
+      <div class="col-md-6 portfolio-artigo">
+        <div class="row border rounded overflow-hidden mb-4 h-md-250 position-relative g-0">
+          <div class="col d-flex flex-column p-4">
+            <div>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">full stack</span>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">.net</span>
+            </div>
+            <h3 class="portfolio-titulo">Projeto Green</h3>
+            <p class="card-text mb-auto portfolio-abstract">Projeto com objetivo realizar sorteios, análises estatísticas e levantamentos de loterias.</p>
+            <a class="portfolio-link" href="/portfolio/projeto-template.html"> <span>Veja Mais</span> <i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="col-auto p-0 d-none d-lg-block">
+            <div class="portfolio-thumbnail">
+              <img src="assets/img/portfolio/exemplo1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Projeto 1 -->
+
+      <!-- Projeto 2 -->
+      <div class="col-md-6 portfolio-artigo">
+        <div class="row border rounded overflow-hidden mb-4 h-md-250 position-relative g-0">
+          <div class="col d-flex flex-column p-4">
+            <div>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">full stack</span>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">.net</span>
+            </div>
+            <h3 class="portfolio-titulo">Projeto Sem Planilha</h3>
+            <p class="card-text mb-auto portfolio-abstract">Projeto com objetivo atender às necessidades pessoais de organização financeira.</p>
+            <a class="portfolio-link" href="/portfolio/projeto-template.html"> <span>Veja Mais</span> <i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="col-auto p-0 d-none d-lg-block">
+            <div class="portfolio-thumbnail">
+              <img src="assets/img/portfolio/exemplo1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / Projeto 2 -->
+
+    <div class="row">
+      <!-- Projeto 3 -->
+      <div class="col-md-6 portfolio-artigo">
+        <div class="row border rounded overflow-hidden mb-4 h-md-250 position-relative g-0">
+          <div class="col d-flex flex-column p-4">
+            <div>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">full stack</span>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">.net</span>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">angular</span>
+            </div>
+            <h3 class="portfolio-titulo">Projeto Aventura Solo</h3>
+            <p class="card-text mb-auto portfolio-abstract">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+            <a class="portfolio-link" href="/portfolio/projeto-template.html"> <span>Veja Mais</span> <i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="col-auto p-0 d-none d-lg-block">
+            <div class="portfolio-thumbnail">
+              <img src="assets/img/portfolio/exemplo1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Projeto 3 -->
+
+      <!-- Projeto 4 -->
+      <div class="col-md-6 portfolio-artigo">
+        <div class="row border rounded overflow-hidden mb-4 h-md-250 position-relative g-0">
+          <div class="col d-flex flex-column p-4">
+            <div>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">c#</span>
+              <span class="d-inline-block mb-2 portfolio-categoria frontend">unity</span>
+            </div>
+            <h3 class="portfolio-titulo">Projeto Kojima</h3>
+            <p class="card-text mb-auto portfolio-abstract">Projeto visa desenvolver jogos, aplicando os conceitos de programação de forma divertida.</p>
+            <a class="portfolio-link" href="/portfolio/projeto-template.html"> <span>Veja Mais</span> <i class="fas fa-angle-right"></i></a>
+          </div>
+          
+          <div class="col-auto p-0 d-none d-lg-block">
+            <div class="portfolio-thumbnail">
+              <img src="assets/img/portfolio/exemplo1.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- / Projeto 4 -->
+    </div>
+  </section>
+  <!-- / SEÇÃO: PORTFOLIO -->
 
   <!-- RODAPÉ -->
   <footer class="container">
-    <hr class="hr-padrao">
+    <div class="separador-longo"></div>
     
     <div class="row justify-content-center">
       <div class="col-sm-6 col-12 text-center">

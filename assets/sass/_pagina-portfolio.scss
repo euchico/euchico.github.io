@@ -1,0 +1,64 @@
+/* PÁGINA: Portfólio ============================ */
+body#pagina-portfolio{
+  // ajuste navegação =====
+  .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.8; }
+  .navbar .navbar-toggler, .navbar .navbar-toggler{ color: var(--cor-invertido-texto); }
+
+  h3{
+    margin: 15px 0px;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-base-texto);
+  }
+
+  .portfolio-artigo{
+    .portfolio-thumbnail{
+      height: 250px;
+      width: 200px;
+      
+      img{
+        display: block;
+        object-fit: cover;
+      }
+    }
+
+    .portfolio{
+      &-categoria{
+        font-weight: bold;
+
+        &.frontend{ color: red; }
+      }
+
+      &-titulo{
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: var(--cor-base-texto);
+      }
+
+      &-abstract{
+        color: var(--cor-nivel-1-texto);
+      }
+
+      &-link{
+        color: var(--cor-base-texto);
+
+        &::after{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+// ajuste navegação =====
+.tema-escuro:root body#pagina-portfolio {
+  .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.5; }
+}
