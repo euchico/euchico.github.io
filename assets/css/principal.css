@@ -335,7 +335,7 @@ body#pagina-portfolio .portfolio-artigo .portfolio-titulo {
   font-size: 1.5em;
   font-weight: bold;
   color: var(--cor-base-texto); }
-body#pagina-portfolio .portfolio-artigo .portfolio-abstract {
+body#pagina-portfolio .portfolio-artigo .portfolio-resumo {
   color: var(--cor-nivel-1-texto); }
 body#pagina-portfolio .portfolio-artigo .portfolio-link {
   color: var(--cor-base-texto); }
