@@ -128,7 +128,14 @@
 
 // Media Query ==================================
 @media (max-width: (576px-1)){
-  .navbar .nav-item.active{ border-bottom: none; }
+  .navbar .nav-item.active{ 
+    position: relative;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-bottom: none; 
+  }
 }
 
 

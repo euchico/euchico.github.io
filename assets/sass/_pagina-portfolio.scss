@@ -38,11 +38,11 @@ body#pagina-portfolio{
       }
 
       &-resumo{
-        color: var(--cor-nivel-1-texto);
+        color: var(--cor-media-texto);
       }
 
       &-link{
-        color: var(--cor-base-texto);
+        color: var(--cor-destaque);
 
         &::after{
           position: absolute;

@@ -51,15 +51,10 @@ body#pagina-sobre{
     }
   }
 
-  // Sobre: Arte ================================
-  #sec-arte{
-    h3{
-      margin: 15px 0px;
-      font-size: 1.75em;
-      font-weight: bold;
-      text-transform: uppercase;
-      color: var(--cor-base-texto);
-    }
+  .projetos-sobre{
+    .projeto-titulo{ color: var(--cor-invertido-texto); }
+    .projeto-link span { color: var(--cor-destaque-invertido); }
+    .projeto-link .fa-angle-right{ color: var(--cor-destaque-invertido); }
   }
 }
 
