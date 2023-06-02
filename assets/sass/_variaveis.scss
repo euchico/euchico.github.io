@@ -1,7 +1,9 @@
-// FUNÇÕES ======================================
+/* FUNÇÕES ====================================== */
+// Geral ========================================
 @function hexToRGB($hex) {
   @return red($hex), green($hex), blue($hex);
 }
+
 
 /* VÁRIAVEIS  =================================== */
 // Váriaveis: SASS ==============================
@@ -17,6 +19,13 @@ $cor-cinza-claro: #A9A9A9;
 
 $cor-destaque-claro: #C21010;
 $cor-destaque-escuro: #A0DC41;
+
+$cor-categoria-conteudo: #76D7C4;
+$cor-categoria-fullstack: #A569BD;
+$cor-categoria-dotnet: #2980B9;
+$cor-categoria-csharp: #5D6D7E;
+$cor-categoria-angular: #E74C3C;
+$cor-categoria-unity: #E67E22;
 
 
 // Váriaveis: CSS ===============================

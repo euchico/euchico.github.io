@@ -27,7 +27,12 @@ body#pagina-portfolio{
       &-categoria{
         font-weight: bold;
 
-        &.frontend{ color: red; }
+        &.categoria-conteudo{ color: $cor-categoria-conteudo; }
+        &.categoria-fullstack{ color: $cor-categoria-fullstack; }
+        &.categoria-dotnet{ color: $cor-categoria-dotnet; }
+        &.categoria-csharp{ color: $cor-categoria-csharp; }
+        &.categoria-angular{ color: $cor-categoria-angular; }
+        &.categoria-unity{ color: $cor-categoria-unity; }
       }
 
       &-titulo{
@@ -39,6 +44,7 @@ body#pagina-portfolio{
 
       &-resumo{
         color: var(--cor-media-texto);
+        hyphens: auto;
       }
 
       &-link{

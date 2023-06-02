@@ -4,6 +4,7 @@
  * Copyleft 2023 - Francisco de Paula
  * Licensed under MIT (https://github.com/euchico/euchico.github.io/blob/master/LICENSE)
  */
+/* FUNÇÕES ====================================== */
 /* VÁRIAVEIS  =================================== */
 :root {
   --cor-base-texto: #212529;
@@ -332,15 +333,26 @@ body#pagina-portfolio .portfolio-artigo .portfolio-thumbnail {
     object-fit: cover; }
 body#pagina-portfolio .portfolio-artigo .portfolio-categoria {
   font-weight: bold; }
-  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.frontend {
-    color: red; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-conteudo {
+    color: #76D7C4; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-fullstack {
+    color: #A569BD; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-dotnet {
+    color: #2980B9; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-csharp {
+    color: #5D6D7E; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-angular {
+    color: #E74C3C; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-unity {
+    color: #E67E22; }
 body#pagina-portfolio .portfolio-artigo .portfolio-titulo {
   margin-bottom: 15px;
   font-size: 1.5em;
   font-weight: bold;
   color: var(--cor-base-texto); }
 body#pagina-portfolio .portfolio-artigo .portfolio-resumo {
-  color: var(--cor-media-texto); }
+  color: var(--cor-media-texto);
+  hyphens: auto; }
 body#pagina-portfolio .portfolio-artigo .portfolio-link {
   color: var(--cor-destaque); }
   body#pagina-portfolio .portfolio-artigo .portfolio-link::after {
