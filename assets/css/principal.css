@@ -367,4 +367,24 @@ body#pagina-portfolio .portfolio-artigo .portfolio-link {
 .tema-escuro:root body#pagina-portfolio .navbar .nav-item .decoracao.decoracao-animada {
   opacity: 0.5; }
 
+/* PÁGINA: Currículo ============================ */
+body#pagina-curriculo #secao-curriculo .curriculo-cartao {
+  border-radius: 7px 7px 0px 0px;
+  background-color: var(--cor-fundo-destaque); }
+  body#pagina-curriculo #secao-curriculo .curriculo-cartao-download {
+    padding: 1.6em;
+    border-radius: 0px 0px 7px 7px; }
+    body#pagina-curriculo #secao-curriculo .curriculo-cartao-download-btn {
+      width: fit-content;
+      display: grid;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      font-weight: bold;
+      text-transform: uppercase; }
+      body#pagina-curriculo #secao-curriculo .curriculo-cartao-download-btn b
+      img {
+        width: 35px;
+        vertical-align: sub; }
+
 /*# sourceMappingURL=principal.css.map */
