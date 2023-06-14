@@ -1,6 +1,7 @@
 // FUNÇÃO: Inicializaçã AOS =====================
 AOS.init();
 
+
 // FUNÇÃO: Tema Escuro ==========================
 const $html = document.querySelector("html");
 const $tema = document.querySelectorAll(".tema");
@@ -69,4 +70,18 @@ if (bodyId == 'pagina-inicio'){
 
   divsProjetos.forEach(div => div.classList.add("d-none"));
   divsProjetos[randomIndex1].classList.remove("d-none");
+}
+
+
+// FUNÇÃO: ??? =======
+function toggleArrow(id){
+  var el = document.getElementById(id);
+
+  if (el.classList.contains("fa-angle-down")){
+    el.classList.remove("fa-angle-down");
+    el.classList.add("fa-angle-up");
+  }else{
+    el.classList.remove("fa-angle-up");
+    el.classList.add("fa-angle-down");
+  }
 }

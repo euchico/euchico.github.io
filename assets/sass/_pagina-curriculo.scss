@@ -2,29 +2,60 @@
 body#pagina-curriculo{
   
   #secao-curriculo{
-    // Currículo: Cartão ========================
-    .curriculo-cartao{
-      //padding: $spacing-3;
-      border-radius: 7px 7px 0px 0px;
+    // Currículo: Geral ========================
+    section.informacao{
+      color: var(--cor-base-texto);
       background-color: var(--cor-fundo-destaque);
+    }
+
+    // Currículo: Cartão ========================
+    .cartao{
+      &-apresentacao{
+        border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
+        border-bottom: none;
+        border-radius: 7px 7px 0px 0px;
+        background-color: var(--cor-fundo-destaque);
+
+        h2{
+          font-size: 2em;
+          font-weight: bold;
+          color: var(--cor-base-texto);
+        }
+
+        h3{
+          font-family: 'Covered By Your Grace', cursive;
+          font-size: 1.75em;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: var(--cor-destaque);
+        }
+
+        .social{
+          margin-top: 10px;
       
-      &-download{
-        //margin-bottom: $spacing-3;
+          img{
+            width: 45px;
+            height: auto;
+            margin: 0 5px;
+          }
+        }
+      }
+
+      &-baixar{
         padding: 1.6em;
         border-radius: 0px 0px 7px 7px;
-        //background-color: $c-nv2;
+        background-color: rgb(var(--cor-detalhe-rgb));
         
-        &-btn{
+        .botao{
           width: fit-content;
           display: grid;
           padding: 10px 20px;
           border: none;
           border-radius: 50px;
-          //font-size: $font-size3;
           font-weight: bold;
           text-transform: uppercase;
-          //color: $c-nv2;
-          b//ackground-color: $c-white;
+          color: rgb(var(--cor-detalhe-rgb));
+          background-color: var(--cor-fundo);
           
           img{
             width: 35px;
@@ -32,8 +63,52 @@ body#pagina-curriculo{
           }
         }
       }
-    
-      // .img-profile{ margin-bottom: $spacing-3; }
+      
+      .img-perfil{ border: 7px solid var(--cor-destaque); }     
+    }
+
+    // CURRÍCULO:INFORMAÇÕES ===============
+    .informacao{
+      //margin: 0px 0px $spacing-3 0px;
+      //padding: $spacing-3;
+      border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
+      border-radius: 7px;
+      
+      &-titulo{ font-weight: bold; }
+      
+      ul{
+        padding: 0px;
+        //margin-top: $spacing-2;
+        margin-bottom: 0px;
+        //font-size: $font-size2;
+        //font-weight: 300;
+        list-style-type: none;
+        
+        strong{ font-weight: bold; }
+      }
+      //table{ font-size: $font-size2; }
+
+      .glyphicon { color: var(--cor-destaque); }
+      //.fa-check-circle{ color: $c-nv2; }
+      
+      // CURRÍCULO:INFORMAÇÕES (CAIXA) =====
+      .collapse{
+        &-date{
+          //font-size: $font-size3;
+          font-weight: 300;
+        }
+        &-area{
+          //margin-bottom: $spacing-1;
+          padding-left: 1em;
+          //border-left: 0.2em solid $c-nv2;
+        }
+        &-title{
+          display: block;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        //&-subtitle{ color: $c-nv2; }
+      }
     }
   }
 }

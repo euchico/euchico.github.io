@@ -267,10 +267,6 @@ body#pagina-inicio header {
     font-size: 1.25em;
     font-weight: 300;
     color: var(--cor-base-texto); }
-body#pagina-inicio section .project-link {
-  color: var(--cor-base-texto); }
-body#pagina-inicio section .webdev-title {
-  font-size: 1.75em; }
 
 /* PÁGINA: Sobre ================================ */
 body#pagina-sobre .navbar .nav-item .decoracao.decoracao-animada {
@@ -368,23 +364,69 @@ body#pagina-portfolio .portfolio-artigo .portfolio-link {
   opacity: 0.5; }
 
 /* PÁGINA: Currículo ============================ */
-body#pagina-curriculo #secao-curriculo .curriculo-cartao {
+body#pagina-curriculo #secao-curriculo section.informacao {
+  color: var(--cor-base-texto);
+  background-color: var(--cor-fundo-destaque); }
+body#pagina-curriculo #secao-curriculo .cartao-apresentacao {
+  border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
+  border-bottom: none;
   border-radius: 7px 7px 0px 0px;
   background-color: var(--cor-fundo-destaque); }
-  body#pagina-curriculo #secao-curriculo .curriculo-cartao-download {
-    padding: 1.6em;
-    border-radius: 0px 0px 7px 7px; }
-    body#pagina-curriculo #secao-curriculo .curriculo-cartao-download-btn {
-      width: fit-content;
-      display: grid;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 50px;
-      font-weight: bold;
-      text-transform: uppercase; }
-      body#pagina-curriculo #secao-curriculo .curriculo-cartao-download-btn b
-      img {
-        width: 35px;
-        vertical-align: sub; }
+  body#pagina-curriculo #secao-curriculo .cartao-apresentacao h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--cor-base-texto); }
+  body#pagina-curriculo #secao-curriculo .cartao-apresentacao h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--cor-destaque); }
+  body#pagina-curriculo #secao-curriculo .cartao-apresentacao .social {
+    margin-top: 10px; }
+    body#pagina-curriculo #secao-curriculo .cartao-apresentacao .social img {
+      width: 45px;
+      height: auto;
+      margin: 0 5px; }
+body#pagina-curriculo #secao-curriculo .cartao-baixar {
+  padding: 1.6em;
+  border-radius: 0px 0px 7px 7px;
+  background-color: rgb(var(--cor-detalhe-rgb)); }
+  body#pagina-curriculo #secao-curriculo .cartao-baixar .botao {
+    width: fit-content;
+    display: grid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(var(--cor-detalhe-rgb));
+    background-color: var(--cor-fundo); }
+    body#pagina-curriculo #secao-curriculo .cartao-baixar .botao img {
+      width: 35px;
+      vertical-align: sub; }
+body#pagina-curriculo #secao-curriculo .cartao .img-perfil {
+  border: 7px solid var(--cor-destaque); }
+body#pagina-curriculo #secao-curriculo .informacao {
+  border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
+  border-radius: 7px; }
+  body#pagina-curriculo #secao-curriculo .informacao-titulo {
+    font-weight: bold; }
+  body#pagina-curriculo #secao-curriculo .informacao ul {
+    padding: 0px;
+    margin-bottom: 0px;
+    list-style-type: none; }
+    body#pagina-curriculo #secao-curriculo .informacao ul strong {
+      font-weight: bold; }
+  body#pagina-curriculo #secao-curriculo .informacao .glyphicon {
+    color: var(--cor-destaque); }
+  body#pagina-curriculo #secao-curriculo .informacao .collapse-date {
+    font-weight: 300; }
+  body#pagina-curriculo #secao-curriculo .informacao .collapse-area {
+    padding-left: 1em; }
+  body#pagina-curriculo #secao-curriculo .informacao .collapse-title {
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase; }
 
 /*# sourceMappingURL=principal.css.map */

@@ -26,18 +26,4 @@ body#pagina-inicio{
       color: var(--cor-base-texto);
     }
   }
-
-  // Início: Projetos ===========================
-  section{
-    .project{
-      &-link{ color: var(--cor-base-texto); }
-    }
-  }
-
-  // Início: Compartilhar =======================
-  section{
-    .webdev{
-      &-title{ font-size: 1.75em; }
-    }
-  }
 }

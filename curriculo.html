@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="tema-claro">
 <head>
   <meta charset="utf-8">
 
@@ -97,17 +97,17 @@
   <!-- / NAVEGAÇÃO -->
 
   <!-- SEÇÃO: CURRÍCULO -->
-  <section id="secao-curriculo" class="container">
+  <section id="secao-curriculo" class="container mt-5">
     <div class="row">
       <!-- CARTÃO -->
-      <div class="col-lg-5">
-        <div class="curriculo-cartao text-center">
-          <img class="img-fluid img-perfil" src="assets/img/euchico-perfil-principal.jpg" alt="Avatar euChico">
+      <div class="col-lg-5 cartao">
+        <div class="cartao-apresentacao text-center py-5">
+          <img class="img-perfil img-fluid" src="assets/img/euchico-perfil-principal.jpg" alt="Avatar euChico">
 
-          <h2>Francisco de Paula</h2>
-          <h3>Desenvolvedor Web</h3>
+          <h2 class="mt-3">Francisco de Paula</h2>
+          <h3>Programador Jr.</h3>
 
-          <div class="social">     
+          <div class="social mt-4">     
             <a class="d-inline-block" href="http://github.com/euchico" target="_blank">
               <img src="assets/img/social-github.png" alt="GitHub: @euchico">
             </a>
@@ -122,10 +122,10 @@
           </div>
         </div>
 
-        <div id="card-download" class="text-center">
-          <a href="file/franciscodepaula-curriculo.pdf" target="_blank">
-            <div id="card-download-btn" class="mx-auto">
-             <div><img src="assets/img/icon-dowload.png"> download</div> 
+        <div class="cartao-baixar text-center mb-4">
+          <a href="arquivo/franciscodepaula-curriculo.pdf" target="_blank">
+            <div class="botao mx-auto">
+             <div><img src="assets/img/icone-baixar.png"> baixar</div> 
             </div>
           </a>
         </div>
@@ -135,8 +135,8 @@
       <!-- INFORMAÇÕES -->
       <div class="col-lg-7">
         <!-- ÁREA: SOBRE MIM -->
-        <section class="information">
-          <h3 class="information-title">Sobre Mim</h3>
+        <section class="informacao mb-4 p-4">
+          <h4 class="informacao-titulo">Sobre Mim</h4>
 
           <p>
             Sou um grande admirador da Programação e Desenvolvimento Web.
@@ -144,24 +144,22 @@
             Sempre tive interesse em matemática, lógica, codificação e ampliei a minha visão através do contato com outros campos, como Design e Arte, realizando a união para o meu desenvolvimento pessoal e profissional.
           </p>
 
-          <hr class="hr-type2">
+          <div class="separador-longo"></div>
 
-          <span class="information-title">Informações Pessoais</span>
+          <span class="informacao-titulo">Informações Pessoais</span>
 
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-xl-6">
               <ul>
                 <li><strong>Nome:</strong> Francisco de Paula</li>
-                <li><strong>Idade:</strong> 31 anos</li>
-                <li><strong>Endereço:</strong> Mesquita, RJ/Brasil</li>
+                <li><strong>Idade:</strong> 33 anos</li>
               </ul>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-xl-6">
               <ul>
-                <li><strong>Telefone:</strong> (21) 99716-4318 </li>
+                <li><strong>Endereço:</strong> Rio de Janeiro</li>
                 <li><strong>E-mail:</strong> <a href="mailto:eu.francisco@outlook.com">eu.francisco@outlook.com</a> </li>
-                <li><strong>Freelance:</strong> <i class="fas fa-check-circle "></i> Disponível</li>
               </ul>
             </div>
           </div>
@@ -169,12 +167,12 @@
         <!-- / ÁREA: SOBRE MIM -->
 
         <!-- ÁREA: EXPERIÊNCIAS -->
-        <section class="information">
-          <h3 class="information-title">Experiências</h3>
+        <section class="informacao mb-4 p-4">
+          <h4 class="informacao-titulo">Sobre Mim</h4>
 
           <!-- EXPERIÊNCIA 1 -->
-          <!-- <div id="collapse" class="info-collapse">
-            <a href="#null" class="d-block h-100" data-target="#collapse-1" aria-controls="collapse-1" data-toggle="collapse" aria-expanded="true">
+          <div id="collapse" class="info-collapse">
+            <a class="d-block h-100" href="#null" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1" onclick="toggleArrow('arrow-1');">
               <div class="row no-gutters">
                 <div class="col-sm-3 d-none d-sm-block">
                   <span class="float-left collapse-date">Presente</span>
@@ -187,19 +185,19 @@
                 </div>
                 
                 <div class="col-2 col-sm-1">
-                  <i id="arrow-1" class="float-right my-auto h-100 glyphicon fas fa-2x fa-angle-down" onclick="toggleArrow('arrow-1');"></i>
+                  <i id="arrow-1" class="float-right my-auto h-100 glyphicon fas fa-angle-down" ></i>
                 </div>
               </div>
             </a>
 
-            <div >
+            <div>
               <p id="collapse-1" class="collapse">
                 A melhor forma de aprender e de demonstrar conhecimentos é realizando projetos e colocar tudo em prática. 
                 Meus projetos vão além dos estudos e de apenas uma área do conhecimento, gosto de envolver Matemática, Design e até mesmo Marketing. 
                 Atualmente estou construindo o <strong><a href="https://matematicadasorte.com" target="_blank">“Matemática da Sorte”</a></strong>.
               </p>
             </div>
-          </div> -->
+          </div>
           <!-- / EXPERIÊNCIA 1 -->
 
           <!-- EXPERIÊNCIA 2 -->
@@ -265,8 +263,8 @@
         <!-- / ÁREA: EXPERIÊNCIAS -->
 
         <!-- ÁREA: FORMAÇÃO -->
-        <section class="information">
-          <h3 class="information-title">Formação</h3>
+        <section class="informacao mb-4 p-4">
+          <h4 class="informacao-titulo">Formação</h4>
 
           <!-- FORMAÇÃO 1 -->
           <!-- <div id="collapse" class="info-collapse">
@@ -359,9 +357,10 @@
         <!-- / ÁREA: FORMAÇÃO -->
 
         <!-- ÁREA: COMPETÊNCIAS E HABILIDADES -->
-        <!-- <section class="information">
-          <h3 class="information-title">Competências e Habilidades</h3>
-
+        <section class="informacao mb-4 p-4">
+          <h4 class="informacao-titulo">Competências e Habilidades</h4>
+          
+          <!--
           <table class="table text-center">
             <tbody>
               <tr class="row d-flex">
@@ -390,14 +389,15 @@
                 <td class="border-0 col-sm-4 d-none d-sm-block">GIMP</td>
               </tr>
             </tbody>
-          </table>
-        </section> -->
+          </table>-->
+        </section> 
         <!-- / ÁREA: COMPETÊNCIAS E HABILIDADES -->
 
         <!-- ÁREA: OUTROS INTERESSES -->
-        <!-- <section class="information">
-          <h3 class="information-title">Outros Interesses</h3>
-
+        <section class="informacao mb-4 p-4">
+          <h4 class="informacao-titulo">Outros Interesses</h4>
+          
+          <!-- 
           <div class="row">
             <div class="col-sm-12">
               <strong class="">Arte</strong>
@@ -409,7 +409,8 @@
               </p>
             </div>
           </div>
-        </section> -->
+          -->
+        </section> 
         <!-- / ÁREA: OUTROS INTERESSES -->
       </div>
       <!-- / INFORMAÇÕES -->
