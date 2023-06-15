@@ -1,4 +1,186 @@
 /* COMPONENTES ================================== */
+// NAVEGAÇÃO ====================================
+.navbar{
+  .nav-item{
+    float: right;
+    font-size: 1.2em;
+
+    .nav-link{
+      padding: 0;
+      margin: 8px;
+      position: relative;
+
+      text-align: center;
+      text-transform: lowercase;
+      font-weight: 400;
+      color: var(--cor-base-texto);
+      transition: .3s;
+      cursor: pointer;
+
+      &[data-nav="inicio"]{ font-weight: 200; }
+      &[data-nav="blog"]{ font-weight: 600; }
+      
+      &:link, &:visited, &:active, &:focus{ color: var(--cor-base-texto); }
+
+      .decoracao{
+        background: var(--cor-destaque);
+        
+          --mask:
+            radial-gradient(7.21px at 50% calc(100% + 2.75px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 4px + .5px)/20px 8px repeat-x,
+            radial-gradient(7.21px at 50% -2.75px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 4px)/20px 8px repeat-x;
+            -webkit-mask: var(--mask);
+                    mask: var(--mask);
+
+        &.decoracao-animada{
+          opacity: 0.5;
+
+          background: linear-gradient(to right, var(--cor-destaque) 50%, transparent 0);
+          background-size: 200% 100%;
+          background-position: right bottom;
+          transition: all 0.3s linear;
+        }
+      }
+
+      div.decoracao{
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        &:hover{ background-position: left bottom; }
+      }
+    }
+
+    &.active{ color: var(--cor-media-texto); }
+  }
+
+  .navbar-toggler,
+  .navbar-toggler:focus{
+    border: none;
+    color: var(--cor-base-texto);
+  }
+
+  .navbar-toggler{
+    .navbar-toggler-icon{ color: var(--cor-base-texto); }    
+  }
+
+  .logo{
+    font-size: 1.5em;
+  
+    span{
+      &:nth-child(1){
+        font-weight: 300;
+        color: var(--cor-media-texto);
+      }
+  
+      &:nth-child(2){
+        font-weight: bold;
+        color: var(--cor-base-texto);
+      }
+    }
+  }
+
+  #tema-checkbox{ display: none; }
+}
+
+.fundo-navegacao{
+  height: 250px;
+  background-color: var(--cor-invertido-fundo);
+
+  .navbar{
+    .logo{
+      span{
+        &:nth-child(1){ color: var(--cor-media-texto); }
+        &:nth-child(2){ color: var(--cor-invertido-texto); }
+      }
+    }
+
+    .nav-item{
+      .nav-link{
+        color: var(--cor-invertido-texto);
+        
+        &:link, &:visited, &:active, &:focus{ color: var(--cor-invertido-texto); } 
+
+        .decoracao{ 
+          background: var(--cor-destaque-invertido); 
+          
+          &.decoracao-animada{
+            opacity: 0.5;
+  
+            background: linear-gradient(to right, var(--cor-destaque-invertido) 50%, transparent 0);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.3s linear;
+          }
+        }
+
+        div.decoracao:hover{ background-position: left bottom; }
+      }
+    }
+  }
+}
+
+// Navegação: Tema Escuro ==================================
+.tema-escuro:root {
+  .navbar .nav-item .decoracao.decoracao-animada{ opacity: 0.8; }
+}
+
+// Navegação: Media Query ==================================
+@media (max-width: (576px-1)){
+  .navbar .nav-item.active{ 
+    position: relative;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-bottom: none; 
+  }
+}
+
+// Navegação: Sobrescrever Bootstrap =======================
+.navbar-light .navbar-nav .nav-link.disabled{ color: inherit; }
+
+
+// RODAPÉ =======================================
+footer{
+  padding: 30px 0;
+
+  .logo{
+    font-size: 1.5em;
+  
+    span{
+      &:nth-child(1){
+        font-weight: 300;
+        color: var(--cor-media-texto);
+      }
+  
+      &:nth-child(2){
+        font-weight: bold;
+        color: var(--cor-base-texto);
+      }
+    }
+  }
+
+  .email{
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: .05em;
+    color: var(--cor-base-texto);
+  }
+
+  .social{
+    margin-top: 10px;
+
+    img{
+      width: 30px;
+      height: auto;
+      margin: 0 5px;
+    }
+  }
+}
+
+
 // CONTEÚDO: Projetos ===========================
 .projeto{
   &-titulo{
@@ -33,8 +215,6 @@
       z-index: 1;
       content: "";
       color: var(--cor-base-texto);
-
-      
     }
   }
 }

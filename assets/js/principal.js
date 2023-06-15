@@ -48,7 +48,7 @@ $temaCheckbox.addEventListener("change", function(){
 });
 
 
-// FUNÇÃO: Exibição Aleatória de Projetos =======
+// FUNÇÃO: Exibição aleatória de Projetos =======
 const bodyId = document.getElementsByTagName("body")[0].id;
 // Página Inicial ===============================
 if (bodyId == 'pagina-inicio'){
@@ -73,7 +73,7 @@ if (bodyId == 'pagina-inicio'){
 }
 
 
-// FUNÇÃO: ??? =======
+// FUNÇÃO: Alternar seta do Cúrriculo no clique =
 function toggleArrow(id){
   var el = document.getElementById(id);
 

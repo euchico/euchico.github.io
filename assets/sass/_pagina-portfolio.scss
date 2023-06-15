@@ -27,11 +27,12 @@ body#pagina-portfolio{
       &-categoria{
         font-weight: bold;
 
-        &.categoria-conteudo{ color: $cor-categoria-conteudo; }
-        &.categoria-fullstack{ color: $cor-categoria-fullstack; }
-        &.categoria-dotnet{ color: $cor-categoria-dotnet; }
-        &.categoria-csharp{ color: $cor-categoria-csharp; }
         &.categoria-angular{ color: $cor-categoria-angular; }
+        &.categoria-conteudo{ color: $cor-categoria-conteudo; }
+        &.categoria-csharp{ color: $cor-categoria-csharp; }
+        &.categoria-dotnet{ color: $cor-categoria-dotnet; }
+        &.categoria-fullstack{ color: $cor-categoria-fullstack; }
+        &.categoria-python{ color: $cor-categoria-python; }
         &.categoria-unity{ color: $cor-categoria-unity; }
       }
 
@@ -49,7 +50,9 @@ body#pagina-portfolio{
 
       &-link{
         color: var(--cor-destaque);
+        transition: opacity 0.5s ease-out;
 
+        &:hover{ opacity: 0.6; }
         &::after{
           position: absolute;
           top: 0;

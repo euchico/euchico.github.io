@@ -71,67 +71,6 @@ div.separador-longo {
   border-radius: 50%; }
 
 /* COMPONENTES ================================== */
-.projeto-titulo {
-  margin-bottom: 15px;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: var(--cor-base-texto); }
-.projeto-resumo {
-  margin-bottom: 15px;
-  font-size: 1.15em;
-  color: var(--cor-media-texto); }
-.projeto-link {
-  margin-bottom: 15px;
-  display: inline-flex;
-  align-items: center;
-  font-size: 1em;
-  font-weight: bold;
-  transition: opacity 0.5s ease-out; }
-  .projeto-link span {
-    margin-right: 5px;
-    color: var(--cor-destaque); }
-  .projeto-link .fa-angle-right {
-    color: var(--cor-destaque); }
-  .projeto-link:hover {
-    opacity: 0.6; }
-  .projeto-link:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    content: "";
-    color: var(--cor-base-texto); }
-
-.estudo {
-  padding: 20px;
-  border-radius: 0.365rem;
-  border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
-  text-align: center;
-  background-color: var(--cor-fundo-destaque); }
-  .estudo-icone {
-    color: var(--cor-base-texto); }
-  .estudo-titulo {
-    margin: 15px 0;
-    font-weight: bold;
-    color: var(--cor-destaque); }
-  .estudo-resumo {
-    text-align: justify;
-    hyphens: auto;
-    font-size: 1.1em;
-    color: var(--cor-media-texto); }
-  .estudo .btn {
-    padding: 5px 15px;
-    border: none;
-    color: var(--cor-invertido-texto);
-    background-color: var(--cor-destaque);
-    transition: opacity 0.5s ease-out; }
-    .estudo .btn:hover {
-      opacity: 0.6;
-      background-color: var(--cor-destaque); }
-
-/* NAVEGAÇÃO ==================================== */
 .navbar .nav-item {
   float: right;
   font-size: 1.2em; }
@@ -226,7 +165,6 @@ div.separador-longo {
 .navbar-light .navbar-nav .nav-link.disabled {
   color: inherit; }
 
-/* RODAPÉ ======================================= */
 footer {
   padding: 30px 0; }
   footer .logo {
@@ -248,6 +186,66 @@ footer {
       width: 30px;
       height: auto;
       margin: 0 5px; }
+
+.projeto-titulo {
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--cor-base-texto); }
+.projeto-resumo {
+  margin-bottom: 15px;
+  font-size: 1.15em;
+  color: var(--cor-media-texto); }
+.projeto-link {
+  margin-bottom: 15px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1em;
+  font-weight: bold;
+  transition: opacity 0.5s ease-out; }
+  .projeto-link span {
+    margin-right: 5px;
+    color: var(--cor-destaque); }
+  .projeto-link .fa-angle-right {
+    color: var(--cor-destaque); }
+  .projeto-link:hover {
+    opacity: 0.6; }
+  .projeto-link:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    color: var(--cor-base-texto); }
+
+.estudo {
+  padding: 20px;
+  border-radius: 0.365rem;
+  border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
+  text-align: center;
+  background-color: var(--cor-fundo-destaque); }
+  .estudo-icone {
+    color: var(--cor-base-texto); }
+  .estudo-titulo {
+    margin: 15px 0;
+    font-weight: bold;
+    color: var(--cor-destaque); }
+  .estudo-resumo {
+    text-align: justify;
+    hyphens: auto;
+    font-size: 1.1em;
+    color: var(--cor-media-texto); }
+  .estudo .btn {
+    padding: 5px 15px;
+    border: none;
+    color: var(--cor-invertido-texto);
+    background-color: var(--cor-destaque);
+    transition: opacity 0.5s ease-out; }
+    .estudo .btn:hover {
+      opacity: 0.6;
+      background-color: var(--cor-destaque); }
 
 /* PÁGINA: Início =============================== */
 body#pagina-inicio header {
@@ -329,16 +327,18 @@ body#pagina-portfolio .portfolio-artigo .portfolio-thumbnail {
     object-fit: cover; }
 body#pagina-portfolio .portfolio-artigo .portfolio-categoria {
   font-weight: bold; }
-  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-conteudo {
-    color: #76D7C4; }
-  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-fullstack {
-    color: #A569BD; }
-  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-dotnet {
-    color: #2980B9; }
-  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-csharp {
-    color: #5D6D7E; }
   body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-angular {
     color: #E74C3C; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-conteudo {
+    color: #76D7C4; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-csharp {
+    color: #5D6D7E; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-dotnet {
+    color: #2980B9; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-fullstack {
+    color: #A569BD; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-python {
+    color: #2ECC71; }
   body#pagina-portfolio .portfolio-artigo .portfolio-categoria.categoria-unity {
     color: #E67E22; }
 body#pagina-portfolio .portfolio-artigo .portfolio-titulo {
@@ -350,7 +350,10 @@ body#pagina-portfolio .portfolio-artigo .portfolio-resumo {
   color: var(--cor-media-texto);
   hyphens: auto; }
 body#pagina-portfolio .portfolio-artigo .portfolio-link {
-  color: var(--cor-destaque); }
+  color: var(--cor-destaque);
+  transition: opacity 0.5s ease-out; }
+  body#pagina-portfolio .portfolio-artigo .portfolio-link:hover {
+    opacity: 0.6; }
   body#pagina-portfolio .portfolio-artigo .portfolio-link::after {
     position: absolute;
     top: 0;
@@ -423,8 +426,9 @@ body#pagina-curriculo #secao-curriculo .informacao {
   body#pagina-curriculo #secao-curriculo .informacao .collapse-date {
     font-weight: 300; }
   body#pagina-curriculo #secao-curriculo .informacao .collapse-area {
-    padding-left: 1em; }
-  body#pagina-curriculo #secao-curriculo .informacao .collapse-title {
+    padding-left: 1em;
+    border-left: 0.2em solid var(--cor-destaque); }
+  body#pagina-curriculo #secao-curriculo .informacao .collapse .titulo {
     display: block;
     font-weight: bold;
     text-transform: uppercase; }

@@ -67,10 +67,8 @@ body#pagina-curriculo{
       .img-perfil{ border: 7px solid var(--cor-destaque); }     
     }
 
-    // CURRÍCULO:INFORMAÇÕES ===============
+    // CURRÍCULO:INFORMAÇÕES ====================
     .informacao{
-      //margin: 0px 0px $spacing-3 0px;
-      //padding: $spacing-3;
       border: 2px solid rgba(var(--cor-detalhe-rgb), 0.3);
       border-radius: 7px;
       
@@ -78,152 +76,29 @@ body#pagina-curriculo{
       
       ul{
         padding: 0px;
-        //margin-top: $spacing-2;
         margin-bottom: 0px;
-        //font-size: $font-size2;
-        //font-weight: 300;
         list-style-type: none;
         
         strong{ font-weight: bold; }
       }
-      //table{ font-size: $font-size2; }
 
       .glyphicon { color: var(--cor-destaque); }
-      //.fa-check-circle{ color: $c-nv2; }
       
-      // CURRÍCULO:INFORMAÇÕES (CAIXA) =====
+
+      // CURRÍCULO:INFORMAÇÕES (CAIXA) ==========
       .collapse{
-        &-date{
-          //font-size: $font-size3;
-          font-weight: 300;
+        &-date{ font-weight: 300; }
+        &-area{ 
+          padding-left: 1em; 
+          border-left: 0.2em solid var(--cor-destaque);
         }
-        &-area{
-          //margin-bottom: $spacing-1;
-          padding-left: 1em;
-          //border-left: 0.2em solid $c-nv2;
-        }
-        &-title{
+        .titulo{
           display: block;
           font-weight: bold;
           text-transform: uppercase;
+          
         }
-        //&-subtitle{ color: $c-nv2; }
       }
     }
   }
 }
-
-// CONTEÚDO: Cartão ===========================
-
-
-
-// CURRÍCULO ===============
-// #resume{
-//   h2{
-//     font-size: $font-size4;
-//     color: $c-black;
-//   }
-//   h3{ 
-//     margin: $spacing-1 auto $spacing-3 auto;
-//     font-size: $font-size3;
-//     color: $c-black;
-//   }
-// }
-
-
-// CURRÍCULO:GERAL ===============
-// #sec-resume{ 
-//   margin-top: $spacing-4;
-
-//   section{
-//     color: $c-black;
-//     background-color: $c-white;
-//   }
-// }
-
-
-// CURRÍCULO:CARTÃO ===============
-// #card{
-//   padding: $spacing-3;
-//   border-radius: 7px 7px 0px 0px;
-//   background-color: $c-white;
-  
-//   &-download{
-//     margin-bottom: $spacing-3;
-//     padding: 1.6em;
-//     border-radius: 0px 0px 7px 7px;
-//     background-color: $c-nv2;
-    
-//     &-btn{
-//       width: fit-content;
-//       display: grid;
-//       padding: 10px 20px;
-//       border: none;
-//       border-radius: 50px;
-//       font-size: $font-size3;
-//       font-weight: bold;
-//       text-transform: uppercase;
-//       color: $c-nv2;
-//       background-color: $c-white;
-      
-//       img{
-//         width: 35px;
-//         vertical-align: sub;
-//       }
-//     }
-//   }
-
-//   .img-profile{ margin-bottom: $spacing-3; }
-// }
-
-
-// CURRÍCULO:INFORMAÇÕES ===============
-// .information{
-//   margin: 0px 0px $spacing-3 0px;
-//   padding: $spacing-3;
-//   border-radius: 7px;
-  
-//   &-title{
-//     margin-bottom: $spacing-3;
-//     font-weight: bold;
-//   }
-//   p{
-//     font-size: $font-size2;
-//     font-weight: 300;
-//   }
-//   ul{
-//     padding: 0px;
-//     margin-top: $spacing-2;
-//     margin-bottom: 0px;
-//     font-size: $font-size2;
-//     font-weight: 300;
-//     list-style-type: none;
-    
-//     strong{ font-weight: bold; }
-//   }
-//   table{ font-size: $font-size2; }
-
-//   .glyphicon,
-//   .fa-check-circle{ color: $c-nv2; }
-  
-//   .hr-type1{ margin-left: 0px; }
-// }
-
-// CURRÍCULO:INFORMAÇÕES (CAIXA) =====
-// .collapse{
-//   &-date{
-//     font-size: $font-size3;
-//     font-weight: 300;
-//   }
-//   &-area{
-//     margin-bottom: $spacing-1;
-//     padding-left: 1em;
-//     border-left: 0.2em solid $c-nv2;
-//   }
-//   &-title{
-//     display: block;
-//     font-weight: bold;
-//     text-transform: uppercase;
-//   }
-//   &-subtitle{ color: $c-nv2; }
-// }
