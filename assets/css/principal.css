@@ -152,7 +152,10 @@ div.separador-longo {
     width: 25%;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .fundo-navegacao {
+    height: auto; } }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: inherit; }
 
