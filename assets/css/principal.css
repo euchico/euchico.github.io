@@ -14,8 +14,8 @@
   --cor-invertido-texto: #F8F9FA;
   --cor-invertido-fundo: #212529;
   --cor-detalhe-rgb: 108, 117, 125;
-  --cor-destaque: #C21010;
-  --cor-destaque-invertido: #A0DC41; }
+  --cor-destaque: #1D4E89;
+  --cor-destaque-invertido: #F79256; }
 
 .tema-escuro:root {
   --cor-base-texto: #F8F9FA;
@@ -25,8 +25,8 @@
   --cor-invertido-texto: #212529;
   --cor-invertido-fundo: #F8F9FA;
   --cor-detalhe-rgb: 169, 169, 169;
-  --cor-destaque: #A0DC41;
-  --cor-destaque-invertido: #C21010; }
+  --cor-destaque: #F79256;
+  --cor-destaque-invertido: #1D4E89; }
 
 /* GERAL ======================================== */
 html, body {
@@ -43,27 +43,17 @@ a, a:link, a:visited, a:hover, a:active, a:focus {
 
 div.separador-curto {
   width: 100px;
-  height: 10px;
+  height: 7px;
   margin: 5px auto 10px;
   background: var(--cor-destaque);
-  opacity: .5;
-  --mask:
-  radial-gradient(8.21px at 50% calc(100% + 2.75px),#0000 calc(99% - 5px),#000 calc(101% - 5px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 5px + .5px)/20px 10px repeat-x,
-  radial-gradient(8.21px at 50% -2.75px,#0000 calc(99% - 5px),#000 calc(101% - 5px) 99%,#0000 101%) 50% calc(50% + 5px)/20px 10px repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask); }
+  opacity: .5; }
 
 div.separador-longo {
   width: 100%;
-  height: 10px;
+  height: 3px;
   margin: 5px auto 20px;
   background: var(--cor-destaque);
-  opacity: .2;
-  --mask:
-    radial-gradient(5.57px at 50% calc(100% + 2.20px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 8px) calc(50% - 3px + .5px)/16px 6px repeat-x,
-    radial-gradient(5.57px at 50% -2.2px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 3px)/16px 6px repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask); }
+  opacity: .2; }
 
 .img-perfil {
   width: 200px;
@@ -91,12 +81,7 @@ div.separador-longo {
     .navbar .nav-item .nav-link:link, .navbar .nav-item .nav-link:visited, .navbar .nav-item .nav-link:active, .navbar .nav-item .nav-link:focus {
       color: var(--cor-base-texto); }
     .navbar .nav-item .nav-link .decoracao {
-      background: var(--cor-destaque);
-      --mask:
-        radial-gradient(7.21px at 50% calc(100% + 2.75px),#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 4px + .5px)/20px 8px repeat-x,
-        radial-gradient(7.21px at 50% -2.75px,#0000 calc(99% - 3px),#000 calc(101% - 3px) 99%,#0000 101%) 50% calc(50% + 4px)/20px 8px repeat-x;
-      -webkit-mask: var(--mask);
-      mask: var(--mask); }
+      background: var(--cor-destaque); }
       .navbar .nav-item .nav-link .decoracao.decoracao-animada {
         opacity: 0.5;
         background: linear-gradient(to right, var(--cor-destaque) 50%, transparent 0);
@@ -104,15 +89,19 @@ div.separador-longo {
         background-position: right bottom;
         transition: all 0.3s linear; }
     .navbar .nav-item .nav-link div.decoracao {
-      height: 100%;
+      height: 7px;
       width: 100%;
-      top: 0;
+      bottom: -6px;
       left: 0;
       position: absolute; }
       .navbar .nav-item .nav-link div.decoracao:hover {
-        background-position: left bottom; }
+        background-position: left top; }
+    .navbar .nav-item .nav-link:hover div.decoracao {
+      background-position: left top; }
   .navbar .nav-item.active {
     color: var(--cor-media-texto); }
+  .navbar .nav-item .tema {
+    width: 35px; }
 .navbar .navbar-toggler,
 .navbar .navbar-toggler:focus {
   border: none;
@@ -150,7 +139,9 @@ div.separador-longo {
         background-position: right bottom;
         transition: all 0.3s linear; }
     .fundo-navegacao .navbar .nav-item .nav-link div.decoracao:hover {
-      background-position: left bottom; }
+      background-position: left top; }
+    .fundo-navegacao .navbar .nav-item .nav-link:hover div.decoracao {
+      background-position: left top; }
 
 .tema-escuro:root .navbar .nav-item .decoracao.decoracao-animada {
   opacity: 0.8; }
@@ -252,10 +243,10 @@ body#pagina-inicio header {
   margin: 50px auto 30px auto; }
   body#pagina-inicio header h2 {
     margin: 5px;
-    font-family: 'Covered By Your Grace', cursive;
-    font-size: 4em;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-family: 'Comfortaa', cursive;
+    font-size: 3.1em;
+    font-weight: 700;
+    letter-spacing: -3px;
     color: var(--cor-destaque); }
   body#pagina-inicio header h3 {
     font-size: 1.75em;

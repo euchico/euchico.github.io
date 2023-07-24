@@ -73,7 +73,7 @@ if (bodyId == 'pagina-inicio'){
 }
 
 
-// FUNÇÃO: Alternar seta do Cúrriculo no clique =
+// FUNÇÃO: Alternância seta do Cúrriculo ========
 function toggleArrow(id){
   var el = document.getElementById(id);
 
