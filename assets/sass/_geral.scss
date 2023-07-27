@@ -20,12 +20,6 @@ div.separador-curto{
   margin: 5px auto 10px;
   background: var(--cor-destaque);
   opacity: .5;
-
-  // --mask:
-  // radial-gradient(8.21px at 50% calc(100% + 2.75px),#0000 calc(99% - 5px),#000 calc(101% - 5px) 99%,#0000 101%) calc(50% - 10px) calc(50% - 5px + .5px)/20px 10px repeat-x,
-  // radial-gradient(8.21px at 50% -2.75px,#0000 calc(99% - 5px),#000 calc(101% - 5px) 99%,#0000 101%) 50% calc(50% + 5px)/20px 10px repeat-x;
-  // -webkit-mask: var(--mask);
-  //         mask: var(--mask);
 }
 
 div.separador-longo{
@@ -34,12 +28,6 @@ div.separador-longo{
   margin: 5px auto 20px;
   background: var(--cor-destaque);
   opacity: .2;
-
-  // --mask:
-  //   radial-gradient(5.57px at 50% calc(100% + 2.20px),#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) calc(50% - 8px) calc(50% - 3px + .5px)/16px 6px repeat-x,
-  //   radial-gradient(5.57px at 50% -2.2px,#0000 calc(99% - 2px),#000 calc(101% - 2px) 99%,#0000 101%) 50% calc(50% + 3px)/16px 6px repeat-x;
-  //   -webkit-mask: var(--mask);
-  //           mask: var(--mask);
 }
 
 // Imagens ======================================

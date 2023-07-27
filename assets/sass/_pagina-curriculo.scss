@@ -17,24 +17,24 @@ body#pagina-curriculo{
         background-color: var(--cor-fundo-destaque);
 
         h2{
+          font-family: 'Comfortaa', cursive;
+          font-weight: 700;
+          letter-spacing: -1px;
           font-size: 2em;
           font-weight: bold;
           color: var(--cor-base-texto);
         }
 
         h3{
-          font-family: 'Covered By Your Grace', cursive;
-          font-size: 1.75em;
-          font-weight: bold;
-          text-transform: uppercase;
-          color: var(--cor-destaque);
+          font-size: 1.5em;
+          color: var(--cor-media-texto);
         }
 
         .social{
           margin-top: 10px;
       
           img{
-            width: 45px;
+            width: 40px;
             height: auto;
             margin: 0 5px;
           }
@@ -80,6 +80,11 @@ body#pagina-curriculo{
         list-style-type: none;
         
         strong{ font-weight: bold; }
+      }
+
+      tr{
+        color: var(--cor-base-texto);
+        border-color: var(--cor-destaque);
       }
 
       .glyphicon { color: var(--cor-destaque); }
