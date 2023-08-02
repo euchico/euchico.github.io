@@ -51,6 +51,12 @@ body#pagina-sobre{
     .secao-ads-resumo{
       font-size: 1.15em;
       color: var(--cor-invertido-texto);
+
+      .quote{
+        color: var(--cor-media-texto);
+
+        i{ font-weight: bold; }
+      }
     }
   }
 

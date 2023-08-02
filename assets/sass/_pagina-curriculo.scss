@@ -101,7 +101,9 @@ body#pagina-curriculo{
           display: block;
           font-weight: bold;
           text-transform: uppercase;
-          
+        }
+        &-subtitle{
+          font-weight: 100;
         }
       }
     }

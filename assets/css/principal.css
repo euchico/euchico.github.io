@@ -295,6 +295,10 @@ body#pagina-sobre #secao-ads .separador-curto {
 body#pagina-sobre #secao-ads .secao-ads-resumo {
   font-size: 1.15em;
   color: var(--cor-invertido-texto); }
+  body#pagina-sobre #secao-ads .secao-ads-resumo .quote {
+    color: var(--cor-media-texto); }
+    body#pagina-sobre #secao-ads .secao-ads-resumo .quote i {
+      font-weight: bold; }
 body#pagina-sobre .projetos-sobre .projeto-titulo {
   color: var(--cor-invertido-texto); }
 body#pagina-sobre .projetos-sobre .projeto-link span {
@@ -428,5 +432,7 @@ body#pagina-curriculo #secao-curriculo .informacao {
     display: block;
     font-weight: bold;
     text-transform: uppercase; }
+  body#pagina-curriculo #secao-curriculo .informacao .collapse-subtitle {
+    font-weight: 100; }
 
 /*# sourceMappingURL=principal.css.map */
