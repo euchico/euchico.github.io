@@ -1,7 +1,7 @@
 # euChico
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](./LICENSE)
 
-Portfólio simples, HTML, SCSS e JavaScript, para compartilhar meus estudos de programação, projetos pessoais e trajetória profissional.
+Portfólio simples em HTML, SCSS e JavaScript, para compartilhar meus estudos de programação, projetos pessoais e trajetória profissional.
 
 ## Sobre ([Link](https://euchico.github.io))
 
