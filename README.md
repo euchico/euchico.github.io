@@ -29,5 +29,5 @@ Espaço para descrever minha trajetória de estudos e conhecimentos, e todos os 
 * **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
 * **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
 
-## Licença do Projeto
-- [MIT](./LICENSE)
+## Licença
+MIT License (MIT) 2025 - [Francisco de Paula](https://github.com/euchico/). Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
