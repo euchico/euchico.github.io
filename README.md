@@ -1,7 +1,21 @@
-# euChico
+# euChico - Francisco de Paula
+
+![status](https://img.shields.io/badge/status-Em_Andamento-yellow)
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](./LICENSE)
 
 Portfólio simples em HTML, SCSS e JavaScript, para compartilhar meus estudos de programação, projetos pessoais e trajetória profissional.
+
+
+---
+### Conteúdo
+
+- [Contato](#Contato)
+	- [Principal](#Principal)
+	- [Redes](#Redes)
+- [Contribuição](#Contribuição)
+- [Licença](#Licença)
+---
+
 
 ## Sobre ([Link](https://euchico.github.io))
 
@@ -21,6 +35,7 @@ Espaço para descrever minha trajetória de estudos e conhecimentos, e todos os 
 * **Blog** *([Link](https://dev.to/euchicodev))*  
 
 ## Contato
+
 ### Principal
 * **Site:** [euchico.github.io](https://euchico.github.io)
 * **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
@@ -29,5 +44,9 @@ Espaço para descrever minha trajetória de estudos e conhecimentos, e todos os 
 * **Twitter:** [@euchicodev](https://twitter.com/euchicodev)
 * **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
 
+## Contribuição
+Contribuições são sempre bem-vindas! <br>
+Se surgir algum problema, dificuldade ou questionamento, por favor, registre uma [Issue](../../issues).
+
 ## Licença
-MIT License (MIT) 2025 - [Francisco de Paula](https://github.com/euchico/). Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
+MIT License (c) 2025 - [Francisco de Paula](https://github.com/euchico/). Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
