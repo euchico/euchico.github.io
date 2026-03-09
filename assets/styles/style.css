@@ -1,0 +1,201 @@
+/* =================
+1. VARIÁVEIS E TEMAS
+================= */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #6b6b6b;
+  --border: #e5e5e5;
+
+  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-title: Georgia, "Times New Roman", serif;
+  
+  --transition-theme: background-color 0.5s ease, color 0.3s ease;
+  --transition-link: opacity 0.2s ease;
+}
+
+[data-theme="dark"] {
+  --bg: #0f172a;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --border: #334155;
+}
+
+/* ============
+2. RESET E BASE
+============ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  font-family: var(--font-ui);
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  transition: var(--transition-theme);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-link);
+}
+
+/* ==================
+3. LAYOUT (CONTAINER)
+================== */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+/* ========================
+4. COMPONENTES DE NAVEGAÇÃO
+======================== */
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Revisado */
+
+.menu a, 
+#theme-toggle {
+  opacity: 0.7;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+}
+
+.menu a:hover, 
+#theme-toggle:hover {
+  opacity: 1;
+}
+
+/* Alternância de Ícones */
+[data-theme="light"] .icon-sun { display: inline; }
+[data-theme="light"]  .icon-moon { display: none; }
+[data-theme="dark"] .icon-sun { display: none; }
+[data-theme="dark"] .icon-moon { display: inline; }
+
+/* =====================
+5. TIPOGRAFIA E CONTEÚDO
+===================== */
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-family: var(--font-title);
+  font-size: 2.6rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.hero p {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* ======================
+6. LISTAS DE PROJETOS/EXP
+====================== */
+.list {
+  font-size: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+a.row:hover {
+  opacity: 0.7;
+}
+
+/* ====================
+7. UTILITÁRIOS E FOOTER
+==================== */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0;
+}
+
+section hr{
+  opacity: 0.3;
+}
+
+.footer {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.copyleft {
+  display: inline-block;
+  transform: scaleX(-1);
+}
+
+/* ==============
+8. RESPONSIVIDADE
+============== */
+@media (min-width: 768px) {
+  .container {
+    padding: 2rem 2rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--muted);
+  outline-offset: 4px;
+}
