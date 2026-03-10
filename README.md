@@ -14,15 +14,16 @@ Visualização: https://euchico.github.io
 ---
 ## Conteúdo
 
-- [Pré-Visualização](#Pré-Visualização)
-- [Características](#Características)
-- [Como Rodar](#Como Rodar (Localmente))
-- [Próximos Passos](#Próximos Passos)
-- [Contato](#Contato)
-	- [Principal](#Principal)
-	- [Redes](#Redes)
-- [Contribuição](#Contribuição)
-- [Licença](#Licença)
+- Pré-Visualização
+- Características
+- Como Rodar
+- Próximos Passos
+- Contato
+	- Principal
+	- Redes
+- Contribuição
+- Licença
+
 ---
 
 ## 📸 Pré-Visualização
@@ -73,5 +74,3 @@ Se surgir algum problema, dificuldade ou questionamento, por favor, registre uma
 ## ⚖️ Licença
 MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/). <br>
 Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
-
-
