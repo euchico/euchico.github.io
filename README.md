@@ -1,4 +1,4 @@
-# euChico - Francisco de Paula
+# Francisco de Paula (euChico)
 
 ![status](https://img.shields.io/badge/status-Em_Andamento-yellow)
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](./LICENSE)
@@ -14,14 +14,16 @@ Visualização: https://euchico.github.io
 ---
 ## Conteúdo
 
-- [Características](#Características)
-- [Como Rodar](#Como Rodar)
-- [Próximos Passos](#Próximos Passos)
-- [Contato](#Contato)
-	- [Principal](#Principal)
-	- [Redes](#Redes)
-- [Contribuição](#Contribuição)
-- [Licença](#Licença)
+- Pré-Visualização
+- Características
+- Como Rodar
+- Próximos Passos
+- Contato
+	- Principal
+	- Redes
+- Contribuição
+- Licença
+
 ---
 
 ## 📸 Pré-Visualização
@@ -30,21 +32,21 @@ Visualização: https://euchico.github.io
   <img src="assets/images/screenshot-preview.jpg" alt="Screenshot do Portfólio" width="600px">
 </p>
 
-## 🛠️ Características:
+## 🛠️ Características
 
 - Tecnologias: HTML5, CSS3, Vanilla JavaScript e GitHub Pages;
 - Estrutura semântica para melhor desempenho em SEO e acessibilidade;
 - Layout minimalista, responsivo e com aplicação de tema escuro;
 - Construído com apoio de IA.
 
-## 🚀 Como Rodar (Localmente):
+## 🚀 Como Rodar (Localmente)
 
 ```
 # 1. Clone o repositório
-git clone [https://github.com/euchico/euchico.github.io.git](https://github.com/euchico/euchico.github.io.git)
+> git clone https://github.com/euchico/euchico.github.io.git
 
 # 2. Acesse a pasta
-cd euchico.github.io
+> euchico.github.io
 
 # 3. Abra o index.html no seu navegador
 ```
@@ -70,5 +72,5 @@ Contribuições são sempre bem-vindas! <br>
 Se surgir algum problema, dificuldade ou questionamento, por favor, registre uma [Issue](../../issues).
 
 ## ⚖️ Licença
-MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/).
+MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/). <br>
 Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
