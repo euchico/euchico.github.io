@@ -1,4 +1,4 @@
-# euChico - Francisco de Paula
+# Francisco de Paula (euChico)
 
 ![status](https://img.shields.io/badge/status-Em_Andamento-yellow)
 [![licence mit](https://img.shields.io/badge/licence-MIT-blue.svg)](./LICENSE)
@@ -41,10 +41,10 @@ Visualização: https://euchico.github.io
 
 ```
 # 1. Clone o repositório
-git clone [https://github.com/euchico/euchico.github.io.git](https://github.com/euchico/euchico.github.io.git)
+> git clone https://github.com/euchico/euchico.github.io.git
 
 # 2. Acesse a pasta
-cd euchico.github.io
+> euchico.github.io
 
 # 3. Abra o index.html no seu navegador
 ```
@@ -72,3 +72,4 @@ Se surgir algum problema, dificuldade ou questionamento, por favor, registre uma
 ## ⚖️ Licença
 MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/).
 Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
+
