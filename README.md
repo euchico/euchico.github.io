@@ -14,8 +14,9 @@ Visualização: https://euchico.github.io
 ---
 ## Conteúdo
 
+- [Pré-Visualização](#Pré-Visualização)
 - [Características](#Características)
-- [Como Rodar](#Como Rodar)
+- [Como Rodar](#Como Rodar (Localmente))
 - [Próximos Passos](#Próximos Passos)
 - [Contato](#Contato)
 	- [Principal](#Principal)
@@ -30,14 +31,14 @@ Visualização: https://euchico.github.io
   <img src="assets/images/screenshot-preview.jpg" alt="Screenshot do Portfólio" width="600px">
 </p>
 
-## 🛠️ Características:
+## 🛠️ Características
 
 - Tecnologias: HTML5, CSS3, Vanilla JavaScript e GitHub Pages;
 - Estrutura semântica para melhor desempenho em SEO e acessibilidade;
 - Layout minimalista, responsivo e com aplicação de tema escuro;
 - Construído com apoio de IA.
 
-## 🚀 Como Rodar (Localmente):
+## 🚀 Como Rodar (Localmente)
 
 ```
 # 1. Clone o repositório
@@ -70,6 +71,7 @@ Contribuições são sempre bem-vindas! <br>
 Se surgir algum problema, dificuldade ou questionamento, por favor, registre uma [Issue](../../issues).
 
 ## ⚖️ Licença
-MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/).
+MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/). <br>
 Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
+
 
