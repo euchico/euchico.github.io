@@ -64,7 +64,7 @@ Visualização: https://euchico.github.io
 * **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
 ### Redes
 * **LinkedIn:** [/in/euchico](https://www.linkedin.com/in/euchico)
-* **Twitter/X:** [@euchicodev](https://twitter.com/euchicoprog)
+* **Twitter/X:** [@euchicoprog](https://twitter.com/euchicoprog)
 * **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
 
 ## 🤝 Contribuição
@@ -74,3 +74,4 @@ Se surgir algum problema, dificuldade ou questionamento, por favor, registre uma
 ## ⚖️ Licença
 MIT License (c) 2026 - [Francisco de Paula](https://github.com/euchico/). <br>
 Consulte a seção [LICENSE](LICENSE) para obter mais detalhes.
+
