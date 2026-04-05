@@ -2,23 +2,29 @@
 1. VARIÁVEIS E TEMAS
 ================= */
 :root {
-  --bg: #ffffff;
-  --text: #111111;
-  --muted: #6b6b6b;
-  --border: #e5e5e5;
+  --bg: #f5f3ef;
+  --text: #1a1814;
+  --muted: #6b6760;
+  --subtle: #a8a5a0;
+  --border: #e0ddd8;
+  --border-strong: rgba(26, 24, 20, 0.22);
 
-  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-title: Georgia, "Times New Roman", serif;
-  
-  --transition-theme: background-color 0.5s ease, color 0.3s ease;
-  --transition-link: opacity 0.2s ease;
+  --font-body: "EB Garamond", Georgia, serif;
+  --font-mono: "DM Mono", monospace;
+
+  --transition-theme: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                      color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                      border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-link: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
 }
 
 [data-theme="dark"] {
-  --bg: #0f172a;
-  --text: #f3f4f6;
-  --muted: #9ca3af;
-  --border: #334155;
+  --bg: #181714;
+  --text: #f0ede8;
+  --muted: #9a9590;
+  --subtle: #5c5955;
+  --border: #2e2c29;
+  --border-strong: rgba(240, 237, 232, 0.2);
 }
 
 /* ============
@@ -28,153 +34,287 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+
+html {
+  font-size: 16px;
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
   line-height: 1.7;
   letter-spacing: 0.01em;
-  font-family: var(--font-ui);
-  color: var(--text);
-  background-color: var(--bg);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   transition: var(--transition-theme);
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
   transition: var(--transition-link);
 }
 
+button {
+  font: inherit;
+}
+
 /* ==================
-3. LAYOUT (CONTAINER)
+3. LAYOUT
 ================== */
+.page {
+  width: 100%;
+}
+
 .container {
-  max-width: 720px;
+  width: min(100% - 2.5rem, 640px);
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+}
+
+main.container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* ========================
-4. COMPONENTES DE NAVEGAÇÃO
+4. TOPBAR
 ======================== */
 .topbar {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 2.5rem;
+  padding: 1.25rem 0;
 }
 
-.menu {
+.topbar-inner {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 1.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.9rem;
 }
 
-/* Revisado */
+.topbar-logo {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
 
-.menu a, 
-#theme-toggle {
-  opacity: 0.7;
-  cursor: pointer;
+.topbar-logo:hover {
+  color: var(--text);
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lang-toggle,
+.theme-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   background: none;
   border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.lang-toggle:hover,
+.theme-btn:hover {
   color: var(--text);
-  display: flex;
+}
+
+.theme-btn {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.menu a:hover, 
-#theme-toggle:hover {
-  opacity: 1;
-}
-
-/* Alternância de Ícones */
 [data-theme="light"] .icon-sun { display: inline; }
-[data-theme="light"]  .icon-moon { display: none; }
+[data-theme="light"] .icon-moon { display: none; }
 [data-theme="dark"] .icon-sun { display: none; }
 [data-theme="dark"] .icon-moon { display: inline; }
 
 /* =====================
-5. TIPOGRAFIA E CONTEÚDO
+5. HERO
 ===================== */
 .hero {
-  margin-bottom: 3rem;
+  margin-bottom: 5.5rem;
 }
 
-.hero h1 {
-  font-family: var(--font-title);
-  font-size: 2.6rem;
+.hero-name {
+  font-size: clamp(2.8rem, 8vw, 4.25rem);
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  color: var(--text);
+  margin-bottom: 1.15rem;
 }
 
-.hero p {
-  font-size: 1.05rem;
+.hero-sub {
+  max-width: 26rem;
+  font-size: 1.0625rem;
+  font-style: italic;
+  font-weight: 400;
   color: var(--muted);
+  line-height: 1.6;
 }
 
-h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
+/* =====================
+6. SEÇÕES
+===================== */
+.content-section {
+  margin-bottom: 4.5rem;
+}
+
+.section-header {
+  margin-bottom: 1.75rem;
+}
+
+.section-title {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  margin-bottom: 1.5rem;
+  color: var(--muted);
 }
 
-h3 {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--muted);
-  margin-bottom: 1rem;
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--border);
+  margin-top: 0.75rem;
+  transition: var(--transition-theme);
+}
+
+.sub-label {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--subtle);
+}
+
+.sub-label:first-of-type {
+  margin-top: 0;
 }
 
 /* ======================
-6. LISTAS DE PROJETOS/EXP
+7. LISTAS EDITORIAIS
 ====================== */
-.list {
-  font-size: 1.15rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  margin-bottom: 2rem;
+.item-list {
+  list-style: none;
 }
 
-.row {
+.item-row {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
-  width: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
 }
 
-a.row:hover {
-  opacity: 0.7;
+a.item-row:hover {
+  opacity: 0.86;
+  transform: translateX(4px);
+}
+
+.item-name {
+  flex: 1;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text);
+}
+
+.item-name em {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.item-tag {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--subtle);
+}
+
+.static-row {
+  cursor: default;
 }
 
 /* ====================
-7. UTILITÁRIOS E FOOTER
+8. FOOTER
 ==================== */
-hr {
-  border: none;
-  border-top: 1px solid var(--border);
-  margin: 3rem 0;
-}
-
-section hr{
-  opacity: 0.3;
-}
-
 .footer {
-  margin-top: 5rem;
-  text-align: center;
-  font-size: 0.8rem;
-  color: var(--muted);
+  padding: 2.5rem 0 2rem;
+  border-top: 1px solid var(--border);
+  transition: var(--transition-theme);
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--subtle);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--subtle);
+}
+
+.footer-link:hover {
+  color: var(--text);
 }
 
 .copyleft {
@@ -182,20 +322,44 @@ section hr{
   transform: scaleX(-1);
 }
 
-/* ==============
-8. RESPONSIVIDADE
-============== */
-@media (min-width: 768px) {
-  .container {
-    padding: 2rem 2rem 2rem;
-  }
-
-  .hero h1 {
-    font-size: 3.2rem;
-  }
+/* ====================
+9. ACESSIBILIDADE
+==================== */
+:focus-visible {
+  outline: 2px solid var(--border-strong);
+  outline-offset: 4px;
 }
 
-:focus-visible {
-  outline: 2px solid var(--muted);
-  outline-offset: 4px;
+/* ====================
+10. RESPONSIVIDADE
+==================== */
+@media (max-width: 520px) {
+  .container {
+    width: min(100% - 1.5rem, 640px);
+  }
+
+  main.container {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero {
+    margin-bottom: 4rem;
+  }
+
+  .item-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 0.9rem 1.25rem;
+  }
 }
