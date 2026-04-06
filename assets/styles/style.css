@@ -9,8 +9,15 @@
   --border: #e0ddd8;
   --border-strong: rgba(26, 24, 20, 0.22);
 
+  --tag-pessoal: #7d8a7d;
+  --tag-desafio: #96756b;
+  --tag-estudo: #788394;
+  --tag-profissional: #8b7d89;
+  --tag-experimento: #8f846d;
+
   --font-body: "EB Garamond", Georgia, serif;
   --font-mono: "DM Mono", monospace;
+  --font-mark: "Cormorant Garamond", serif;
 
   --transition-theme: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
                       color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
@@ -25,6 +32,12 @@
   --subtle: #5c5955;
   --border: #2e2c29;
   --border-strong: rgba(240, 237, 232, 0.2);
+
+  --tag-pessoal: #92a08f;
+  --tag-desafio: #af8e82;
+  --tag-estudo: #92a0b3;
+  --tag-profissional: #a595a2;
+  --tag-experimento: #a89b83;
 }
 
 /* ============
@@ -60,9 +73,7 @@ ul {
   padding: 0;
 }
 
-h1,
-h2,
-p {
+h1, h2, h3, p {
   margin: 0;
 }
 
@@ -76,9 +87,9 @@ button {
   font: inherit;
 }
 
-/* ==================
+/* ======
 3. LAYOUT
-================== */
+========= */
 .page {
   width: 100%;
 }
@@ -93,9 +104,9 @@ main.container {
   padding-bottom: 5rem;
 }
 
-/* ========================
+/* ======
 4. TOPBAR
-======================== */
+========= */
 .topbar {
   padding: 1.25rem 0;
 }
@@ -104,15 +115,17 @@ main.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border);
   padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--border);
 }
 
 .topbar-logo {
-  font-family: "Cormorant Garamond", serif;
+  color: var(--muted);
+  font-family: var(--font-mark);
+  font-size: 0.95rem;
   font-style: italic;
   font-weight: 700;
-  font-size: 0.95rem;
+  letter-spacing: 0;
 }
 
 .topbar-logo:hover {
@@ -125,41 +138,37 @@ main.container {
   gap: 1.5rem;
 }
 
-.lang-toggle,
-.theme-btn {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 400;
-  color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.lang-toggle:hover,
-.theme-btn:hover {
-  color: var(--text);
-}
-
 .theme-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 1.5rem;
   height: 1.5rem;
+  padding: 0;
+  
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
+.theme-btn:hover {
+  color: var(--text);
+}
+
+.icon-sun, .icon-moon { display: none; }
 [data-theme="light"] .icon-sun { display: inline; }
-[data-theme="light"] .icon-moon { display: none; }
-[data-theme="dark"] .icon-sun { display: none; }
 [data-theme="dark"] .icon-moon { display: inline; }
 
-/* =====================
+/* ====
 5. HERO
-===================== */
+======= */
 .hero {
   margin-bottom: 5.5rem;
 }
@@ -175,16 +184,16 @@ main.container {
 
 .hero-sub {
   max-width: 26rem;
-  font-size: 1.0625rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 400;
   color: var(--muted);
   line-height: 1.6;
 }
 
-/* =====================
+/* ======
 6. SEÇÕES
-===================== */
+========= */
 .content-section {
   margin-bottom: 4.5rem;
 }
@@ -226,9 +235,9 @@ main.container {
   margin-top: 0;
 }
 
-/* ======================
+/* =================
 7. LISTAS EDITORIAIS
-====================== */
+==================== */
 .item-list {
   list-style: none;
 }
@@ -257,9 +266,11 @@ a.item-row:hover {
 }
 
 .item-name em {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.92rem;
   font-style: italic;
   color: var(--muted);
-  font-size: 0.94rem;
 }
 
 .item-tag {
@@ -267,19 +278,32 @@ a.item-row:hover {
   white-space: nowrap;
   font-family: var(--font-mono);
   font-size: 0.6875rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--subtle);
 }
 
+.tag-pessoal { color: var(--tag-pessoal); }
+.tag-desafio { color: var(--tag-desafio); }
+.tag-estudo { color: var(--tag-estudo); }
+.tag-profissional { color: var(--tag-profissional); }
+.tag-experimento { color: var(--tag-experimento); }
+
 .static-row {
   cursor: default;
 }
 
-/* ====================
+.item-empty {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--subtle);
+  font-style: italic;
+}
+
+/* ======
 8. FOOTER
-==================== */
+========= */
 .footer {
   padding: 2.5rem 0 2rem;
   border-top: 1px solid var(--border);
@@ -322,17 +346,41 @@ a.item-row:hover {
   transform: scaleX(-1);
 }
 
-/* ====================
+/* ==============
 9. ACESSIBILIDADE
-==================== */
+================= */
 :focus-visible {
   outline: 2px solid var(--border-strong);
   outline-offset: 4px;
 }
 
-/* ====================
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.noscript-message {
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* ===============
 10. RESPONSIVIDADE
-==================== */
+================== */
 @media (max-width: 520px) {
   .container {
     width: min(100% - 1.5rem, 640px);

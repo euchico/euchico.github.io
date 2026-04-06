@@ -1,0 +1,20 @@
+[
+  {
+    "order": 1,
+    "title": "Programador Jr.",
+    "organization": "MXM Sistemas",
+    "period": "Nov/2021 ~ Atualmente"
+  },
+  {
+    "order": 2,
+    "title": "Desenvolvedor Front-end Jr.",
+    "organization": "Agência Kindle",
+    "period": "Ago/2021 ~ Nov/2021"
+  },
+  {
+    "order": 3,
+    "title": "Estagiário",
+    "organization": "Vento Consulting",
+    "period": "Ago/2013 ~ Jun/2014"
+  }
+]

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
 <head>
+  <!-- Configurações básicas do documento -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Título exibido na aba do navegador e usado por mecanismos de busca -->
   <title>Francisco de Paula | Programador Full Stack focado no ecossistema .NET e especializado em ERP</title>
+
+  <!-- URL canônica para indicar a versão principal da página -->
   <link rel="canonical" href="https://euchico.github.io/">
 
+  <!-- Metadados gerais para SEO -->
   <meta name="author" content="Francisco de Paula">
   <meta name="description" content="Francisco de Paula, programador Full Stack focado no ecossistema .NET (C#), com experiência em sustentação e evolução de sistemas ERP.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#f5f3ef">
 
+  <!-- Open Graph: melhora a aparência da página ao compartilhar em redes sociais -->
   <meta property="og:locale" content="pt_BR">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Francisco de Paula">
@@ -23,27 +29,66 @@
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
 
+  <!-- Twitter Card: pré-visualização ao compartilhar no X/Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@euchicoprog">
   <meta name="twitter:creator" content="@euchicoprog">
   <meta name="twitter:title" content="Francisco de Paula | Programador Full Stack focado no ecossistema .NET e especializado em ERP">
   <meta name="twitter:description" content="Francisco de Paula, programador Full Stack focado no ecossistema .NET (C#), com experiência em sustentação e evolução de sistemas ERP.">
   <meta name="twitter:image" content="https://euchico.github.io/assets/images/euchico-perfil.jpg">
-  
+
+  <!-- Pré-conexão com servidores do Google Fonts para melhorar o carregamento -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Famílias tipográficas usadas na identidade visual do site -->
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Normalize primeiro, depois o CSS principal do projeto -->
   <link rel="stylesheet" href="assets/styles/normalize.css">
   <link rel="stylesheet" href="assets/styles/style.css">
+
+  <!--
+    Dados estruturados em JSON-LD.
+    Ajudam mecanismos de busca a entender melhor quem é a pessoa apresentada na página.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Francisco de Paula",
+    "url": "https://euchico.github.io/",
+    "image": "https://raw.githubusercontent.com/euchico/euchico.github.io/master/assets/img/euchico-perfil.jpg",
+    "jobTitle": "Programador Full Stack",
+    "description": "Programador Full Stack focado no ecossistema .NET e especializado em ERP.",
+    "sameAs": [
+      "https://github.com/euchico",
+      "https://linkedin.com/in/euchico",
+      "https://twitter.com/euchicoprog"
+    ],
+    "knowsAbout": [
+      ".NET",
+      "C#",
+      "ERP Systems",
+      "Full Stack Development"
+    ]
+  }
+  </script>
 </head>
 
 <body>
+  <!-- Wrapper geral da página -->
   <div class="page">
+
+    <!-- Navegação superior curta e funcional -->
     <nav class="topbar" aria-label="Navegação superior">
       <div class="container topbar-inner">
+        <!-- Monograma/marca pessoal -->
         <a href="/" class="topbar-logo" aria-label="Página inicial">fp</a>
 
         <div class="topbar-actions">
-          <!-- quando existir a versão em inglês, troque o href -->
-          <a href="/en/" lang="en" hreflang="en" class="lang-toggle" title="Switch to English">en</a>
-
+          <!-- Botão de alternância de tema.
+               Os ícones visíveis são controlados no CSS conforme o data-theme do html -->
           <button id="theme-toggle" class="theme-btn" type="button" aria-label="Alternar entre modo claro e escuro">
             <span class="icon-sun" aria-hidden="true">☀</span>
             <span class="icon-moon" aria-hidden="true">☾</span>
@@ -52,7 +97,10 @@
       </div>
     </nav>
 
+    <!-- Conteúdo principal da página -->
     <main class="container">
+
+      <!-- Hero: bloco de apresentação principal -->
       <header class="hero">
         <h1 class="hero-name">Francisco de Paula</h1>
         <p class="hero-sub">
@@ -60,97 +108,92 @@
         </p>
       </header>
 
-      <section class="content-section" aria-labelledby="projetos-title">
+      <!-- Seção de projetos.
+           As listas começam com um fallback e depois são preenchidas via JavaScript -->
+      <section class="content-section" aria-labelledby="projects-title">
         <div class="section-header">
-          <h2 id="projetos-title" class="section-title">Projetos</h2>
+          <h2 id="projects-title" class="section-title">Projetos</h2>
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
-        <span class="sub-label">Destaques</span>
-        <ul class="item-list">
-          <li>
-            <a class="item-row" href="https://github.com/euchico/euchico.github.io" target="_blank" rel="noopener noreferrer">
-              <span class="item-name">Página Pessoal</span>
-              <span class="item-tag">Pessoal</span>
-            </a>
-          </li>
-
-          <li>
-            <a class="item-row" href="https://github.com/euchico/projeto-azor" target="_blank" rel="noopener noreferrer">
-              <span class="item-name">Projeto Azor</span>
-              <span class="item-tag">Pessoal</span>
-            </a>
-          </li>
+        <h3 class="sub-label">Destaques</h3>
+        <ul id="projects-featured" class="item-list">
+          <li class="item-empty">Carregando projetos em destaque...</li>
         </ul>
 
-        <span class="sub-label">Últimos</span>
-        <ul class="item-list">
-          <li>
-            <a class="item-row" href="https://github.com/euchico/euchico.github.io" target="_blank" rel="noopener noreferrer">
-              <span class="item-name">Página Pessoal</span>
-              <span class="item-tag">Pessoal</span>
-            </a>
-          </li>
-
-          <li>
-            <a class="item-row" href="https://github.com/euchico/projeto-azor" target="_blank" rel="noopener noreferrer">
-              <span class="item-name">Projeto Azor</span>
-              <span class="item-tag">Pessoal</span>
-            </a>
-          </li>
+        <h3 class="sub-label">Últimos</h3>
+        <ul id="projects-all" class="item-list">
+          <li class="item-empty">Carregando projetos...</li>
         </ul>
       </section>
 
-      <section class="content-section" aria-labelledby="experiencia-title">
+      <!-- Seção de experiência profissional -->
+      <section class="content-section" aria-labelledby="experience-title">
         <div class="section-header">
-          <h2 id="experiencia-title" class="section-title">Experiência</h2>
+          <h2 id="experience-title" class="section-title">Experiência</h2>
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
-        <ul class="item-list">
-          <li>
-            <div class="item-row static-row">
-              <span class="item-name">
-                Programador Jr. <em>em MXM Sistemas</em>
-              </span>
-              <span class="item-tag">Atualmente</span>
-            </div>
-          </li>
+        <ul id="experience-list" class="item-list">
+          <li class="item-empty">Carregando experiência...</li>
         </ul>
       </section>
 
-      <section class="content-section" aria-labelledby="educacao-title">
+      <!-- Seção de formação acadêmica -->
+      <section class="content-section" aria-labelledby="education-title">
         <div class="section-header">
-          <h2 id="educacao-title" class="section-title">Educação</h2>
+          <h2 id="education-title" class="section-title">Educação</h2>
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
-        <ul class="item-list">
-          <li>
-            <div class="item-row static-row">
-              <span class="item-name">
-                Especialização em ERP <em>em UNINTER</em>
-              </span>
-              <span class="item-tag">Cursando</span>
-            </div>
-          </li>
+        <ul id="education-list" class="item-list">
+          <li class="item-empty">Carregando formação...</li>
         </ul>
       </section>
+
+      <!-- Mensagem exibida apenas quando o navegador estiver com JavaScript desativado -->
+      <noscript>
+        <section class="content-section">
+          <p class="noscript-message">
+            Este site usa JavaScript para carregar parte do conteúdo. Caso algo não apareça, consulte também meu GitHub e currículo no rodapé.
+          </p>
+        </section>
+      </noscript>
     </main>
 
+    <!-- Rodapé com links externos e aviso acessível para leitores de tela -->
     <footer class="footer">
       <div class="container footer-inner">
-        <span class="footer-copy"><span class="copyleft">©</span> 2026 — Francisco de Paula</span>
+        <span class="footer-copy">
+          <span class="copyleft">©</span> 2026 — Francisco de Paula
+        </span>
 
         <div class="footer-links">
-          <a href="https://github.com/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="#" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="franciscodepaula-curriculo.pdf" class="footer-link" target="_blank" rel="noopener noreferrer">Currículo</a>
+          <a href="https://github.com/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">
+            GitHub
+            <span class="sr-only">(abre em nova aba)</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+            <span class="sr-only">(abre em nova aba)</span>
+          </a>
+
+          <a href="franciscodepaula-curriculo.pdf" class="footer-link" target="_blank" rel="noopener noreferrer">
+            Currículo
+            <span class="sr-only">(abre em nova aba)</span>
+          </a>
         </div>
       </div>
     </footer>
   </div>
 
-  <script src="assets/scripts/theme.js"></script>
+  <!--
+    Os scripts usam "defer" para não bloquear a leitura do HTML.
+    theme.js cuida do modo claro/escuro.
+    content-loader.js busca os JSONs e renderiza as listas.
+  -->
+  <script src="assets/scripts/theme.js" defer></script>
+  <script src="assets/scripts/content-loader.js" defer></script>
 </body>
 </html>
