@@ -73,11 +73,11 @@ Acesse: http://localhost:8000
 
 ## ▶️ Próximos Passos
 
-- [ ] Criar favicon
-- [ ] Atualizar pré-visualização
+- [ ] Reestrutura pasta e arquivos
+- [ ] Revisar código
 - [ ] Corrigir desempenho no pagespeed
+- [ ] Criar favicon
 - [ ] Atualizar currículo
-- [ ] Criar versão em inglês
 
 ## 📧 Contato
 
