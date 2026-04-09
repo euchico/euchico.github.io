@@ -16,7 +16,7 @@ O objetivo do projeto é apresentar meus estudos em programação, projetos pess
 
 - Pré-Visualização
 - Características
-- Arquitetura
+- Estrutura
 - Como Rodar
 - Próximos Passos
 - Contato
@@ -26,19 +26,21 @@ O objetivo do projeto é apresentar meus estudos em programação, projetos pess
 ---
 
 ## 📸 Pré-Visualização
+
 <p align="center">
   <img src="assets/images/screenshot-preview.jpg" alt="Screenshot do Portfólio" width="600px">
 </p>
 
 ## 🛠️ Características
-- HTML5, CSS3, Vanilla JavaScript e GitHub Pages
+
+- HTML5, CSS3, JavaScript e GitHub Pages
 - Estrutura semântica focada em SEO e acessibilidade
-- Layout minimalista com foco em tipografia e leitura
 - Tema escuro/claro com alternância
 - Conteúdo dinâmico via JSON
 - Construído com apoio de IA
 
-## 🧱 Arquitetura
+## 🧱 Estrutura
+
 O conteúdo do site é gerenciado de forma desacoplada da estrutura HTML.
 
 - `assets/data/projects.json`
@@ -70,6 +72,7 @@ Acesse: http://localhost:8000
 ```
 
 ## ▶️ Próximos Passos
+
 - [ ] Criar favicon
 - [ ] Atualizar pré-visualização
 - [ ] Corrigir desempenho no pagespeed
@@ -77,18 +80,24 @@ Acesse: http://localhost:8000
 - [ ] Criar versão em inglês
 
 ## 📧 Contato
+
 ### Principal
+
 * **Site:** [euchico.github.io](https://euchico.github.io)
 * **Email:** [eu.francisco@outlook.com](mailto:eu.francisco@outlook.com)
+
 ### Redes
+
 * **LinkedIn:** [/in/euchico](https://www.linkedin.com/in/euchico)
 * **Twitter/X:** [@euchicoprog](https://twitter.com/euchicoprog)
 * **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
 
 ## 🤝 Contribuição
+
 Contribuições são sempre bem-vindas! <br>
 Se encontrar algum problema ou tiver sugestões, abra uma [Issue](../../issues).
 
 ## ⚖️ Licença
+
 Licença MIT (c) 2026 - [Francisco de Paula](https://github.com/euchico/). <br>
 Consulte a seção [LICENSE](LICENSE) para mais detalhes.
