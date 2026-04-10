@@ -1,6 +1,6 @@
 ﻿const CACHE_NAME = 'site-cache-v1';
 const ASSETS = [
-  '/public/index.html',
+  '/index.html',
   '/src/pages/home/index.html',
   '/src/pages/sobre/index.html',
   '/src/pages/contato/index.html',
@@ -16,7 +16,7 @@ const ASSETS = [
   '/data/projects.json',
   '/data/experience.json',
   '/data/education.json',
-  '/public/favicon.ico'
+  '/favicon.ico'
 ];
 
 self.addEventListener('install', (event) => {
@@ -59,3 +59,5 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+

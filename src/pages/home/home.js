@@ -1,5 +1,8 @@
 ﻿import { fetchJson, sortByOrder } from '../../scripts/utils.js';
 
+/**
+ * Mapa para tradução e estilo das categorias de projetos.
+ */
 const PROJECT_TYPES = {
   personal: { label: 'Pessoal', className: 'tag-pessoal' },
   challenge: { label: 'Desafio', className: 'tag-desafio' },
@@ -8,6 +11,9 @@ const PROJECT_TYPES = {
   experiment: { label: 'Experimento', className: 'tag-experimento' }
 };
 
+/**
+ * Pequena fábrica de elementos para manter renderização consistente.
+ */
 const UI = {
   createTag(text, className = '') {
     const span = document.createElement('span');
@@ -47,6 +53,9 @@ const UI = {
   }
 };
 
+/**
+ * Renderiza listas em containers por id com fallback de vazio.
+ */
 function renderList(containerId, items, rowMapper, emptyMsg) {
   const container = document.getElementById(containerId);
   if (!container) return;
@@ -95,6 +104,9 @@ function handleProjects(projects) {
   );
 }
 
+/**
+ * Carrega dados JSON e monta conteúdo da Home.
+ */
 export async function initHomePage() {
   try {
     const [projects, experience, education] = await Promise.all([

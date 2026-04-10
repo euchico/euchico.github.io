@@ -1,12 +1,18 @@
 ﻿import { markActiveNav } from '../components/header/header.js';
 import { updateFooterYear } from '../components/footer/footer.js';
 
+/**
+ * Obtém o tema inicial baseado no localStorage ou na preferência do sistema.
+ */
 function getInitialTheme() {
   const saved = localStorage.getItem('theme');
   if (saved) return saved;
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
+/**
+ * Aplica o tema no documento e atualiza a dica de acessibilidade do botão.
+ */
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
@@ -18,6 +24,9 @@ function applyTheme(theme) {
   }
 }
 
+/**
+ * Inicializa interação do botão de alternância de tema.
+ */
 function initThemeToggle() {
   const toggle = document.getElementById('theme-toggle');
   if (!toggle) return;
@@ -31,6 +40,9 @@ function initThemeToggle() {
   });
 }
 
+/**
+ * Inicialização global da interface.
+ */
 export function initAppShell() {
   markActiveNav();
   updateFooterYear();
