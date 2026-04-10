@@ -1,0 +1,9 @@
+﻿.about-page h1 {
+  font-size: clamp(2.1rem, 5vw, 2.8rem);
+  margin-bottom: 1rem;
+}
+
+.about-page p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
