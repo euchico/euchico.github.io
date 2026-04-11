@@ -27,7 +27,7 @@
   <meta property="og:description" content="Francisco de Paula, programador Full Stack focado no ecossistema .NET (C#), com experiência em sustentação e evolução de sistemas ERP.">
   <meta property="og:url" content="https://euchico.github.io/">
   <meta property="og:site_name" content="euChico">
-  <meta property="og:image" content="https://euchico.github.io/assets/images/euchico-perfil.jpg">
+  <meta property="og:image" content="https://raw.githubusercontent.com/euchico/euchico.github.io/master/assets/img/euchico-perfil.jpg">
   <meta property="og:image:alt" content="Foto de perfil de Francisco de Paula">
   <meta property="og:image:width" content="300">
   <meta property="og:image:height" content="300">
@@ -91,19 +91,18 @@
 </head>
 
 <body data-page="home">
-  <!-- Wrapper geral da página -->
+  <!-- Wrapper Geral -->
   <div class="page">
 
-    <!-- Navegação superior curta e funcional -->
+    <!-- Navegação Superior  -->
     <header>
       <nav class="topbar" aria-label="Navegação principal">
         <div class="container topbar-inner">
-          <a href="/index.html" class="topbar-logo" aria-label="Página inicial">fp</a>
+          <!-- Marca Pessoal -->
+          <a href="/" class="topbar-logo" aria-label="Página inicial">fp</a>
 
+          <!-- Botão de Alternância de Tema -->
           <div class="topbar-links">
-            <a href="/index.html" class="topbar-link">Início</a>
-            <a href="/src/pages/sobre/index.html" class="topbar-link">Sobre</a>
-            <a href="/src/pages/contato/index.html" class="topbar-link">Contato</a>
             <button id="theme-toggle" class="theme-btn button button-ghost" type="button" aria-label="Alternar tema">
               <span class="icon-sun" aria-hidden="true">☀</span>
               <span class="icon-moon" aria-hidden="true">☾</span>
@@ -113,8 +112,10 @@
       </nav>
     </header>
 
-    <!-- Conteúdo principal da página -->
+    <!-- Conteúdo Principal -->
     <main class="container">
+
+      <!-- Hero -->
       <header class="hero">
         <h1 class="hero-name">Francisco de Paula</h1>
         <p class="hero-sub">
@@ -122,23 +123,27 @@
         </p>
       </header>
 
+      <!-- Seção: Projetos -->
       <section class="content-section" aria-labelledby="projects-title">
         <div class="section-header">
           <h2 id="projects-title" class="section-title">Projetos</h2>
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
+        <!-- Projetos de Destaque -->
         <h3 class="sub-label">Destaques</h3>
         <ul id="projects-featured" class="item-list">
           <li class="item-empty">Carregando projetos em destaque...</li>
         </ul>
 
-        <h3 class="sub-label">Últimos</h3>
+        <!-- Projetos Recentes -->
+        <h3 class="sub-label">Recentes</h3>
         <ul id="projects-all" class="item-list">
           <li class="item-empty">Carregando projetos...</li>
         </ul>
       </section>
 
+      <!-- Seção: Experiência Profissional -->
       <section class="content-section" aria-labelledby="experience-title">
         <div class="section-header">
           <h2 id="experience-title" class="section-title">Experiência</h2>
@@ -150,6 +155,7 @@
         </ul>
       </section>
 
+      <!-- Seção: Educação -->
       <section class="content-section" aria-labelledby="education-title">
         <div class="section-header">
           <h2 id="education-title" class="section-title">Educação</h2>
@@ -161,31 +167,35 @@
         </ul>
       </section>
 
+      <!-- Mensagem: JavaScript Desativado -->
       <noscript>
         <section class="content-section">
           <p class="noscript-message">
-            Este site usa JavaScript para carregar parte do conteúdo. Caso algo não apareça, consulte também meu GitHub e currículo no rodapé.
+            Parte do conteúdo deste site depende de JavaScript. Se algo não carregar, confira meu GitHub e currículo no rodapé.
           </p>
         </section>
       </noscript>
     </main>
 
-    <!-- Rodapé com links externos -->
+    <!-- Rodapé -->
     <footer class="footer">
       <div class="container footer-inner">
+        <!-- Copyright -->
         <span class="footer-copy">
           <span class="copyleft">©</span> <span id="footer-year"></span> Francisco de Paula
         </span>
 
+        <!-- Links -->
         <div class="footer-links">
-          <a href="https://github.com/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="/franciscodepaula-curriculo.pdf" class="footer-link" target="_blank" rel="noopener noreferrer">Currículo</a>
+          <a href="https://github.com/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only">(abre em nova aba)</span></a>
+          <a href="https://www.linkedin.com/in/euchico" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only">(abre em nova aba)</span></a>
+          <a href="/assets/files/franciscodepaula-curriculo.pdf" class="footer-link" target="_blank" rel="noopener noreferrer">Currículo<span class="sr-only">(abre em nova aba)</span></a>
         </div>
       </div>
     </footer>
   </div>
 
-  <script type="module" src="/src/main.js"></script>
+  <!-- Scripts -->
+  <script type="module" src="/src/main.js" defer></script>
 </body>
 </html>
