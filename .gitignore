@@ -55,3 +55,4 @@ Thumbs.db
 # Codex (evitar versionar config local)
 # =========================
 .codex/
+*.bak
