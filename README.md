@@ -73,7 +73,6 @@ Acesse: http://localhost:8000
 
 ## ▶️ Próximos Passos
 
-- [ ] Reestrutura pasta e arquivos
 - [ ] Revisar código
 - [ ] Corrigir desempenho no pagespeed
 - [ ] Criar favicon
