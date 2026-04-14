@@ -1,18 +1,14 @@
-﻿const CACHE_NAME = 'site-cache-v1';
+const CACHE_NAME = 'site-cache-v3';
 const ASSETS = [
+  '/',
   '/index.html',
-  '/src/pages/home/index.html',
-  '/src/pages/sobre/index.html',
-  '/src/pages/contato/index.html',
-  '/src/styles/app.css',
-  '/src/main.js',
+  '/src/styles/main.css',
+  '/src/scripts/main.js',
   '/src/scripts/global.js',
   '/src/scripts/utils.js',
+  '/src/scripts/content-loader.js',
   '/src/components/header/header.js',
   '/src/components/footer/footer.js',
-  '/src/pages/home/home.js',
-  '/src/pages/sobre/sobre.js',
-  '/src/pages/contato/contato.js',
   '/data/projects.json',
   '/data/experience.json',
   '/data/education.json',
@@ -29,35 +25,51 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => Promise.all(
-      keys.map((key) => {
-        if (key !== CACHE_NAME) {
-          return caches.delete(key);
-        }
-        return Promise.resolve();
-      })
+      keys
+        .filter((key) => key !== CACHE_NAME)
+        .map((key) => caches.delete(key))
     ))
   );
   self.clients.claim();
 });
 
+function saveToCache(request, response) {
+  if (!response || response.status !== 200 || response.type === 'opaque') {
+    return response;
+  }
+
+  const copy = response.clone();
+  caches.open(CACHE_NAME).then((cache) => cache.put(request, copy));
+  return response;
+}
+
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin) return;
+
+  const isDataRequest = url.pathname.startsWith('/data/');
+  const isCoreTextAsset =
+    event.request.mode === 'navigate' ||
+    url.pathname.endsWith('.html') ||
+    url.pathname.endsWith('.js') ||
+    url.pathname.endsWith('.css');
+
+  if (isDataRequest || isCoreTextAsset) {
+    event.respondWith(
+      fetch(event.request)
+        .then((response) => saveToCache(event.request, response))
+        .catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
-
-      return fetch(event.request).then((networkResponse) => {
-        if (!networkResponse || networkResponse.status !== 200 || networkResponse.type === 'opaque') {
-          return networkResponse;
-        }
-
-        const copy = networkResponse.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-        return networkResponse;
-      });
+      return fetch(event.request).then((response) => saveToCache(event.request, response));
     })
   );
 });
-
 
