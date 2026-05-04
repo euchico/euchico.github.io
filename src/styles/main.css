@@ -1,63 +1,6 @@
-﻿/* FILE: src/styles/variables.css */
-:root {
-  --bg: #f5f3ef;
-  --text: #1a1814;
-  --muted: #645f58;
-  --subtle: #6f6962;
-  --border: #e0ddd8;
-  --border-strong: rgba(26, 24, 20, 0.22);
+﻿@import "variables.css";
 
-  --tag-pessoal: #6d796d;
-  --tag-desafio: #836359;
-  --tag-estudo: #616d80;
-  --tag-profissional: #786b77;
-  --tag-experimento: #7c715a;
-
-  --font-body: "EB Garamond", Georgia, serif;
-  --font-mono: "DM Mono", monospace;
-  --font-mark: "Cormorant Garamond", serif;
-
-  --transition-theme: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  --transition-link: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
-}
-
-[data-theme="dark"] {
-  --bg: #181714;
-  --text: #f0ede8;
-  --muted: #b1aba3;
-  --subtle: #9d968d;
-  --border: #2e2c29;
-  --border-strong: rgba(240, 237, 232, 0.2);
-
-  --tag-pessoal: #9dad9a;
-  --tag-desafio: #c3a093;
-  --tag-estudo: #9dadc3;
-  --tag-profissional: #baa9b7;
-  --tag-experimento: #b8ac95;
-}
-
-
-/* FILE: src/styles/global.css */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
-}
-
-main {
-  display: block;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-
-/* FILE: src/styles/utilities.css */
+/* Geral */
 body {
   min-height: 100vh;
   background-color: var(--bg);
@@ -69,10 +12,6 @@ body {
   transition: var(--transition-theme);
 }
 
-.page {
-  width: 100%;
-}
-
 .container {
   width: min(100% - 2.5rem, 640px);
   margin: 0 auto;
@@ -81,15 +20,6 @@ body {
 main.container {
   padding-top: 5rem;
   padding-bottom: 5rem;
-}
-
-h1,
-h2,
-h3,
-p,
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 ul {
@@ -138,30 +68,25 @@ a {
 }
 
 
-/* FILE: src/components/button/button.css */
+/* Navegação Superior */
 .button {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  border: 1px solid var(--border);
-  border-radius: 999px;
+  justify-content: right;
+  border: none;
   padding: 0.5rem 1rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: var(--transition-link);
-}
-
-.button:hover {
-  border-color: var(--border-strong);
+  cursor: pointer;
 }
 
 .button-ghost {
   background: transparent;
   color: var(--muted);
 }
-
 
 /* FILE: src/components/header/header.css */
 .topbar {
@@ -192,7 +117,7 @@ a {
 
 .topbar-link {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--subtle);
@@ -433,5 +358,3 @@ a.item-row:hover {
   color: var(--muted);
   margin-bottom: 1rem;
 }
-
-

@@ -49,6 +49,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=DM+Mono:wght@300;400;500&display=swap"></noscript>
 
   <!-- CSS Principal (Consolidado e Não Bloqueante) -->
+  <link rel="stylesheet" href="/src/styles/normalize.css">
   <link rel="preload" href="/src/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="/src/styles/main.css"></noscript>
 
@@ -82,9 +83,9 @@
     ],
     "knowsAbout": [
       ".NET",
-      "C#",
-      "ERP Systems",
-      "Full Stack Development"
+      "Angular",
+      "Full Stack",
+      "ERP"
     ]
   }
   </script>
@@ -92,28 +93,26 @@
 
 <body data-page="home">
   <!-- Wrapper Geral -->
-  <div class="page">
+  <main class="page">
 
     <!-- Navegação Superior  -->
-    <header>
-      <nav class="topbar" aria-label="Navegação principal">
-        <div class="container topbar-inner">
-          <!-- Marca Pessoal -->
-          <a href="/" class="topbar-logo" aria-label="Página inicial">fp</a>
+    <nav class="topbar" aria-label="Navegação principal">
+      <div class="container topbar-inner">
+        <!-- Marca Pessoal -->
+        <span class="topbar-logo" aria-label="Página inicial">fp</span>
 
-          <!-- Botão de Alternância de Tema -->
-          <div class="topbar-links">
-            <button id="theme-toggle" class="theme-btn button button-ghost" type="button" aria-label="Alternar tema">
-              <span class="icon-sun" aria-hidden="true">☀</span>
-              <span class="icon-moon" aria-hidden="true">☾</span>
-            </button>
-          </div>
+        <!-- Botão de Alternância de Tema -->
+        <div class="topbar-links">
+          <button id="theme-toggle" class="theme-btn button button-ghost" type="button" aria-label="Alternar tema">
+            <span class="icon-sun" aria-hidden="true">☀</span>
+            <span class="icon-moon" aria-hidden="true">☾</span>
+          </button>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
     <!-- Conteúdo Principal -->
-    <main class="container">
+    <div class="container">
 
       <!-- Hero -->
       <header class="hero">
@@ -175,7 +174,7 @@
           </p>
         </section>
       </noscript>
-    </main>
+    </div>
 
     <!-- Rodapé -->
     <footer class="footer">
@@ -193,7 +192,7 @@
         </div>
       </div>
     </footer>
-  </div>
+  </main>
 
   <!-- Scripts -->
   <script type="module" src="/src/scripts/main.js" defer></script>
