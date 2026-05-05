@@ -1,20 +1,20 @@
-const CACHE_NAME = 'site-cache-v3';
+// Nome e versao do cache estatico principal da aplicacao.
+const CACHE_NAME = 'euchico-cache-v1';
+
+// Lista de recursos essenciais para navegacao offline basica.
 const ASSETS = [
   '/',
   '/index.html',
   '/src/styles/main.css',
   '/src/scripts/main.js',
-  '/src/scripts/global.js',
-  '/src/scripts/utils.js',
   '/src/scripts/content-loader.js',
-  '/src/components/header/header.js',
-  '/src/components/footer/footer.js',
   '/data/projects.json',
   '/data/experience.json',
   '/data/education.json',
   '/favicon.ico'
 ];
 
+// Precache dos arquivos essenciais durante a instalacao.
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
@@ -22,6 +22,7 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
+// Limpa caches antigos e assume controle imediato das abas abertas.
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) => Promise.all(
@@ -33,6 +34,7 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
+// Salva respostas validas no cache para reutilizacao futura.
 function saveToCache(request, response) {
   if (!response || response.status !== 200 || response.type === 'opaque') {
     return response;
@@ -43,6 +45,9 @@ function saveToCache(request, response) {
   return response;
 }
 
+// Estrategia de fetch:
+// - dados e textos principais: network-first com fallback em cache;
+// - demais recursos: cache-first com fallback em network.
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
 
@@ -72,4 +77,3 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
-
