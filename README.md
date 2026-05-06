@@ -73,9 +73,7 @@ Acesse: http://localhost:8000
 
 ## ▶️ Próximos Passos
 
-- [ ] Revisar código
 - [ ] Corrigir desempenho no pagespeed
-- [ ] Criar favicon
 - [ ] Atualizar currículo
 
 ## 📧 Contato
