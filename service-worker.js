@@ -1,10 +1,12 @@
 // Nome e versao do cache estatico principal da aplicacao.
-const CACHE_NAME = 'euchico-cache-v1';
+const CACHE_NAME = 'euchico-cache-v2';
 
 // Lista de recursos essenciais para navegacao offline basica.
 const ASSETS = [
   '/',
   '/index.html',
+  '/src/styles/normalize.css',
+  '/src/styles/variables.css',
   '/src/styles/main.css',
   '/src/scripts/main.js',
   '/src/scripts/content-loader.js',

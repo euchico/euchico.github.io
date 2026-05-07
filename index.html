@@ -49,13 +49,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
   <!-- Fonte Carregada -->
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=DM+Mono:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,700&family=DM+Mono:wght@300;400;500&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@1,700&family=DM+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cormorant+Garamond:ital,wght@1,700&family=DM+Mono:wght@400;500&display=swap"></noscript>
 
-  <!-- CSS Principal (Consolidado e Não Bloqueante) -->
+  <!-- CSS Principal -->
   <link rel="stylesheet" href="/src/styles/normalize.css">
-  <link rel="preload" href="/src/styles/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="/src/styles/main.css"></noscript>
+  <link rel="stylesheet" href="/src/styles/variables.css">
+  <link rel="stylesheet" href="/src/styles/main.css">
 
   <!-- Script de Renderização de Tema -->
   <script>
@@ -150,7 +150,7 @@
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
-        <ul id="experience-list" class="item-list">
+        <ul id="experience-list" class="item-list item-list--timeline item-list--3">
           <li class="item-empty">Carregando experiência...</li>
         </ul>
       </section>
@@ -162,7 +162,7 @@
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
-        <ul id="education-list" class="item-list">
+        <ul id="education-list" class="item-list item-list--timeline item-list--2">
           <li class="item-empty">Carregando formação...</li>
         </ul>
       </section>

@@ -102,16 +102,17 @@ const TYPE_CLASSES = {
 function asList(container, rows, emptyMessage) {
   if (!container) return;
 
-  container.innerHTML = '';
   if (!rows.length) {
     const item = document.createElement('li');
     item.className = 'item-empty';
     item.textContent = emptyMessage;
-    container.appendChild(item);
+    container.replaceChildren(item);
     return;
   }
 
-  rows.forEach((row) => container.appendChild(row));
+  const fragment = document.createDocumentFragment();
+  rows.forEach((row) => fragment.appendChild(row));
+  container.replaceChildren(fragment);
 }
 
 function normalizeType(type) {

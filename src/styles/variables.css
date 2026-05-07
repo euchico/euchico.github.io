@@ -12,9 +12,9 @@
   --tag-profissional: #786b77;
   --tag-experimento: #7c715a;
 
-  --font-body: "EB Garamond", Georgia, serif;
-  --font-mono: "DM Mono", monospace;
-  --font-mark: "Cormorant Garamond", serif;
+  --font-body: "EB Garamond", Georgia, "Times New Roman", serif;
+  --font-mono: "DM Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-mark: "Cormorant Garamond", "EB Garamond", Georgia, serif;
 
   --transition-theme: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.35s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-link: color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;

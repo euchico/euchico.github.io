@@ -1,6 +1,4 @@
-﻿@import "variables.css";
-
-/* GERAL: Início */
+﻿/* GERAL: Início */
 body {
   min-height: 100vh;
   font: 1.0625rem/1.7 var(--font-body);
@@ -207,7 +205,18 @@ a {
 }
 
 .item-list {
-  padding-inline-start: 0;
+  --expected-rows: 1;
+  --row-min-block-size: 3.1rem;
+  min-block-size: calc(var(--expected-rows) * var(--row-min-block-size));
+  margin: 0;
+  padding: 0;
+}
+
+.item-list--2 { --expected-rows: 2; }
+.item-list--3 { --expected-rows: 3; }
+
+.item-list--timeline {
+  --row-min-block-size: 4.5rem;
 }
 
 .item-row {
