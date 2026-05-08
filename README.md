@@ -73,8 +73,8 @@ Acesse: http://localhost:8000
 
 ## ▶️ Próximos Passos
 
-- [ ] Corrigir desempenho no pagespeed
 - [ ] Atualizar currículo
+- [ ] Refatoração para simplificação do código
 
 ## 📧 Contato
 
