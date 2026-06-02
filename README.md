@@ -41,15 +41,10 @@ O objetivo do projeto é apresentar meus estudos em programação, projetos pess
 
 ## 🧱 Estrutura
 
-O conteúdo do site é gerenciado de forma desacoplada da estrutura HTML.
+O conteúdo do site é gerenciado de forma desacoplada da estrutura HTML. <br>
+Arquivos são carregados via JavaScript (`content-loader.js`) e renderizados dinamicamente no DOM.
 
-- `assets/data/projects.json`
-- `assets/data/experience.json`
-- `assets/data/education.json`
-
-Esses arquivos são carregados via JavaScript (`content-loader.js`) e renderizados dinamicamente no DOM.
-
-Isso permite:
+Vantagens:
 - Manutenção simplificada;
 - Adição de conteúdo sem alterar HTML;
 - Organização clara entre estrutura e dados.
@@ -73,8 +68,8 @@ Acesse: http://localhost:8000
 
 ## ▶️ Próximos Passos
 
-- [ ] Corrigir desempenho no pagespeed
 - [ ] Atualizar currículo
+- [ ] Refatoração para simplificação do código
 
 ## 📧 Contato
 
@@ -87,7 +82,7 @@ Acesse: http://localhost:8000
 
 * **LinkedIn:** [/in/euchico](https://www.linkedin.com/in/euchico)
 * **Twitter/X:** [@euchicoprog](https://twitter.com/euchicoprog)
-* **Instagram:** [@euchicodev](https://www.instagram.com/euchicodev)
+* **Instagram:** [@euchicoprog](https://www.instagram.com/euchicoprog)
 
 ## 🤝 Contribuição
 
