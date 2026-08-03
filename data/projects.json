@@ -5,5 +5,19 @@
     "link": "https://github.com/euchico/euchico.github.io",
     "type": "pessoal",
     "featured": true
+  },
+  {
+    "order": 2,
+    "name": "Azor",
+    "link": "https://github.com/euchico/azor",
+    "type": "pessoal",
+    "featured": true
+  },
+  {
+    "order": 3,
+    "name": "Smaug",
+    "link": "https://github.com/euchico/smaug",
+    "type": "pessoal",
+    "featured": true
   }
 ]
