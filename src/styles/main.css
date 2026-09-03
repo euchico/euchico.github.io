@@ -248,6 +248,13 @@ a.item-row:hover {
   color: var(--muted);
 }
 
+.item-metadata {
+  display: flex;
+  flex-shrink: 0;
+  align-items: baseline;
+  gap: 1rem;
+}
+
 .item-tag {
   flex-shrink: 0;
   white-space: nowrap;
@@ -263,6 +270,9 @@ a.item-row:hover {
 .tag-estudo { color: var(--tag-estudo); }
 .tag-profissional { color: var(--tag-profissional); }
 .tag-experimento { color: var(--tag-experimento); }
+
+.status-em-andamento { color: var(--status-em-andamento); }
+.status-finalizado { color: var(--status-finalizado); }
 
 .static-row {
   cursor: default;
@@ -280,6 +290,10 @@ a.item-row:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.3rem;
+  }
+
+  .item-metadata {
+    gap: 0.75rem;
   }
 }
 /* SUB-SEÇÃO: Fim */

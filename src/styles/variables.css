@@ -11,6 +11,8 @@
   --tag-estudo: #616d80;
   --tag-profissional: #786b77;
   --tag-experimento: #7c715a;
+  --status-em-andamento: #9a6b00;
+  --status-finalizado: #3f7652;
 
   --font-body: "EB Garamond", Georgia, "Times New Roman", serif;
   --font-mono: "DM Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
@@ -33,4 +35,6 @@
   --tag-estudo: #9dadc3;
   --tag-profissional: #baa9b7;
   --tag-experimento: #b8ac95;
+  --status-em-andamento: #dfae4a;
+  --status-finalizado: #8fcb9e;
 }

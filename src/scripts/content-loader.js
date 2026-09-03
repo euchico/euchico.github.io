@@ -99,6 +99,16 @@ const TYPE_CLASSES = {
   experimento: 'tag-experimento'
 };
 
+const STATUS_LABELS = {
+  em_andamento: 'Em andamento',
+  finalizado: 'Finalizado'
+};
+
+const STATUS_CLASSES = {
+  em_andamento: 'status-em-andamento',
+  finalizado: 'status-finalizado'
+};
+
 function asList(container, rows, emptyMessage) {
   if (!container) return;
 
@@ -119,7 +129,7 @@ function normalizeType(type) {
   return String(type || '').trim().toLowerCase();
 }
 
-// Renderiza um item de projeto com link e tag de categoria.
+// Renderiza um item de projeto com link, tag de categoria e status.
 function projectRow(project) {
   const li = document.createElement('li');
   const anchor = document.createElement('a');
@@ -137,8 +147,17 @@ function projectRow(project) {
   tag.className = `item-tag ${TYPE_CLASSES[typeKey] || ''}`.trim();
   tag.textContent = TYPE_LABELS[typeKey] || 'Projeto';
 
+  const statusKey = normalizeType(project.status);
+  const status = document.createElement('span');
+  status.className = `item-tag item-status ${STATUS_CLASSES[statusKey] || ''}`.trim();
+  status.textContent = STATUS_LABELS[statusKey] || 'Status não definido';
+
+  const metadata = document.createElement('span');
+  metadata.className = 'item-metadata';
+  metadata.append(tag, status);
+
   anchor.appendChild(name);
-  anchor.appendChild(tag);
+  anchor.appendChild(metadata);
   li.appendChild(anchor);
   return li;
 }
