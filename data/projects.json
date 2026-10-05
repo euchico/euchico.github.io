@@ -7,4 +7,12 @@
     "status": "em_andamento",
     "featured": true
   }
+  {
+    "order": 2,
+    "name": "Autenticação e Autorização",
+    "link": "https://github.com/euchico/authlab",
+    "type": "estudo",
+    "status": "em_andamento",
+    "featured": true
+  }
 ]
