@@ -6,7 +6,7 @@
     "type": "pessoal",
     "status": "em_andamento",
     "featured": true
-  }
+  },
   {
     "order": 2,
     "name": "Autenticação e Autorização",
