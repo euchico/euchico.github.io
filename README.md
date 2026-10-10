@@ -1,7 +1,7 @@
 # Francisco de Paula
 
-![estado](https://img.shields.io/badge/estado-Em_Andamento-yellow)
-![assistência](https://img.shields.io/badge/assistência-IA-blueviolet)
+![estado](https://img.shields.io/badge/estado-Finalizado-green)
+![assistência](https://img.shields.io/badge/IA-Codex-blueviolet)
 [![licença](https://img.shields.io/badge/licença-MIT-blue.svg)](./LICENSE)
 
 Portfólio pessoal desenvolvido com HTML, CSS e JavaScript, publicado via GitHub Pages.
@@ -18,7 +18,6 @@ O objetivo do projeto é apresentar meus estudos em programação, projetos pess
 - Características
 - Estrutura
 - Como Rodar
-- Próximos Passos
 - Contato
 - Contribuição
 - Licença
@@ -66,11 +65,6 @@ Acesse: http://localhost:8000
 ⚠️ Observação: abrir diretamente o arquivo index.html pode não funcionar corretamente devido ao uso de fetch().
 ```
 
-## ▶️ Próximos Passos
-
-- [ ] Atualizar currículo
-- [ ] Refatoração para simplificação do código
-
 ## 📧 Contato
 
 ### Principal
@@ -91,5 +85,5 @@ Se encontrar algum problema ou tiver sugestões, abra uma [Issue](../../issues).
 
 ## ⚖️ Licença
 
-Licença MIT (c) 2026 - [Francisco de Paula](https://github.com/euchico/). <br>
+Licença MIT (c) 2026 – [Francisco de Paula](https://github.com/euchico/). <br>
 Consulte a seção [LICENSE](LICENSE) para mais detalhes.
