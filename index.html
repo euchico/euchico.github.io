@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
 <head>
   <!-- Configurações Básicas -->
@@ -22,7 +22,7 @@
   <meta name="author" content="Francisco de Paula">
   <meta name="description" content="Francisco de Paula, programador Full Stack focado no ecossistema .NET (C#), com experiência em sustentação e evolução de sistemas ERP.">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#f5f3ef">
+  <meta name="theme-color" content="#181714">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="pt_BR">
@@ -31,10 +31,10 @@
   <meta property="og:description" content="Francisco de Paula, programador Full Stack focado no ecossistema .NET (C#), com experiência em sustentação e evolução de sistemas ERP.">
   <meta property="og:url" content="https://euchico.github.io/">
   <meta property="og:site_name" content="euChico">
-  <meta property="og:image" content="https://euchico.github.io/assets/images/euchico-perfil.jpg">
-  <meta property="og:image:alt" content="Foto de perfil de Francisco de Paula">
-  <meta property="og:image:width" content="300">
-  <meta property="og:image:height" content="300">
+  <meta property="og:image" content="https://euchico.github.io/assets/images/social-preview.png">
+  <meta property="og:image:alt" content="Francisco de Paula, Programador Full Stack focado no ecossistema .NET e especialista em ERP">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- X/Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -42,7 +42,7 @@
   <meta name="twitter:creator" content="@euchicoprog">
   <meta name="twitter:title" content="Francisco de Paula | Programador Full Stack focado no ecossistema .NET e especialista em ERP">
   <meta name="twitter:description" content="Francisco de Paula, programador Full Stack focado no ecossistema .NET (C#), com experiência em sustentação e evolução de sistemas ERP.">
-  <meta name="twitter:image" content="https://euchico.github.io/assets/images/euchico-perfil.jpg">
+  <meta name="twitter:image" content="https://euchico.github.io/assets/images/social-preview.png">
 
   <!-- Pré-conexão com Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,13 +60,15 @@
   <!-- Script de Renderização de Tema -->
   <script>
     (function () {
+      var theme;
       try {
         var saved = localStorage.getItem('theme');
-        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        document.documentElement.setAttribute('data-theme', theme);
+        theme = saved === 'dark' || saved === 'light' ? saved : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
       } catch (e) {
-        document.documentElement.setAttribute('data-theme', 'light');
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       }
+      document.documentElement.setAttribute('data-theme', theme);
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', theme === 'dark' ? '#181714' : '#f5f3ef');
     })();
   </script>
 
@@ -133,13 +135,51 @@
         <!-- Projetos de Destaque -->
         <h3 class="sub-label">Destaques</h3>
         <ul id="projects-featured" class="item-list">
-          <li class="item-empty">Carregando projetos em destaque...</li>
+          <!-- INÍCIO DO CONTEÚDO GERADO:projects-featured -->
+          <li>
+            <a class="item-row" href="https://github.com/euchico/euchico.github.io" target="_blank" rel="noopener noreferrer">
+              <span class="item-name">Página Pessoal<span class="sr-only"> (abre em nova aba)</span></span>
+              <span class="item-metadata">
+                <span class="item-tag tag-pessoal">Pessoal</span>
+                <span class="item-tag item-status status-finalizado">Finalizado</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="item-row" href="https://github.com/euchico/authlab" target="_blank" rel="noopener noreferrer">
+              <span class="item-name">Autenticação e Autorização<span class="sr-only"> (abre em nova aba)</span></span>
+              <span class="item-metadata">
+                <span class="item-tag tag-estudo">Estudo</span>
+                <span class="item-tag item-status status-em-andamento">Em andamento</span>
+              </span>
+            </a>
+          </li>
+          <!-- FIM DO CONTEÚDO GERADO:projects-featured -->
         </ul>
 
         <!-- Projetos Recentes -->
         <h3 class="sub-label">Recentes</h3>
         <ul id="projects-all" class="item-list">
-          <li class="item-empty">Carregando projetos recentes...</li>
+          <!-- INÍCIO DO CONTEÚDO GERADO:projects-all -->
+          <li>
+            <a class="item-row" href="https://github.com/euchico/euchico.github.io" target="_blank" rel="noopener noreferrer">
+              <span class="item-name">Página Pessoal<span class="sr-only"> (abre em nova aba)</span></span>
+              <span class="item-metadata">
+                <span class="item-tag tag-pessoal">Pessoal</span>
+                <span class="item-tag item-status status-finalizado">Finalizado</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="item-row" href="https://github.com/euchico/authlab" target="_blank" rel="noopener noreferrer">
+              <span class="item-name">Autenticação e Autorização<span class="sr-only"> (abre em nova aba)</span></span>
+              <span class="item-metadata">
+                <span class="item-tag tag-estudo">Estudo</span>
+                <span class="item-tag item-status status-em-andamento">Em andamento</span>
+              </span>
+            </a>
+          </li>
+          <!-- FIM DO CONTEÚDO GERADO:projects-all -->
         </ul>
       </section>
 
@@ -151,7 +191,26 @@
         </div>
 
         <ul id="experience-list" class="item-list item-list--timeline item-list--3">
-          <li class="item-empty">Carregando experiência...</li>
+          <!-- INÍCIO DO CONTEÚDO GERADO:experience-list -->
+          <li>
+            <div class="item-row static-row">
+              <span class="item-name">Programador Jr.<em>MXM Sistemas</em></span>
+              <span class="item-tag">Nov/2021 ~ Abr/2026</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-row static-row">
+              <span class="item-name">Desenvolvedor Front-end Jr.<em>Agência Kindle</em></span>
+              <span class="item-tag">Ago/2021 ~ Nov/2021</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-row static-row">
+              <span class="item-name">Estagiário<em>Vento Consulting</em></span>
+              <span class="item-tag">Ago/2013 ~ Jun/2014</span>
+            </div>
+          </li>
+          <!-- FIM DO CONTEÚDO GERADO:experience-list -->
         </ul>
       </section>
 
@@ -162,8 +221,27 @@
           <div class="section-divider" aria-hidden="true"></div>
         </div>
 
-        <ul id="education-list" class="item-list item-list--timeline item-list--2">
-          <li class="item-empty">Carregando formação...</li>
+        <ul id="education-list" class="item-list item-list--timeline item-list--3">
+          <!-- INÍCIO DO CONTEÚDO GERADO:education-list -->
+          <li>
+            <div class="item-row static-row">
+              <span class="item-name">Especialização em ERP<em>UNINTER</em></span>
+              <span class="item-tag">Set/2025 ~ Abr/2026</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-row static-row">
+              <span class="item-name">Especialização em Engenharia da Computação<em>UNINTER</em></span>
+              <span class="item-tag">Out/2025 ~ Jun/2026</span>
+            </div>
+          </li>
+          <li>
+            <div class="item-row static-row">
+              <span class="item-name">Análise e Desenvolvimento de Sistema<em>UNINTER</em></span>
+              <span class="item-tag">Nov/2022 ~ Mar/2025</span>
+            </div>
+          </li>
+          <!-- FIM DO CONTEÚDO GERADO:education-list -->
         </ul>
       </section>
 
@@ -171,7 +249,7 @@
       <noscript>
         <div class="content-section">
           <p class="noscript-message">
-            Parte do conteúdo deste site depende de JavaScript. Se algo não carregar, confira meu GitHub e currículo no rodapé.
+            O conteúdo inicial está disponível sem JavaScript. Para ver atualizações recentes, confira meu GitHub e currículo no rodapé.
           </p>
         </div>
       </noscript>
