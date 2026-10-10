@@ -45,7 +45,7 @@ Arquivos são carregados via JavaScript (`content-loader.js`) e renderizados din
 
 Vantagens:
 - Manutenção simplificada;
-- Adição de conteúdo sem alterar HTML;
+- Adição de conteúdo sem editar HTML manualmente;
 - Organização clara entre estrutura e dados.
 
 ## 🚀 Como Rodar (Localmente)
@@ -60,9 +60,10 @@ cd euchico.github.io
 # 3. Inicie um servidor local (recomendado)
 # VSCode:
 # Live Server extension
-Acesse: http://localhost:8000
 
-⚠️ Observação: abrir diretamente o arquivo index.html pode não funcionar corretamente devido ao uso de fetch().
+
+⚠️ Observação: Abra o endereço exibido pela extensão Live Server. Abrir diretamente `index.html` pode impedir a atualização do conteúdo via `fetch()`.
+
 ```
 
 ## 📧 Contato

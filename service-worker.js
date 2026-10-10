@@ -1,5 +1,5 @@
 // Nome e versao do cache estatico principal da aplicacao.
-const CACHE_NAME = 'euchico-cache-v2';
+const CACHE_NAME = 'euchico-cache-v3';
 
 // Lista de recursos essenciais para navegacao offline basica.
 const ASSETS = [
@@ -13,7 +13,8 @@ const ASSETS = [
   '/data/projects.json',
   '/data/experience.json',
   '/data/education.json',
-  '/favicon.ico'
+  '/favicon.ico',
+  '/favicon.svg'
 ];
 
 // Precache dos arquivos essenciais durante a instalacao.

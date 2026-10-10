@@ -40,15 +40,24 @@ function markActiveNav() {
 
 // Define tema inicial por storage, com fallback para preferência do sistema.
 function getInitialTheme() {
-  const saved = localStorage.getItem('theme');
-  if (saved) return saved;
+  try {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark' || saved === 'light') return saved;
+  } catch (error) {
+    // O tema continua disponível quando o armazenamento está bloqueado.
+  }
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
 // Aplica tema e ajusta descrição acessível do botão.
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('theme', theme);
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#181714' : '#f5f3ef');
+  try {
+    localStorage.setItem('theme', theme);
+  } catch (error) {
+    // A preferência permanece ativa nesta página quando não puder ser salva.
+  }
 
   const toggle = document.getElementById('theme-toggle');
   if (toggle) {
@@ -125,6 +134,22 @@ function asList(container, rows, emptyMessage) {
   container.replaceChildren(fragment);
 }
 
+// Mantém o conteúdo inicial visível e informa quando a atualização falha.
+function showLoadError(container, message) {
+  if (!container) return;
+
+  const item = document.createElement('li');
+  item.className = 'item-empty';
+  item.setAttribute('role', 'status');
+  item.textContent = message;
+
+  if (container.querySelector('.item-row')) {
+    container.appendChild(item);
+  } else {
+    container.replaceChildren(item);
+  }
+}
+
 function normalizeType(type) {
   return String(type || '').trim().toLowerCase();
 }
@@ -141,6 +166,11 @@ function projectRow(project) {
   const name = document.createElement('span');
   name.className = 'item-name';
   name.textContent = project.name || 'Projeto sem nome';
+
+  const newTabNotice = document.createElement('span');
+  newTabNotice.className = 'sr-only';
+  newTabNotice.textContent = ' (abre em nova aba)';
+  name.appendChild(newTabNotice);
 
   const typeKey = normalizeType(project.type);
   const tag = document.createElement('span');
@@ -211,9 +241,16 @@ async function loadTimeline(path, elementId, emptyMessage) {
 export async function initHomeContent() {
   if (!document.body || document.body.dataset.page !== 'home') return;
 
-  await Promise.allSettled([
-    loadProjects(),
-    loadTimeline(EXPERIENCE_PATH, 'experience-list', 'Nenhuma experiência cadastrada.'),
-    loadTimeline(EDUCATION_PATH, 'education-list', 'Nenhuma formação cadastrada.')
+  await Promise.all([
+    loadProjects().catch(() => {
+      showLoadError(document.getElementById('projects-featured'), 'Não foi possível atualizar os projetos. Exibindo o conteúdo disponível.');
+      showLoadError(document.getElementById('projects-all'), 'Não foi possível atualizar os projetos. Exibindo o conteúdo disponível.');
+    }),
+    loadTimeline(EXPERIENCE_PATH, 'experience-list', 'Nenhuma experiência cadastrada.').catch(() => {
+      showLoadError(document.getElementById('experience-list'), 'Não foi possível atualizar a experiência. Exibindo o conteúdo disponível.');
+    }),
+    loadTimeline(EDUCATION_PATH, 'education-list', 'Nenhuma formação cadastrada.').catch(() => {
+      showLoadError(document.getElementById('education-list'), 'Não foi possível atualizar a formação. Exibindo o conteúdo disponível.');
+    })
   ]);
 }

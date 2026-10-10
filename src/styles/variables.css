@@ -4,14 +4,14 @@
   --muted: #645f58;
   --subtle: #6f6962;
   --border: #e0ddd8;
-  --border-strong: rgba(26, 24, 20, 0.22);
+  --border-strong: #6a5c49;
 
-  --tag-pessoal: #6d796d;
+  --tag-pessoal: #596858;
   --tag-desafio: #836359;
   --tag-estudo: #616d80;
   --tag-profissional: #786b77;
-  --tag-experimento: #7c715a;
-  --status-em-andamento: #9a6b00;
+  --tag-experimento: #6c604c;
+  --status-em-andamento: #805900;
   --status-finalizado: #3f7652;
 
   --font-body: "EB Garamond", Georgia, "Times New Roman", serif;
@@ -28,7 +28,7 @@
   --muted: #b1aba3;
   --subtle: #9d968d;
   --border: #2e2c29;
-  --border-strong: rgba(240, 237, 232, 0.2);
+  --border-strong: #c9b996;
 
   --tag-pessoal: #9dad9a;
   --tag-desafio: #c3a093;
