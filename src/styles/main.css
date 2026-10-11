@@ -117,8 +117,26 @@ a {
 /* Media Query */
 @media (max-width: 520px) {
   .topbar-inner {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
     padding-inline: 0.75rem;
   }
+
+  .topbar-logo {
+    font-size: 2rem;
+  }
+
+  .theme-btn {
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .icon-sun,
+  .icon-moon {
+    font-size: 1.5rem;
+}
 }
 /* NAVEGAÇÃO: Fim */
 
@@ -331,12 +349,14 @@ a.item-row:hover {
 @media (max-width: 520px) {
   .footer-inner {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
   }
 
   .footer-links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.9rem 1rem;
   }
 
